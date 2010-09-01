@@ -1,0 +1,17 @@
+Source: live-tools
+Section: misc
+Priority: optional
+Maintainer: Debian Live Project <debian-live@lists.debian.org>
+Uploaders: Daniel Baumann <daniel@debian.org>
+Build-Depends: debhelper (>= 7.0.50~)
+Standards-Version: 3.9.1
+Homepage: http://live.debian.net/devel/live-tools/
+Vcs-Browser: http://live.debian.net/gitweb/?p=live-tools.git
+Vcs-Git: git://live.debian.net/git/live-tools.git
+
+Package: live-tools
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: perl, rsync
+Description: Debian Live - System Support Scripts
+ live-tools contains additional support scripts for Debian Live systems.

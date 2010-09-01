@@ -1,0 +1,149 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the live-config package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: live-config VERSION\n"
+"POT-Creation-Date: 2010-09-02 18:11+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: TH
+#: en/live-tools.7:9
+#, no-wrap
+msgid "LIVE-TOOLS"
+msgstr ""
+
+#. type: TH
+#: en/live-tools.7:9
+#, no-wrap
+msgid "2010-09-02"
+msgstr ""
+
+#. type: TH
+#: en/live-tools.7:9
+#, no-wrap
+msgid "3.0~a1"
+msgstr ""
+
+#. type: TH
+#: en/live-tools.7:9
+#, no-wrap
+msgid "Debian Live Project"
+msgstr ""
+
+#. type: SH
+#: en/live-tools.7:11
+#, no-wrap
+msgid "NAME"
+msgstr ""
+
+#. type: Plain text
+#: en/live-tools.7:13
+msgid "B<live-tools> - System Support Scripts"
+msgstr ""
+
+#. type: SH
+#: en/live-tools.7:14
+#, no-wrap
+msgid "DESCRIPTION"
+msgstr ""
+
+#. type: Plain text
+#: en/live-tools.7:16
+msgid ""
+"B<live-tools> contains additional support scripts for Debian Live systems."
+msgstr ""
+
+#. type: SH
+#: en/live-tools.7:17
+#, no-wrap
+msgid "TOOLS"
+msgstr ""
+
+#. type: Plain text
+#: en/live-tools.7:19
+msgid "B<live-tools> currently features the following tools."
+msgstr ""
+
+#. type: IP
+#: en/live-tools.7:20
+#, no-wrap
+msgid "B<live-toram>"
+msgstr ""
+
+#. type: Plain text
+#: en/live-tools.7:22
+msgid "copies running system to RAM in order to eject the live media."
+msgstr ""
+
+#. type: SH
+#: en/live-tools.7:23
+#, no-wrap
+msgid "SEE ALSO"
+msgstr ""
+
+#. type: Plain text
+#: en/live-tools.7:25
+msgid "I<live-boot>(7)"
+msgstr ""
+
+#. type: Plain text
+#: en/live-tools.7:27
+msgid "I<live-build>(7)"
+msgstr ""
+
+#. type: Plain text
+#: en/live-tools.7:29
+msgid "I<live-config>(7)"
+msgstr ""
+
+#. type: SH
+#: en/live-tools.7:30
+#, no-wrap
+msgid "HOMEPAGE"
+msgstr ""
+
+#. type: Plain text
+#: en/live-tools.7:32
+msgid ""
+"More information about live-tools and the Debian Live project can be found "
+"on the homepage at E<lt>I<http://live.debian.net/>E<gt> and in the manual at "
+"E<lt>I<http://live.debian.net/manual/>E<gt>."
+msgstr ""
+
+#. type: SH
+#: en/live-tools.7:33
+#, no-wrap
+msgid "BUGS"
+msgstr ""
+
+#. type: Plain text
+#: en/live-tools.7:35
+msgid ""
+"Bugs can be reported by submitting a bugreport for the live-tools package in "
+"the Debian Bug Tracking System at E<lt>I<http://bugs.debian.org/>E<gt> or by "
+"writing a mail to the Debian Live mailing list at E<lt>I<debian-live@lists."
+"debian.org>E<gt>."
+msgstr ""
+
+#. type: SH
+#: en/live-tools.7:36
+#, no-wrap
+msgid "AUTHOR"
+msgstr ""
+
+#. type: Plain text
+#: en/live-tools.7:37
+msgid ""
+"live-tools was written by Daniel Baumann E<lt>I<daniel@debian.org>E<gt> for "
+"the Debian project."
+msgstr ""

@@ -1,0 +1,5 @@
+live-tools (3.0~a1-1) experimental; urgency=low
+
+  * Initial release.
+
+ -- Daniel Baumann <daniel@debian.org>  Thu, 02 Sep 2010 19:02:30 +0200

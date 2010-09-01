@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+
+%:
+	dh ${@}
+
+override_dh_auto_build:
+	# disabled
+
+override_dh_auto_install:
+	$(MAKE) DESTDIR=$(CURDIR)/debian/live-tools install
+
+	# Removing useless files
+	rm -f debian/live-tools/usr/share/doc/live-tools/COPYING
