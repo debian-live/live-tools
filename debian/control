@@ -12,6 +12,7 @@ Vcs-Git: git://live.debian.net/git/live-tools.git
 Package: live-tools
 Architecture: all
 Depends: ${misc:Depends}
+Recommends: debian-installer-launcher
 Suggests: perl, rsync
 Description: Debian Live - System Support Scripts
  live-tools contains additional support scripts for Debian Live systems.
