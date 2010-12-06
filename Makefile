@@ -6,7 +6,7 @@ LANGUAGES = de
 
 SCRIPTS = scripts/*
 
-all: test build
+all: build
 
 test:
 	@echo -n "Checking for syntax errors"
