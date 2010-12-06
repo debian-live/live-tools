@@ -1,3 +1,18 @@
+live-tools (3.0~a2-1) experimental; urgency=low
+
+  * Adding live-system script to determine if the running system is a
+    live system or not.
+  * Removing deep link to bug page in the in bug script since we don't
+    have stable references yet.
+  * Adding dpkg-source option file.
+  * Removing header in copyright file.
+  * Using dh auto magic in override, rather than manual make call.
+  * Updating to debhelper version 8.
+  * Don't hard-depend on test target in Makefile.
+  * Adding recommends to debian-installer-launcher.
+
+ -- Daniel Baumann <daniel@debian.org>  Mon, 06 Dec 2010 15:19:05 +0100
+
 live-tools (3.0~a1-1) experimental; urgency=low
 
   * Initial release.
