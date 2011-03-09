@@ -1,3 +1,10 @@
+live-tools (3.0~a3-1) unstable; urgency=low
+
+  * Updating year in copyright.
+  * Updating year in manpage files.
+
+ -- Daniel Baumann <daniel@debian.org>  Wed, 09 Mar 2011 20:22:16 +0100
+
 live-tools (3.0~a2-1) experimental; urgency=low
 
   * Adding live-system script to determine if the running system is a
