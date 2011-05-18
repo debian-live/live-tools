@@ -1,3 +1,15 @@
+live-tools (3.0~a4-1) unstable; urgency=low
+
+  * Updating to standards version 3.9.2.
+  * Correcting top-level makefile to automatically get all the supported
+    languages, rather than defining a static list.
+  * Making copyright file distribution neutral.
+  * Shortening URL to manual in bug script.
+  * Updating manpage to cover the live-system script and making the
+    manpage distribution neutral.
+
+ -- Daniel Baumann <daniel@debian.org>  Wed, 18 May 2011 18:35:14 +0200
+
 live-tools (3.0~a3-1) unstable; urgency=low
 
   * Updating year in copyright.
