@@ -4,8 +4,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: live-tools 3.0~a3\n"
-"POT-Creation-Date: 2011-03-09 20:21+0100\n"
+"Project-Id-Version: live-tools 3.0~a4\n"
+"POT-Creation-Date: 2011-05-18 18:34+0300\n"
 "PO-Revision-Date: 2010-05-24 09:59+0300\n"
 "Last-Translator: Daniel Baumann <daniel@debian.org>\n"
 "Language-Team: none\n"
@@ -24,14 +24,14 @@ msgstr "LIVE-TOOLS"
 #. type: TH
 #: en/live-tools.7:9
 #, no-wrap
-msgid "2011-03-09"
-msgstr "09.03.2011"
+msgid "2011-05-18"
+msgstr "18.05.2011"
 
 #. type: TH
 #: en/live-tools.7:9
 #, no-wrap
-msgid "3.0~a3"
-msgstr "3.0~a3"
+msgid "3.0~a4"
+msgstr "3.0~a4"
 
 #. type: TH
 #: en/live-tools.7:9
@@ -70,7 +70,7 @@ msgstr "TOOLS"
 
 #. type: Plain text
 #: en/live-tools.7:19
-msgid "B<live-tools> currently features the following tools."
+msgid "B<live-tools> currently contains the following tools."
 msgstr "B<live-tools> enthält derzeit folgende Tools."
 
 #. type: IP
@@ -84,35 +84,46 @@ msgstr "B<live-toram>"
 msgid "copies running system to RAM in order to eject the live media."
 msgstr "kopiert das laufende System in RAM um das Live Medium auszuwerfen."
 
+#. type: IP
+#: en/live-tools.7:22
+#, no-wrap
+msgid "B<live-system>"
+msgstr "B<live-system>"
+
+#. type: Plain text
+#: en/live-tools.7:24
+msgid "determines if running system is a live system."
+msgstr "bestimmt ob das laufende System ein Live System ist."
+
 #. type: SH
-#: en/live-tools.7:23
+#: en/live-tools.7:25
 #, no-wrap
 msgid "SEE ALSO"
 msgstr "SIEHE AUCH"
 
 #. type: Plain text
-#: en/live-tools.7:25
+#: en/live-tools.7:27
 msgid "I<live-boot>(7)"
 msgstr "I<live-boot>(7)"
 
 #. type: Plain text
-#: en/live-tools.7:27
+#: en/live-tools.7:29
 msgid "I<live-build>(7)"
 msgstr "I<live-build>(7)"
 
 #. type: Plain text
-#: en/live-tools.7:29
+#: en/live-tools.7:31
 msgid "I<live-config>(7)"
 msgstr "I<live-config>(7)"
 
 #. type: SH
-#: en/live-tools.7:30
+#: en/live-tools.7:32
 #, no-wrap
 msgid "HOMEPAGE"
 msgstr "HOMEPAGE"
 
 #. type: Plain text
-#: en/live-tools.7:32
+#: en/live-tools.7:34
 msgid ""
 "More information about live-tools and the Debian Live project can be found "
 "on the homepage at E<lt>I<http://live.debian.net/>E<gt> and in the manual at "
@@ -123,13 +134,13 @@ msgstr ""
 "unter E<lt>I<http://live.debian.net/manual/>E<gt> gefunden werden."
 
 #. type: SH
-#: en/live-tools.7:33
+#: en/live-tools.7:35
 #, no-wrap
 msgid "BUGS"
 msgstr "FEHLER"
 
 #. type: Plain text
-#: en/live-tools.7:35
+#: en/live-tools.7:37
 msgid ""
 "Bugs can be reported by submitting a bugreport for the live-tools package in "
 "the Debian Bug Tracking System at E<lt>I<http://bugs.debian.org/>E<gt> or by "
@@ -143,16 +154,15 @@ msgstr ""
 "werden."
 
 #. type: SH
-#: en/live-tools.7:36
+#: en/live-tools.7:38
 #, no-wrap
 msgid "AUTHOR"
 msgstr "AUTOR"
 
 #. type: Plain text
-#: en/live-tools.7:37
+#: en/live-tools.7:39
 msgid ""
-"live-tools was written by Daniel Baumann E<lt>I<daniel@debian.org>E<gt> for "
-"the Debian project."
+"live-tools was written by Daniel Baumann E<lt>I<daniel@debian.org>E<gt>."
 msgstr ""
-"live-tools wurde von Daniel Baumann E<lt>I<daniel@debian.org>E<gt> für das "
-"Debian Projekt geschrieben."
+"live-tools wurde von Daniel Baumann E<lt>I<daniel@debian.org>E<gt> "
+"geschrieben."
