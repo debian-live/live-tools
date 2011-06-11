@@ -1,3 +1,12 @@
+live-tools (3.0~a5-1) unstable; urgency=low
+
+  * Adding GPL headers in scripts.
+  * Removing accidentally twice included English files when installing
+    manpages.
+  * Adding empty line as seperater in makefile for consistency reasons.
+
+ -- Daniel Baumann <daniel@debian.org>  Sat, 11 Jun 2011 13:23:02 +0200
+
 live-tools (3.0~a4-1) unstable; urgency=low
 
   * Updating to standards version 3.9.2.
