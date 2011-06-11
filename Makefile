@@ -2,7 +2,7 @@
 
 SHELL := sh -e
 
-LANGUAGES = en $(shell cd manpages/po && ls)
+LANGUAGES = $(shell cd manpages/po && ls)
 
 SCRIPTS = scripts/*
 
@@ -70,6 +70,7 @@ uninstall:
 	do \
 		rm -f $(DESTDIR)/usr/$$(basename $${SCRIPT}); \
 	done
+
 	rmdir --ignore-fail-on-non-empty $(DESTDIR)/usr/bin || true
 	rmdir --ignore-fail-on-non-empty $(DESTDIR)/usr || true
 	rmdir --ignore-fail-on-non-empty $(DESTDIR) || true
