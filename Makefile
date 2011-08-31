@@ -71,9 +71,9 @@ uninstall:
 		rm -f $(DESTDIR)/usr/$$(basename $${SCRIPT}); \
 	done
 
-	rmdir --ignore-fail-on-non-empty $(DESTDIR)/usr/bin || true
-	rmdir --ignore-fail-on-non-empty $(DESTDIR)/usr || true
-	rmdir --ignore-fail-on-non-empty $(DESTDIR) || true
+	rmdir --ignore-fail-on-non-empty $(DESTDIR)/usr/bin > /dev/null 2>&1 || true
+	rmdir --ignore-fail-on-non-empty $(DESTDIR)/usr > /dev/null 2>&1 || true
+	rmdir --ignore-fail-on-non-empty $(DESTDIR) > /dev/null 2>&1 || true
 
 	# Uninstalling docs
 	rm -rf $(DESTDIR)/usr/share/doc/live-tools
