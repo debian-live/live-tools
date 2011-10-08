@@ -8,3 +8,6 @@ override_dh_auto_install:
 
 	# Removing useless files
 	rm -f debian/live-tools/usr/share/doc/live-tools/COPYING
+
+override_dh_builddeb:
+	dh_builddeb -- -Zgzip -z9
