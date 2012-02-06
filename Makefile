@@ -32,7 +32,7 @@ test:
 		echo "W: checkbashisms - command not found"; \
 		echo "I: checkbashisms can be optained from: "; \
 		echo "I:   http://git.debian.org/?p=devscripts/devscripts.git"; \
-		echo "I: On Debian systems, checkbashisms can be installed with:"; \
+		echo "I: On Debian based systems, checkbashisms can be installed with:"; \
 		echo "I:   apt-get install devscripts"; \
 	fi
 
@@ -71,9 +71,9 @@ uninstall:
 		rm -f $(DESTDIR)/usr/$$(basename $${SCRIPT}); \
 	done
 
-	rmdir --ignore-fail-on-non-empty $(DESTDIR)/usr/bin || true
-	rmdir --ignore-fail-on-non-empty $(DESTDIR)/usr || true
-	rmdir --ignore-fail-on-non-empty $(DESTDIR) || true
+	rmdir --ignore-fail-on-non-empty $(DESTDIR)/usr/bin > /dev/null 2>&1 || true
+	rmdir --ignore-fail-on-non-empty $(DESTDIR)/usr > /dev/null 2>&1 || true
+	rmdir --ignore-fail-on-non-empty $(DESTDIR) > /dev/null 2>&1 || true
 
 	# Uninstalling docs
 	rm -rf $(DESTDIR)/usr/share/doc/live-tools

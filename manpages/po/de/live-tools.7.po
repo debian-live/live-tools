@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: live-tools 3.0~a5\n"
-"POT-Creation-Date: 2011-06-11 13:20+0300\n"
+"POT-Creation-Date: 2012-02-06 23:36+0100\n"
 "PO-Revision-Date: 2010-05-24 09:59+0300\n"
 "Last-Translator: Daniel Baumann <daniel@debian.org>\n"
 "Language-Team: none\n"
@@ -24,13 +24,14 @@ msgstr "LIVE-TOOLS"
 #. type: TH
 #: en/live-tools.7:9
 #, no-wrap
-msgid "2011-06-11"
-msgstr "11.06.2011"
+msgid "2012-02-06"
+msgstr ""
 
 #. type: TH
 #: en/live-tools.7:9
-#, no-wrap
-msgid "3.0~a5"
+#, fuzzy, no-wrap
+#| msgid "3.0~a5"
+msgid "3.0~a6"
 msgstr "3.0~a5"
 
 #. type: TH
