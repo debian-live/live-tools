@@ -1,3 +1,13 @@
+live-tools (3.0~a6-1) unstable; urgency=low
+
+  * Making references to debian more distribution neutral.
+  * Silencing rmdir calls in makefile.
+  * Using compression level 9 also for binary packages.
+  * Updating to debhelper version 9.
+  * Updating year to 2012 in copyright notices.
+
+ -- Daniel Baumann <daniel@debian.org>  Mon, 06 Feb 2012 23:35:41 +0100
+
 live-tools (3.0~a5-1) unstable; urgency=low
 
   * Adding GPL headers in scripts.
