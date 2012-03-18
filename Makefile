@@ -54,7 +54,7 @@ install:
 
 	# Installing docs
 	mkdir -p $(DESTDIR)/usr/share/doc/live-tools
-	cp -r COPYING docs/* $(DESTDIR)/usr/share/doc/live-tools
+	cp -r COPYING $(DESTDIR)/usr/share/doc/live-tools
 
 	# Installing manpages
 	for MANPAGE in manpages/en/*; \

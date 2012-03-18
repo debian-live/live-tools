@@ -1,2 +1,0 @@
-* once there are more than one script, generalize shell functions into a common
-  file to be sourced.
