@@ -1,3 +1,14 @@
+live-tools (3.0~a7-1) unstable; urgency=low
+
+  * Moving debian-installer-launcher to suggests (Closes: #660584).
+  * Updating copyright file machine-readable format version 1.0.
+  * Updating to standards version 3.9.3.
+  * Adding copyright header to remaining files.
+  * Removing todo file, content is included centrally on
+    live.debian.net/devel for all components.
+
+ -- Daniel Baumann <daniel@debian.org>  Sun, 18 Mar 2012 14:47:23 +0100
+
 live-tools (3.0~a6-1) unstable; urgency=low
 
   * Making references to debian more distribution neutral.
