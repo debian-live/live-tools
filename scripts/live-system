@@ -55,12 +55,12 @@ then
 	then
 		if ls /live/image/install/pool/main/l/live-installer/live-installer_*.udeb > /dev/null 2>&1
 		then
-			[ "${_VERBOSE}" ] && echo " with live-installer support."
+			[ "${_VERBOSE}" ] && echo " with debian-installer (live) support."
 		else
-			[ "${_VERBOSE}" ] && echo " without live-installer support."
+			[ "${_VERBOSE}" ] && echo " with debian-installer (normal) support."
 		fi
 	else
-		[ "${_VERBOSE}" ] && echo "without installer support."
+		[ "${_VERBOSE}" ] && echo "without debian-installer support."
 	fi
 
 	exit 0
