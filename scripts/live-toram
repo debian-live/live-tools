@@ -70,7 +70,7 @@ done
 
 case ${@} in
 	-f|--force)
-		echo "W: Ignoring memory constrains as requested"
+		echo "I: Ignoring memory constrains as requested"
 		;;
 
 	*)
