@@ -86,7 +86,7 @@ esac
 
 # Copying image to memory
 echo "P: Copying images to memory."
-echo "P: This may take a while..."
+echo "I: This may take a while..."
 
 # FIXME: doesn't work with multiple filesystems
 for _FILESYSTEM in ${_FILESYSTEMS}
