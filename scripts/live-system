@@ -41,7 +41,9 @@ esac
 
 if [ ! -e /proc/cmdline ]
 then
+	[ "${_VERBOSE}" ] && echo
 	echo "E: /proc/cmdline - No such file."
+
 	exit 2
 fi
 
