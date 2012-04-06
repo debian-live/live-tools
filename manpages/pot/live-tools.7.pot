@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: live-config VERSION\n"
-"POT-Creation-Date: 2012-03-18 14:46+0100\n"
+"POT-Creation-Date: 2012-04-06 13:44+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,13 +25,13 @@ msgstr ""
 #. type: TH
 #: en/live-tools.7:9
 #, no-wrap
-msgid "2012-03-18"
+msgid "2012-04-06"
 msgstr ""
 
 #. type: TH
 #: en/live-tools.7:9
 #, no-wrap
-msgid "3.0~a7-1"
+msgid "3.0~b1-1"
 msgstr ""
 
 #. type: TH
@@ -93,7 +93,7 @@ msgstr ""
 
 #. type: Plain text
 #: en/live-tools.7:24
-msgid "determines if running system is a live system."
+msgid "determines if running system is a debian-live based system."
 msgstr ""
 
 #. type: SH

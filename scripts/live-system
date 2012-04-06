@@ -25,7 +25,7 @@ exec 1>&2
 
 case "${1}" in
 	-h|--help|-u|--usage)
-		echo "live-system - determine if running system is a live system"
+		echo "live-system - determine if running system is a debian-live based system"
 		echo
 		echo "Usage: ${0} [-v|--verbose]"
 
@@ -37,33 +37,35 @@ case "${1}" in
 		;;
 esac
 
-[ "${_VERBOSE}" ] && echo -n "Checking for live-system... "
+[ "${_VERBOSE}" ] && echo -n "Checking for debian-live based system..."
 
 if [ ! -e /proc/cmdline ]
 then
+	[ "${_VERBOSE}" ] && echo
 	echo "E: /proc/cmdline - No such file."
+
 	exit 2
 fi
 
-if grep -qs boot=live /proc/cmdline
+if grep -qs "boot=live" /proc/cmdline
 then
-	[ "${_VERBOSE}" ] && echo -n " yes, this is a live system"
+	[ "${_VERBOSE}" ] && echo -n " yes, this is a debian-live based system"
 
 	if [ -d /live/image/install ]
 	then
 		if ls /live/image/install/pool/main/l/live-installer/live-installer_*.udeb > /dev/null 2>&1
 		then
-			[ "${_VERBOSE}" ] && echo " with live-installer support."
+			[ "${_VERBOSE}" ] && echo " with debian-installer (live) support."
 		else
-			[ "${_VERBOSE}" ] && echo " without live-installer support."
+			[ "${_VERBOSE}" ] && echo " with debian-installer (normal) support."
 		fi
 	else
-		[ "${_VERBOSE}" ] && echo "without installer support."
+		[ "${_VERBOSE}" ] && echo "without debian-installer support."
 	fi
 
 	exit 0
 else
-	[ "${_VERBOSE}" ] && echo " no, this is not a live system."
+	[ "${_VERBOSE}" ] && echo " no, this is not a debian-live based system."
 
 	exit 1
 fi

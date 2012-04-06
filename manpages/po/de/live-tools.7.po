@@ -1,11 +1,11 @@
 # German translations for live-tools package
-# 2010 Daniel Baumann <daniel@debian.org>
+# 2006-2012 Daniel Baumann <daniel@debian.org>
 # This file is distributed under the same license as the live-tools package.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: live-tools 3.0~a5\n"
-"POT-Creation-Date: 2012-03-18 14:46+0100\n"
+"Project-Id-Version: live-tools 3.0~b1\n"
+"POT-Creation-Date: 2012-04-06 13:44+0300\n"
 "PO-Revision-Date: 2010-05-24 09:59+0300\n"
 "Last-Translator: Daniel Baumann <daniel@debian.org>\n"
 "Language-Team: none\n"
@@ -24,14 +24,14 @@ msgstr "LIVE-TOOLS"
 #. type: TH
 #: en/live-tools.7:9
 #, no-wrap
-msgid "2012-03-18"
-msgstr "03.18.2012"
+msgid "2012-04-06"
+msgstr "06.04.2012"
 
 #. type: TH
 #: en/live-tools.7:9
 #, no-wrap
-msgid "3.0~a7-1"
-msgstr "3.0~a7-1"
+msgid "3.0~b1-1"
+msgstr "3.0~b1-1"
 
 #. type: TH
 #: en/live-tools.7:9
@@ -92,8 +92,8 @@ msgstr "B<live-system>"
 
 #. type: Plain text
 #: en/live-tools.7:24
-msgid "determines if running system is a live system."
-msgstr "bestimmt ob das laufende System ein Live System ist."
+msgid "determines if running system is a debian-live based system."
+msgstr "bestimmt ob das laufende System ein Debian Live basiertes System ist."
 
 #. type: SH
 #: en/live-tools.7:25
