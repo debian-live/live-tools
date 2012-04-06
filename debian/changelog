@@ -1,3 +1,30 @@
+live-tools (3.0~b1-1) unstable; urgency=low
+
+  * Making failure message when not being used on a debian-live based
+    system in live-toram more generic.
+  * Using 'I' rather than 'W' level for message about ignoring memory
+    check in live-toram.
+  * Using 'I' rather than 'P' level for waiting message when copying
+    images to memory in live-toram.
+  * Correcting wrong check for rsync instead of eject when ejecting live
+    media in live-toram.
+  * Wording output message about being a debian-live based system more
+    generically in live-system.
+  * Avoid double whitespace in verbose messages in live-system.
+  * Correcting line wrapping in error message about /proc when using
+    verbose mode in live-system.
+  * Using common quoting for grep expression in live-system.
+  * Rewording messages about debian-installer combinations in live-
+    system.
+  * Updating wording wrt/ debian-live and live-system in live-tools
+    manpage.
+  * Adding symlinks for utilities manpages to live-tools central
+    manpage.
+  * Using common spacing for /dev/null redirection consistently in live-
+    toram.
+
+ -- Daniel Baumann <daniel@debian.org>  Fri, 06 Apr 2012 13:39:13 +0200
+
 live-tools (3.0~a7-1) unstable; urgency=low
 
   * Moving debian-installer-launcher to suggests (Closes: #660584).
