@@ -91,7 +91,7 @@ echo "I: This may take a while..."
 # FIXME: doesn't work with multiple filesystems
 for _FILESYSTEM in ${_FILESYSTEMS}
 do
-	if [ ! -x "$(which rsync 2>/dev/null)" ]
+	if [ ! -x "$(which rsync 2> /dev/null)" ]
 	then
 		rsync -a --progress ${_FILESYSTEM} /tmp/live
 	else
@@ -121,8 +121,8 @@ fi
 if [ "$(expr substr ${_DEVICE} 1 2)" != "sd" ] && \
    ! readlink /sys/block/$(expr substr ${_DEVICE} 6 3) | grep -q usb
 then
-	if [ ! -x "$(which eject 2>/dev/null)" ]
+	if [ ! -x "$(which eject 2> /dev/null)" ]
 	then
-		eject -p -m ${_DEVICE} >/dev/null 2>&1
+		eject -p -m ${_DEVICE} > /dev/null 2>&1
 	fi
 fi
