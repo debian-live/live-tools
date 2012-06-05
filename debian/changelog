@@ -1,3 +1,11 @@
+live-tools (3.0.0-1) unstable; urgency=low
+
+  * Making extraction of the manpage section in manpages/Makefile work
+    with multiple dots in the filename.
+  * Automatically translate date formats in po files.
+
+ -- Daniel Baumann <daniel@debian.org>  Tue, 05 Jun 2012 13:55:13 +0200
+
 live-tools (3.0~b1-1) unstable; urgency=low
 
   * Making failure message when not being used on a debian-live based
