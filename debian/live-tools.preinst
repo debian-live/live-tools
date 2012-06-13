@@ -1,0 +1,24 @@
+#!/bin/sh
+
+set -e
+
+case "${1}" in
+	install|upgrade)
+		dpkg-divert --package live-tools --quiet --add --rename --divert /usr/bin/uptime.procps /usr/bin/uptime
+
+		ln -s /usr/bin/live-uptime /usr/bin/uptime
+		;;
+
+	abort-upgrade)
+
+		;;
+
+	*)
+		echo "preinst called with unknown argument \`$1'" >&2
+		exit 1
+		;;
+esac
+
+#DEBHELPER#
+
+exit 0
