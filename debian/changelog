@@ -1,3 +1,9 @@
+live-tools (3.0.2-1) unstable; urgency=low
+
+  * Switching to xz compression in source and binary packages.
+
+ -- Daniel Baumann <daniel@debian.org>  Wed, 27 Jun 2012 14:53:31 +0200
+
 live-tools (3.0.1-1) unstable; urgency=low
 
   * Adding live-uptime which previously was in linux-container.
