@@ -5,3 +5,5 @@
 /usr/share/man/de/man7/live-tools.7.gz	/usr/share/man/de/man1/live-system.1.gz
 /usr/share/man/de/man7/live-tools.7.gz	/usr/share/man/de/man1/live-toram.1.gz
 /usr/share/man/de/man7/live-tools.7.gz	/usr/share/man/de/man1/live-uptime.1.gz
+
+/usr/bin/live-uptime			/usr/bin/uptime

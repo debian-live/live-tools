@@ -5,8 +5,6 @@ set -e
 case "${1}" in
 	install|upgrade)
 		dpkg-divert --package live-tools --quiet --add --rename --divert /usr/bin/uptime.procps /usr/bin/uptime
-
-		ln -s /usr/bin/live-uptime /usr/bin/uptime
 		;;
 
 	abort-upgrade)

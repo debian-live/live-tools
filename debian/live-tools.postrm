@@ -4,8 +4,6 @@ set -e
 
 case "${1}" in
 	remove)
-		rm -f /usr/bin/uptime
-
 		dpkg-divert --package live-tools --quiet --remove --rename --divert /usr/bin/uptime.procps /usr/bin/uptime
 		;;
 
