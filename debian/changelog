@@ -1,3 +1,11 @@
+live-tools (3.0.3-1) unstable; urgency=low
+
+  [ Evgeni Golov ]
+  * Installing the uptime to live-uptime link in the package, not in
+    preinst (Closes: #679704).
+
+ -- Daniel Baumann <daniel@debian.org>  Thu, 05 Jul 2012 17:05:30 +0200
+
 live-tools (3.0.2-1) unstable; urgency=low
 
   * Switching to xz compression in source and binary packages.
