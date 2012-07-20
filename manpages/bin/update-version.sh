@@ -35,7 +35,7 @@ do
 	then
 		for _FILE in po/${_LANGUAGE}/*.po
 		do
-			sed -i -e "s|^msgstr .*.2012\"$|msgstr \"${DAY}.${MONTH}.${YEAR}\"|g" "${_FILE}"
+			sed -i -e "s|^msgstr .*.${YEAR}\"$|msgstr \"${DAY}.${MONTH}.${YEAR}\"|g" "${_FILE}"
 		done
 	fi
 done
@@ -45,6 +45,6 @@ if ls po/pt_BR/*.po > /dev/null 2>&1
 then
 	for _FILE in po/pt_BR/*.po
 	do
-		sed -i -e "s|^msgstr .*-2012\"$|msgstr \"${DAY}-${MONTH}-${YEAR}\"|g" "${_FILE}"
+		sed -i -e "s|^msgstr .*-${YEAR}\"$|msgstr \"${DAY}-${MONTH}-${YEAR}\"|g" "${_FILE}"
 	done
 fi
