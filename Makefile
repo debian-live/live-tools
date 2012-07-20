@@ -49,8 +49,8 @@ build:
 
 install:
 	# Installing scripts
-	mkdir -p $(DESTDIR)/usr/bin
-	cp -r bin/* $(DESTDIR)/usr/bin
+	mkdir -p $(DESTDIR)/bin
+	cp -r bin/* $(DESTDIR)/bin
 
 	# Installing docs
 	mkdir -p $(DESTDIR)/usr/share/doc/live-tools
@@ -76,11 +76,10 @@ uninstall:
 	# Uninstalling scripts
 	for SCRIPT in bin/*; \
 	do \
-		rm -f $(DESTDIR)/usr/$$(basename $${SCRIPT}); \
+		rm -f $(DESTDIR)/bin/$$(basename $${SCRIPT}); \
 	done
 
-	rmdir --ignore-fail-on-non-empty $(DESTDIR)/usr/bin > /dev/null 2>&1 || true
-	rmdir --ignore-fail-on-non-empty $(DESTDIR)/usr > /dev/null 2>&1 || true
+	rmdir --ignore-fail-on-non-empty $(DESTDIR)/bin > /dev/null 2>&1 || true
 	rmdir --ignore-fail-on-non-empty $(DESTDIR) > /dev/null 2>&1 || true
 
 	# Uninstalling docs
