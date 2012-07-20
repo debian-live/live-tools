@@ -12,7 +12,7 @@ SHELL := sh -e
 
 LANGUAGES = $(shell cd manpages/po && ls)
 
-SCRIPTS = scripts/*
+SCRIPTS = bin/*
 
 all: build
 
@@ -49,8 +49,8 @@ build:
 
 install:
 	# Installing scripts
-	mkdir -p $(DESTDIR)/usr
-	cp -r scripts $(DESTDIR)/usr/bin
+	mkdir -p $(DESTDIR)/usr/bin
+	cp -r bin/* $(DESTDIR)/usr/bin
 
 	# Installing docs
 	mkdir -p $(DESTDIR)/usr/share/doc/live-tools
@@ -74,7 +74,7 @@ install:
 
 uninstall:
 	# Uninstalling scripts
-	for SCRIPT in scripts/*; \
+	for SCRIPT in bin/*; \
 	do \
 		rm -f $(DESTDIR)/usr/$$(basename $${SCRIPT}); \
 	done
