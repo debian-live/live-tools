@@ -1,3 +1,17 @@
+live-tools (3.0.4-1) unstable; urgency=low
+
+  * Using common source tree layout for all live packages.
+  * Completing uninstall target in toplevel Makefile.
+  * Unifying copyright headers to use same GPL blurbs.
+  * Adding reference to live-debconfig in live-config manpage.
+  * Using dynamic year in automatic manpage date translation rather than
+    a hardcoded one.
+  * Moving executables from /usr/bin to /bin as they potentially need to
+    be arround before /usr is available.
+  * Also diverting uptime manpage from procps (Closes: #682574).
+
+ -- Daniel Baumann <daniel@debian.org>  Tue, 24 Jul 2012 21:43:48 +0200
+
 live-tools (3.0.3-1) unstable; urgency=low
 
   [ Evgeni Golov ]
