@@ -5,6 +5,7 @@ set -e
 case "${1}" in
 	remove)
 		dpkg-divert --package live-tools --quiet --remove --rename --divert /usr/bin/uptime.procps /usr/bin/uptime
+		dpkg-divert --package live-tools --quiet --remove --rename --divert /usr/share/man/man1/uptime.procps.1.gz /usr/share/man/man1/uptime.1.gz
 		;;
 
 	purge|upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
