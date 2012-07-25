@@ -3,7 +3,7 @@
 ## live-tools(7) - System Support Scripts
 ## Copyright (C) 2006-2012 Daniel Baumann <daniel@debian.org>
 ##
-## live-tools comes with ABSOLUTELY NO WARRANTY; for details see COPYING.
+## This program comes with ABSOLUTELY NO WARRANTY; for details see COPYING.
 ## This is free software, and you are welcome to redistribute it
 ## under certain conditions; see COPYING for details.
 
@@ -12,7 +12,7 @@ SHELL := sh -e
 
 LANGUAGES = $(shell cd manpages/po && ls)
 
-SCRIPTS = scripts/*
+SCRIPTS = bin/*
 
 all: build
 
@@ -49,8 +49,8 @@ build:
 
 install:
 	# Installing scripts
-	mkdir -p $(DESTDIR)/usr
-	cp -r scripts $(DESTDIR)/usr/bin
+	mkdir -p $(DESTDIR)/bin
+	cp -r bin/* $(DESTDIR)/bin
 
 	# Installing docs
 	mkdir -p $(DESTDIR)/usr/share/doc/live-tools
@@ -74,23 +74,32 @@ install:
 
 uninstall:
 	# Uninstalling scripts
-	for SCRIPT in scripts/*; \
+	for SCRIPT in bin/*; \
 	do \
-		rm -f $(DESTDIR)/usr/$$(basename $${SCRIPT}); \
+		rm -f $(DESTDIR)/bin/$$(basename $${SCRIPT}); \
 	done
 
-	rmdir --ignore-fail-on-non-empty $(DESTDIR)/usr/bin > /dev/null 2>&1 || true
-	rmdir --ignore-fail-on-non-empty $(DESTDIR)/usr > /dev/null 2>&1 || true
+	rmdir --ignore-fail-on-non-empty $(DESTDIR)/bin > /dev/null 2>&1 || true
 	rmdir --ignore-fail-on-non-empty $(DESTDIR) > /dev/null 2>&1 || true
 
 	# Uninstalling docs
 	rm -rf $(DESTDIR)/usr/share/doc/live-tools
+
+	rmdir --ignore-fail-on-non-empty $(DESTDIR)/usr/share/doc > /dev/null 2>&1 || true
+	rmdir --ignore-fail-on-non-empty $(DESTDIR)/usr/share > /dev/null 2>&1 || true
+	rmdir --ignore-fail-on-non-empty $(DESTDIR)/usr > /dev/null 2>&1 || true
+	rmdir --ignore-fail-on-non-empty $(DESTDIR) > /dev/null 2>&1 || true
 
 	# Uninstalling manpages
 	for MANPAGE in manpages/en/*; \
 	do \
 		SECTION="$$(basename $${MANPAGE} | awk -F. '{ print $$2 }')"; \
 		rm -f $(DESTDIR)/usr/share/man/man$${SECTION}/$$(basename $${MANPAGE} .en.$${SECTION}).$${SECTION}; \
+		rmdir --ignore-fail-on-non-empty $(DESTDIR)/usr/share/man/man$${SECTION} > /dev/null 2>&1 || true; \
+		rmdir --ignore-fail-on-non-empty $(DESTDIR)/usr/share/man > /dev/null 2>&1 || true; \
+		rmdir --ignore-fail-on-non-empty $(DESTDIR)/usr/share > /dev/null 2>&1 || true; \
+		rmdir --ignore-fail-on-non-empty $(DESTDIR)/usr > /dev/null 2>&1 || true; \
+		rmdir --ignore-fail-on-non-empty $(DESTDIR) > /dev/null 2>&1 || true; \
 	done
 
 	for LANGUAGE in $(LANGUAGES); \
@@ -99,11 +108,17 @@ uninstall:
 		do \
 			SECTION="$$(basename $${MANPAGE} | awk -F. '{ print $$3 }')"; \
 			rm -f $(DESTDIR)/usr/share/man/$${LANGUAGE}/man$${SECTION}/$$(basename $${MANPAGE} .$${LANGUAGE}.$${SECTION}).$${SECTION}; \
+			rmdir --ignore-fail-on-non-empty $(DESTDIR)/usr/share/man/$${LANGUAGE}/man$${SECTION} > /dev/null 2>&1 || true; \
+			rmdir --ignore-fail-on-non-empty $(DESTDIR)/usr/share/man/$${LANGUAGE} > /dev/null 2>&1 || true; \
+			rmdir --ignore-fail-on-non-empty $(DESTDIR)/usr/share/man > /dev/null 2>&1 || true; \
+			rmdir --ignore-fail-on-non-empty $(DESTDIR)/usr/share > /dev/null 2>&1 || true; \
+			rmdir --ignore-fail-on-non-empty $(DESTDIR)/usr > /dev/null 2>&1 || true; \
+			rmdir --ignore-fail-on-non-empty $(DESTDIR) > /dev/null 2>&1 || true; \
 		done; \
 	done
 
 clean:
 
-distclean:
+distclean: clean
 
 reinstall: uninstall install

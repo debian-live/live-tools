@@ -3,7 +3,7 @@
 ## live-tools(7) - System Support Scripts
 ## Copyright (C) 2006-2012 Daniel Baumann <daniel@debian.org>
 ##
-## live-tools comes with ABSOLUTELY NO WARRANTY; for details see COPYING.
+## This program comes with ABSOLUTELY NO WARRANTY; for details see COPYING.
 ## This is free software, and you are welcome to redistribute it
 ## under certain conditions; see COPYING for details.
 
@@ -35,7 +35,7 @@ do
 	then
 		for _FILE in po/${_LANGUAGE}/*.po
 		do
-			sed -i -e "s|^msgstr .*.2012\"$|msgstr \"${DAY}.${MONTH}.${YEAR}\"|g" "${_FILE}"
+			sed -i -e "s|^msgstr .*.${YEAR}\"$|msgstr \"${DAY}.${MONTH}.${YEAR}\"|g" "${_FILE}"
 		done
 	fi
 done
@@ -45,6 +45,6 @@ if ls po/pt_BR/*.po > /dev/null 2>&1
 then
 	for _FILE in po/pt_BR/*.po
 	do
-		sed -i -e "s|^msgstr .*-2012\"$|msgstr \"${DAY}-${MONTH}-${YEAR}\"|g" "${_FILE}"
+		sed -i -e "s|^msgstr .*-${YEAR}\"$|msgstr \"${DAY}-${MONTH}-${YEAR}\"|g" "${_FILE}"
 	done
 fi
