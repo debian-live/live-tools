@@ -1,0 +1,65 @@
+#!/bin/sh
+
+## live-tools(7) - System Support Scripts
+## Copyright (C) 2006-2012 Daniel Baumann <daniel@debian.org>
+##
+## This program comes with ABSOLUTELY NO WARRANTY; for details see COPYING.
+## This is free software, and you are welcome to redistribute it
+## under certain conditions; see COPYING for details.
+
+
+set -e
+
+if grep -qs "boot=live" /proc/cmdline && \
+   grep -qs "\/live\/image" /proc/mounts
+then
+	_DEVICE="$(awk '/\/live\/image/ { print $1 }' /proc/mounts)"
+
+	mount -o remount,rw ${_DEVICE} > /dev/null 2>&1 || true
+
+	if touch /live/image/.test > /dev/null 2>&1
+	then
+		_READ_WRITE="true"
+
+		rm -f /live/image/.test
+	else
+		_READ_WRITE="false"
+	fi
+fi
+
+case "${_READ_WRITE}" in
+	true)
+		# Updating initramfs
+		/usr/sbin/update-initramfs.initramfs-tools "${@}"
+
+		# FIXME: needs to exclude initrd backup files
+		if [ "$(ls initrd.img-* | wc -l)" -gt 1 ]
+		then
+			_NUMBER="1"
+
+			for _INITRD in /boot/initrd.img-*
+			do
+				_VERSION="$(echo ${_INITRD} | sed -e 's|initrd.img-||')"
+
+				cp /boot/vmlinuz-${_VERSION} /live/image/live/vmlinuz${_NUMBER}.new
+				cp /boot/initrd.img-${_VERSION} /live/image/live/initrd${_NUMBER}.img.new
+
+				mv /live/image/live/vmlinuz${_NUMBER}.new /live/image/live/vmlinuz${_NUMBER}
+				mv /live/image/live/initrd${_NUMBER}.img.new /live/image/live/initrd${_NUMBER}.img
+
+				_NUMBER="$((${_NUMBER} + 1))"
+			done
+		else
+			cp /boot/vmlinuz-* /live/image/live/vmlinuz.new
+			cp /boot/initrd.img-* /live/image/live/initrd.img.new
+
+			mv /live/image/live/vmlinuz.new /live/image/live/vmlinuz
+			mv /live/image/live/initrd.img.new /live/image/live/initrd.img
+		fi
+		;;
+
+	false)
+		echo "I: update-initramfs is disabled (live system is running on read-only media)."
+		exit 0
+		;;
+esac
