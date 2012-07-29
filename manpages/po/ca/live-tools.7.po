@@ -1,4 +1,4 @@
-# French translations for live-tools
+# Spanish translations for live-tools
 # This file is distributed under the same license as the live-tools package.
 # Carlos Zuferri <chals@altorricon.com>, 2012.
 #
@@ -6,10 +6,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: live-tools VERSION\n"
 "POT-Creation-Date: 2012-07-29 23:27+0300\n"
-"PO-Revision-Date: 2012-07-28 23:19+0100\n"
+"PO-Revision-Date: 2012-07-29 23:39+0100\n"
 "Last-Translator: Carlos Zuferri <chals@altorricon.com>\n"
 "Language-Team: Debian Live <debian-live@lists.debian.org>\n"
-"Language: French\n"
+"Language: Catalan\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -47,32 +47,32 @@ msgstr "NOM"
 #. type: Plain text
 #: en/live-tools.7:13
 msgid "B<live-tools> - System Support Scripts"
-msgstr "B<live-tools> - Scripts de Support du Système"
+msgstr "B<live-tools> - Scripts de Suport del Sistema"
 
 #. type: SH
 #: en/live-tools.7:14
 #, no-wrap
 msgid "DESCRIPTION"
-msgstr "DESCRIPTION"
+msgstr "DESCRIPCIÓ"
 
 #. type: Plain text
 #: en/live-tools.7:16
 msgid ""
 "B<live-tools> contains additional support scripts for Debian Live systems."
 msgstr ""
-"B<live-tools> contient des scripts de support supplémentaires pour les "
-"systèmes Debian Live."
+"B<live-tools> conté scripts addicionals de suport per als sistemes Debian "
+"Live."
 
 #. type: SH
 #: en/live-tools.7:17
 #, no-wrap
 msgid "TOOLS"
-msgstr "OUTILS"
+msgstr "EINES"
 
 #. type: Plain text
 #: en/live-tools.7:19
 msgid "B<live-tools> currently contains the following tools."
-msgstr "B<live-tools> contient les outils suivants."
+msgstr "B<live-tools> actualment conté les següents eines."
 
 #. type: IP
 #: en/live-tools.7:20
@@ -83,7 +83,7 @@ msgstr "B<live-update-initramfs>"
 #. type: Plain text
 #: en/live-tools.7:22
 msgid "writes out updated initramfs images to the live media."
-msgstr "écrit des images initramfs mises à jour aux dispositifs."
+msgstr "escriu imatges initramfs actualitzades als medis."
 
 #. type: IP
 #: en/live-tools.7:22
@@ -94,7 +94,8 @@ msgstr "B<live-toram>"
 #. type: Plain text
 #: en/live-tools.7:24
 msgid "copies running system to RAM in order to eject the live media."
-msgstr "copie le système en exécution à la RAM afin d'éjecter le support."
+msgstr ""
+"copia el sistema en execució a la memòria RAM per tal d'expulsar els medis. "
 
 #. type: IP
 #: en/live-tools.7:24
@@ -106,7 +107,8 @@ msgstr "B<live-system>"
 #: en/live-tools.7:26
 msgid "determines if running system is a debian-live based system."
 msgstr ""
-"détermine si le système en exécution est un système basé sur debian-live."
+"determina si el sistema que s'està executant és un sistema basat en debian-"
+"live."
 
 #. type: IP
 #: en/live-tools.7:26
@@ -117,15 +119,13 @@ msgstr "B<live-uptime>"
 #. type: Plain text
 #: en/live-tools.7:28
 msgid "tells how long the system has been running (works with LXC)."
-msgstr ""
-"indique combien de temps le système a été en cours d'exécution (fonctionne "
-"avec LXC)."
+msgstr "diu quant de temps el sistema ha estat funcionant (funciona amb LXC)."
 
 #. type: SH
 #: en/live-tools.7:29
 #, no-wrap
 msgid "SEE ALSO"
-msgstr "VOIR AUSSI"
+msgstr "VEURE TAMBÉ"
 
 #. type: Plain text
 #: en/live-tools.7:31
@@ -151,7 +151,7 @@ msgstr "I<live-debconfig>(7)"
 #: en/live-tools.7:38
 #, no-wrap
 msgid "HOMEPAGE"
-msgstr "PAGE D'ACCUEIL"
+msgstr "PÀGINA WEB"
 
 #. type: Plain text
 #: en/live-tools.7:40
@@ -160,15 +160,15 @@ msgid ""
 "on the homepage at E<lt>I<http://live.debian.net/>E<gt> and in the manual at "
 "E<lt>I<http://live.debian.net/manual/>E<gt>."
 msgstr ""
-"Plus d'informations sur live-tools et le project Debian Live peuvent être "
-"trouvées sur la page E<lt>I<http://live.debian.net/>E<gt> et dans le manuel "
-"sur E<lt>I<http://live.debian.net/manual/>E<gt>."
+"Es pot trobar més informació sobre live-tools i el projecte Debian Live a la "
+"pàgina web E<lt>I<http://live.debian.net/>E<gt> i al manual a E<lt>I<http://"
+"live.debian.net/manual/>E<gt>."
 
 #. type: SH
 #: en/live-tools.7:41
 #, no-wrap
 msgid "BUGS"
-msgstr "BOGUES"
+msgstr "ERRORS"
 
 #. type: Plain text
 #: en/live-tools.7:43
@@ -178,20 +178,20 @@ msgid ""
 "writing a mail to the Debian Live mailing list at E<lt>I<debian-live@lists."
 "debian.org>E<gt>."
 msgstr ""
-"Les bogues peuvent être signalés en soumettant un rapport de bogue à propos "
-"du paquet live-tools via le Debian Bug Tracking System sur E<lt>I<http://"
-"bugs.debian.org/>E<gt> ou en envoyant un mail à la Debian Live mailing list "
-"à E<lt>I<debian-live@lists.debian.org>E<gt>"
+"Es pot informar sobre els errors mitjançant la presentació d'un informe "
+"d'errors sobre al paquet live-tools al Debian Bug Tracking System a "
+"E<lt>I<http://bugs.debian.org/>E<gt> o escrivint un correu a la llista de "
+"correu de Debian Live a E<lt>I<debian-live@lists.debian.org>E<gt>."
 
 #. type: SH
 #: en/live-tools.7:44
 #, no-wrap
 msgid "AUTHOR"
-msgstr "AUTEUR"
+msgstr "AUTOR"
 
 #. type: Plain text
 #: en/live-tools.7:45
 msgid ""
 "live-tools was written by Daniel Baumann E<lt>I<daniel@debian.org>E<gt>."
 msgstr ""
-"live-config a été conçu par Daniel Baumann E<lt>I<daniel@debian.org>E<gt>."
+"live-tools va ser escrit per Daniel Baumann E<lt>I<daniel@debian.org>E<gt>."
