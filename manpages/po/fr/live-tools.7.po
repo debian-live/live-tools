@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: live-tools VERSION\n"
-"POT-Creation-Date: 2012-07-29 23:27+0300\n"
-"PO-Revision-Date: 2012-07-28 23:19+0100\n"
+"POT-Creation-Date: 2012-07-31 00:31+0300\n"
+"PO-Revision-Date: 2012-07-31 00:29+0100\n"
 "Last-Translator: Carlos Zuferri <chals@altorricon.com>\n"
 "Language-Team: Debian Live <debian-live@lists.debian.org>\n"
 "Language: French\n"
@@ -23,8 +23,8 @@ msgstr "LIVE-TOOLS"
 #. type: TH
 #: en/live-tools.7:9
 #, no-wrap
-msgid "2012-07-29"
-msgstr "2012-07-29"
+msgid "2012-07-31"
+msgstr "2012-07-31"
 
 #. type: TH
 #: en/live-tools.7:9
@@ -36,7 +36,7 @@ msgstr "3.0.4-1"
 #: en/live-tools.7:9
 #, no-wrap
 msgid "Debian Live Project"
-msgstr "Debian Live Project"
+msgstr "Projet Debian Live"
 
 #. type: SH
 #: en/live-tools.7:11
@@ -160,7 +160,7 @@ msgid ""
 "on the homepage at E<lt>I<http://live.debian.net/>E<gt> and in the manual at "
 "E<lt>I<http://live.debian.net/manual/>E<gt>."
 msgstr ""
-"Plus d'informations sur live-tools et le project Debian Live peuvent être "
+"Plus d'informations sur live-tools et le projet Debian Live peuvent être "
 "trouvées sur la page E<lt>I<http://live.debian.net/>E<gt> et dans le manuel "
 "sur E<lt>I<http://live.debian.net/manual/>E<gt>."
 
@@ -180,8 +180,8 @@ msgid ""
 msgstr ""
 "Les bogues peuvent être signalés en soumettant un rapport de bogue à propos "
 "du paquet live-tools via le Debian Bug Tracking System sur E<lt>I<http://"
-"bugs.debian.org/>E<gt> ou en envoyant un mail à la Debian Live mailing list "
-"à E<lt>I<debian-live@lists.debian.org>E<gt>"
+"bugs.debian.org/>E<gt> ou en envoyant un mail à la liste de diffusion Debian "
+"Live sur E<lt>I<debian-live@lists.debian.org>E<gt>"
 
 #. type: SH
 #: en/live-tools.7:44
@@ -194,4 +194,4 @@ msgstr "AUTEUR"
 msgid ""
 "live-tools was written by Daniel Baumann E<lt>I<daniel@debian.org>E<gt>."
 msgstr ""
-"live-config a été conçu par Daniel Baumann E<lt>I<daniel@debian.org>E<gt>."
+"live-tools a été conçu par Daniel Baumann E<lt>I<daniel@debian.org>E<gt>."
