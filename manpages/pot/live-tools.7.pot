@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: live-config VERSION\n"
-"POT-Creation-Date: 2012-07-24 21:44+0300\n"
+"POT-Creation-Date: 2012-08-03 12:36+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,13 +25,13 @@ msgstr ""
 #. type: TH
 #: en/live-tools.7:9
 #, no-wrap
-msgid "2012-07-24"
+msgid "2012-08-03"
 msgstr ""
 
 #. type: TH
 #: en/live-tools.7:9
 #, no-wrap
-msgid "3.0.4-1"
+msgid "3.0.5-1"
 msgstr ""
 
 #. type: TH
@@ -77,60 +77,66 @@ msgstr ""
 #. type: IP
 #: en/live-tools.7:20
 #, no-wrap
-msgid "B<live-toram>"
+msgid "B<live-update-initramfs>"
 msgstr ""
 
 #. type: Plain text
 #: en/live-tools.7:22
-msgid "copies running system to RAM in order to eject the live media."
+msgid "writes out updated initramfs images to the live media."
 msgstr ""
 
 #. type: IP
 #: en/live-tools.7:22
+#, no-wrap
+msgid "B<live-toram>"
+msgstr ""
+
+#. type: Plain text
+#: en/live-tools.7:24
+msgid "copies running system to RAM in order to eject the live media."
+msgstr ""
+
+#. type: IP
+#: en/live-tools.7:24
 #, no-wrap
 msgid "B<live-system>"
 msgstr ""
 
 #. type: Plain text
-#: en/live-tools.7:24
+#: en/live-tools.7:26
 msgid "determines if running system is a debian-live based system."
 msgstr ""
 
 #. type: IP
-#: en/live-tools.7:24
+#: en/live-tools.7:26
 #, no-wrap
 msgid "B<live-uptime>"
 msgstr ""
 
 #. type: Plain text
-#: en/live-tools.7:26
+#: en/live-tools.7:28
 msgid "tells how long the system has been running (works with LXC)."
 msgstr ""
 
 #. type: SH
-#: en/live-tools.7:27
+#: en/live-tools.7:29
 #, no-wrap
 msgid "SEE ALSO"
 msgstr ""
 
 #. type: Plain text
-#: en/live-tools.7:29
+#: en/live-tools.7:31
 msgid "I<live-boot>(7)"
 msgstr ""
 
 #. type: Plain text
-#: en/live-tools.7:31
+#: en/live-tools.7:33
 msgid "I<live-build>(7)"
 msgstr ""
 
 #. type: Plain text
-#: en/live-tools.7:33
-msgid "I<live-config>(7)"
-msgstr ""
-
-#. type: Plain text
 #: en/live-tools.7:35
-msgid "I<live-debconfig>(7)"
+msgid "I<live-config>(7)"
 msgstr ""
 
 #. type: SH
