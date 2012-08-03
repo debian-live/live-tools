@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: live-config VERSION\n"
-"POT-Creation-Date: 2012-07-31 00:31+0300\n"
+"POT-Creation-Date: 2012-08-03 12:35+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgstr ""
 #. type: TH
 #: en/live-tools.7:9
 #, no-wrap
-msgid "2012-07-31"
+msgid "2012-08-03"
 msgstr ""
 
 #. type: TH
@@ -139,19 +139,14 @@ msgstr ""
 msgid "I<live-config>(7)"
 msgstr ""
 
-#. type: Plain text
-#: en/live-tools.7:37
-msgid "I<live-debconfig>(7)"
-msgstr ""
-
 #. type: SH
-#: en/live-tools.7:38
+#: en/live-tools.7:36
 #, no-wrap
 msgid "HOMEPAGE"
 msgstr ""
 
 #. type: Plain text
-#: en/live-tools.7:40
+#: en/live-tools.7:38
 msgid ""
 "More information about live-tools and the Debian Live project can be found "
 "on the homepage at E<lt>I<http://live.debian.net/>E<gt> and in the manual at "
@@ -159,13 +154,13 @@ msgid ""
 msgstr ""
 
 #. type: SH
-#: en/live-tools.7:41
+#: en/live-tools.7:39
 #, no-wrap
 msgid "BUGS"
 msgstr ""
 
 #. type: Plain text
-#: en/live-tools.7:43
+#: en/live-tools.7:41
 msgid ""
 "Bugs can be reported by submitting a bugreport for the live-tools package in "
 "the Debian Bug Tracking System at E<lt>I<http://bugs.debian.org/>E<gt> or by "
@@ -174,13 +169,13 @@ msgid ""
 msgstr ""
 
 #. type: SH
-#: en/live-tools.7:44
+#: en/live-tools.7:42
 #, no-wrap
 msgid "AUTHOR"
 msgstr ""
 
 #. type: Plain text
-#: en/live-tools.7:45
+#: en/live-tools.7:43
 msgid ""
 "live-tools was written by Daniel Baumann E<lt>I<daniel@debian.org>E<gt>."
 msgstr ""
