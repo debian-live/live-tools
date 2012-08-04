@@ -1,3 +1,9 @@
+live-tools (3.0.6-1) unstable; urgency=low
+
+  * Adding pre-depends to procps and initramfs-tools (Closes: #682574).
+
+ -- Daniel Baumann <daniel@debian.org>  Sat, 04 Aug 2012 15:46:46 +0200
+
 live-tools (3.0.5-1) unstable; urgency=low
 
   [ Daniel Baumann ]
