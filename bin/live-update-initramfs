@@ -27,6 +27,8 @@ then
 	fi
 else
 	/usr/sbin/update-initramfs.initramfs-tools "${@}"
+
+	exit "${?}"
 fi
 
 case "${_READ_WRITE}" in
