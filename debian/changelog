@@ -1,3 +1,14 @@
+live-tools (3.0.7-1) unstable; urgency=low
+
+  * Handling non-live usages of live-update-initramfs by falling back to
+    update-initramfs.
+  * Return in cases of non-live systems with return value from update-
+    initramfs.
+  * Covering cases of live systems where live media is not mounted on
+    /live/image in live-update-initramfs.
+
+ -- Daniel Baumann <daniel@debian.org>  Sun, 05 Aug 2012 13:19:15 +0200
+
 live-tools (3.0.6-1) unstable; urgency=low
 
   * Adding pre-depends to procps and initramfs-tools (Closes: #682574).
