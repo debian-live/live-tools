@@ -1,3 +1,10 @@
+live-tools (3.0.8-1) unstable; urgency=low
+
+  * Moving symlink from /usr/bin to /bin where live-update-initramfs
+    actually resides now (Closes: #684423).
+
+ -- Daniel Baumann <daniel@debian.org>  Fri, 10 Aug 2012 22:27:08 +0200
+
 live-tools (3.0.7-1) unstable; urgency=low
 
   * Handling non-live usages of live-update-initramfs by falling back to
