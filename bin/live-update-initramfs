@@ -10,9 +10,9 @@
 
 set -e
 
-if [ ! -e /usr/sbin/update-initramfs.initramfs-tools ]
+if [ ! -e /usr/sbin/update-initramfs.orig.initramfs-tools ]
 then
-	echo "E: /usr/sbin/update-initramfs.initramfs-tools - command not found"
+	echo "E: /usr/sbin/update-initramfs.orig.initramfs-tools - command not found"
 	echo "E: On Debian based systems, update-initramfs from initramfs-tools"
 	echo "E: can be installed with:"
 	echo "E:   apt-get install initramfs-tools"
@@ -45,7 +45,7 @@ then
 	fi
 else
 	# non-live system
-	/usr/sbin/update-initramfs.initramfs-tools "${@}"
+	/usr/sbin/update-initramfs.orig.initramfs-tools "${@}"
 
 	exit "${?}"
 fi
@@ -53,7 +53,7 @@ fi
 case "${_READ_WRITE}" in
 	true)
 		# Updating initramfs
-		/usr/sbin/update-initramfs.initramfs-tools "${@}"
+		/usr/sbin/update-initramfs.orig.initramfs-tools "${@}"
 
 		# FIXME: needs to exclude initrd backup files
 		if [ "$(ls initrd.img-* | wc -l)" -gt 1 ]

@@ -5,8 +5,8 @@ set -e
 case "${1}" in
 	remove)
 		# initramfs-tools: update-initramfs
-		dpkg-divert --package live-tools --quiet --remove --rename --divert /usr/sbin/update-initramfs.initramfs-tools /usr/sbin/update-initramfs
-		dpkg-divert --package live-tools --quiet --remove --rename --divert /usr/share/man/man8/update-initramfs.initramfs-tools.8.gz /usr/share/man/man8/update-initramfs.8.gz
+		dpkg-divert --package live-tools --quiet --remove --rename --divert /usr/sbin/update-initramfs.orig.initramfs-tools /usr/sbin/update-initramfs
+		dpkg-divert --package live-tools --quiet --remove --rename --divert /usr/share/man/man8/update-initramfs.orig.initramfs-tools.8.gz /usr/share/man/man8/update-initramfs.8.gz
 
 		# procps: uptime
 		dpkg-divert --package live-tools --quiet --remove --rename --divert /usr/bin/uptime.orig.procps /usr/bin/uptime
