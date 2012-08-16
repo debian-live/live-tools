@@ -9,8 +9,8 @@ case "${1}" in
 		dpkg-divert --package live-tools --quiet --remove --rename --divert /usr/share/man/man8/update-initramfs.initramfs-tools.8.gz /usr/share/man/man8/update-initramfs.8.gz
 
 		# procps: uptime
-		dpkg-divert --package live-tools --quiet --remove --rename --divert /usr/bin/uptime.procps /usr/bin/uptime
-		dpkg-divert --package live-tools --quiet --remove --rename --divert /usr/share/man/man1/uptime.procps.1.gz /usr/share/man/man1/uptime.1.gz
+		dpkg-divert --package live-tools --quiet --remove --rename --divert /usr/bin/uptime.orig.procps /usr/bin/uptime
+		dpkg-divert --package live-tools --quiet --remove --rename --divert /usr/share/man/man1/uptime.orig.procps.1.gz /usr/share/man/man1/uptime.1.gz
 		;;
 
 	purge|upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)

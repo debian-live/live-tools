@@ -10,9 +10,9 @@
 
 set -e
 
-if [ ! -e /usr/bin/uptime.procps ]
+if [ ! -e /usr/bin/uptime.orig.procps ]
 then
-	echo "E: /usr/bin/uptime.procps - command not found"
+	echo "E: /usr/bin/uptime.orig.procps - command not found"
 	echo "E: On Debian based systems, uptime from procps"
 	echo "E: can be installed with:"
 	echo "E:   apt-get install procps"
@@ -20,7 +20,7 @@ then
 	exit 1
 fi
 
-_UPTIME="$(/usr/bin/uptime.procps)"
+_UPTIME="$(/usr/bin/uptime.orig.procps)"
 
 _DATE_HOST="$(date +%s)"
 
