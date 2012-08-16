@@ -13,7 +13,6 @@ Package: live-tools
 Architecture: all
 Pre-Depends: initramfs-tools, procps
 Depends: ${misc:Depends}
-Conflicts: linux-container (<< 2)
 Suggests: debian-installer-launcher, perl, rsync
 Description: Debian Live - System Support Scripts
  live-tools contains additional support scripts for Debian Live systems.
