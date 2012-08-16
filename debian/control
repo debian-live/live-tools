@@ -11,7 +11,6 @@ Vcs-Git: git://live.debian.net/git/live-tools.git
 
 Package: live-tools
 Architecture: all
-Pre-Depends: initramfs-tools, procps
 Depends: ${misc:Depends}
 Suggests: debian-installer-launcher, perl, rsync
 Description: Debian Live - System Support Scripts
