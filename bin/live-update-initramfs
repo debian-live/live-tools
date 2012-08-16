@@ -10,6 +10,16 @@
 
 set -e
 
+if [ ! -e /usr/sbin/update-initramfs.initramfs-tools ]
+then
+	echo "E: /usr/sbin/update-initramfs.initramfs-tools - command not found"
+	echo "E: On Debian based systems, update-initramfs from initramfs-tools"
+	echo "E: can be installed with:"
+	echo "E:   apt-get install initramfs-tools"
+
+	exit 1
+fi
+
 if grep -qs "boot=live" /proc/cmdline
 then
 	if grep -qs "\/live\/image" /proc/mounts
