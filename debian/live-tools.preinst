@@ -4,6 +4,13 @@ set -e
 
 case "${1}" in
 	install|upgrade)
+		# removing old divertions from live-tools <= 3.0.8
+		if [ -e /usr/bin/uptime.procps ]
+		then
+			dpkg-divert --package live-tools --quiet --remove --divert /usr/bin/uptime.procps /usr/bin/uptime
+			mv /usr/bin/uptime.procps /usr/bin/uptime > /dev/null 2>&1 || true
+		fi
+
 		# initramfs-tools: update-initramfs
 		dpkg-divert --package live-tools --quiet --add --rename --divert /usr/sbin/update-initramfs.orig.initramfs-tools /usr/sbin/update-initramfs
 		dpkg-divert --package live-tools --quiet --add --rename --divert /usr/share/man/man8/update-initramfs.orig.initramfs-tools.8.gz /usr/share/man/man8/update-initramfs.8.gz
