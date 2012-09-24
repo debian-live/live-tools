@@ -1,3 +1,12 @@
+live-tools (3.0.10-1) unstable; urgency=low
+
+  * Removing old diversion from live-tools 3.0.3 on upgrade (Closes:
+    #685810).
+  * Adding Catalan to automatic date translation in manpages.
+  * Adding rewritten live-update-initramfs-uuid from live-boot.
+
+ -- Daniel Baumann <daniel@debian.org>  Mon, 24 Sep 2012 10:30:48 +0200
+
 live-tools (3.0.9-1) unstable; urgency=low
 
   * Also correcting uptime symlink to refer to live-uptime /bin instead
