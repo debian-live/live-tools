@@ -23,16 +23,16 @@ done
 # Assemble filesystems
 if [ -z "${_MODULE}" ]
 then
-	_FILESYSTEMS="/live/image/live/filesystem.squashfs"
+	_FILESYSTEMS="/lib/live/image/live/filesystem.squashfs"
 else
 	for _FILESYSTEM in _MODULE
 	do
-		_FILESYSTEMS="${_FILESYSTEMS} /live/image/live/${_FILESYSTEM}"
+		_FILESYSTEMS="${_FILESYSTEMS} /lib/live/image/live/${_FILESYSTEM}"
 	done
 fi
 
 # Exit if system is not debian-live based system
-if [ ! -d /live/image ]
+if [ ! -d /lib/live/image ]
 then
 	echo "E: live-toram only works on Debian Live based systems."
 
@@ -109,12 +109,12 @@ EOF
 done
 
 # Unmounting live media
-_DEVICE="$(awk '/\/live\/image / { print $1 }' /proc/mounts)"
+_DEVICE="$(awk '/\/lib\/live\/image / { print $1 }' /proc/mounts)"
 
-if [ -d /live/image ]
+if [ -d /lib/live/image ]
 then
-	umount /live/image
-	rmdir --ignore-fail-on-non-empty /live/image || true
+	umount /lib/live/image
+	rmdir --ignore-fail-on-non-empty /lib/live/image || true
 fi
 
 # Ejecting live media if it is not an optical device

@@ -51,9 +51,9 @@ if grep -qs "boot=live" /proc/cmdline
 then
 	[ "${_VERBOSE}" ] && echo -n " yes, this is a debian-live based system"
 
-	if [ -d /live/image/install ]
+	if [ -d /lib/live/image/install ]
 	then
-		if ls /live/image/install/pool/main/l/live-installer/live-installer_*.udeb > /dev/null 2>&1
+		if ls /lib/live/image/install/pool/main/l/live-installer/live-installer_*.udeb > /dev/null 2>&1
 		then
 			[ "${_VERBOSE}" ] && echo " with debian-installer (live) support."
 		else
