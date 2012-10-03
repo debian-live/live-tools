@@ -22,24 +22,24 @@ fi
 
 if grep -qs "boot=live" /proc/cmdline
 then
-	if grep -qs "\/lib\/live\/mount\/image" /proc/mounts
+	if grep -qs "\/lib\/live\/mount\/medium" /proc/mounts
 	then
-		# live system with live media mounted as /lib/live/mount/image
-		_DEVICE="$(awk '/\/lib\/live\/mount\/image/ { print $1 }' /proc/mounts)"
+		# live system with live media mounted as /lib/live/mount/medium
+		_DEVICE="$(awk '/\/lib\/live\/mount\/medium/ { print $1 }' /proc/mounts)"
 
 		mount -o remount,rw ${_DEVICE} > /dev/null 2>&1 || true
 
-		if touch /lib/live/mount/image/.test > /dev/null 2>&1
+		if touch /lib/live/mount/medium/.test > /dev/null 2>&1
 		then
 			_READ_WRITE="true"
 
-			rm -f /lib/live/mount/image/.test
+			rm -f /lib/live/mount/medium/.test
 		else
 			_READ_WRITE="false"
 		fi
 	else
-		# live system without live media mounted as /lib/live/mount/image
-		echo "I: update-initramfs is disabled (live system is running without media mounted on /lib/live/mount/image)."
+		# live system without live media mounted as /lib/live/mount/medium
+		echo "I: update-initramfs is disabled (live system is running without media mounted on /lib/live/mount/medium)."
 
 		exit 0
 	fi
@@ -64,20 +64,20 @@ case "${_READ_WRITE}" in
 			do
 				_VERSION="$(echo ${_INITRD} | sed -e 's|initrd.img-||')"
 
-				cp /boot/vmlinuz-${_VERSION} /lib/live/mount/image/live/vmlinuz${_NUMBER}.new
-				cp /boot/initrd.img-${_VERSION} /lib/live/mount/image/live/initrd${_NUMBER}.img.new
+				cp /boot/vmlinuz-${_VERSION} /lib/live/mount/medium/live/vmlinuz${_NUMBER}.new
+				cp /boot/initrd.img-${_VERSION} /lib/live/mount/medium/live/initrd${_NUMBER}.img.new
 
-				mv /lib/live/mount/image/live/vmlinuz${_NUMBER}.new /lib/live/mount/image/live/vmlinuz${_NUMBER}
-				mv /lib/live/mount/image/live/initrd${_NUMBER}.img.new /lib/live/mount/image/live/initrd${_NUMBER}.img
+				mv /lib/live/mount/medium/live/vmlinuz${_NUMBER}.new /lib/live/mount/medium/live/vmlinuz${_NUMBER}
+				mv /lib/live/mount/medium/live/initrd${_NUMBER}.img.new /lib/live/mount/medium/live/initrd${_NUMBER}.img
 
 				_NUMBER="$((${_NUMBER} + 1))"
 			done
 		else
-			cp /boot/vmlinuz-* /lib/live/mount/image/live/vmlinuz.new
-			cp /boot/initrd.img-* /lib/live/mount/image/live/initrd.img.new
+			cp /boot/vmlinuz-* /lib/live/mount/medium/live/vmlinuz.new
+			cp /boot/initrd.img-* /lib/live/mount/medium/live/initrd.img.new
 
-			mv /lib/live/mount/image/live/vmlinuz.new /lib/live/mount/image/live/vmlinuz
-			mv /lib/live/mount/image/live/initrd.img.new /lib/live/mount/image/live/initrd.img
+			mv /lib/live/mount/medium/live/vmlinuz.new /lib/live/mount/medium/live/vmlinuz
+			mv /lib/live/mount/medium/live/initrd.img.new /lib/live/mount/medium/live/initrd.img
 		fi
 		;;
 
