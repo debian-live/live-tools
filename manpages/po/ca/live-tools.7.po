@@ -1,4 +1,4 @@
-# Spanish translations for live-tools
+# Catalan translations for live-tools
 # 2012 Carlos Zuferri <chals@altorricon.com>
 # This file is distributed under the same license as the live-tools package.
 #

@@ -1,14 +1,13 @@
-# French translations for live-config package
-# Copyright (C) 2012 Free Software Foundation, Inc.
-# This file is distributed under the same license as the live-config package.
-# Automatically generated, 2012.
+# French translations for live-tools
+# 2012 Carlos Zuferri <chals@altorricon.com>
+# This file is distributed under the same license as the live-tools package.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: live-config VERSION\n"
-"POT-Creation-Date: 2012-10-24 15:16+0300\n"
-"PO-Revision-Date: 2012-10-24 15:16+0300\n"
-"Last-Translator: Automatically generated\n"
+"Project-Id-Version: live-tools 3.0.12-1\n"
+"POT-Creation-Date: 2012-10-24 15:23+0300\n"
+"PO-Revision-Date: 2012-07-28 22:44+0100\n"
+"Last-Translator: Carlos Zuferri <chals@altorricon.com>\n"
 "Language-Team: none\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
