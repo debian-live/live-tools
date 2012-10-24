@@ -11,7 +11,7 @@
 .\" This file was generated with po4a. Translate the source file.
 .\"
 .\"*******************************************************************
-.TH LIVE\-TOOLS 7 27.09.2012 4.0~a2\-1 "Projet Debian Live"
+.TH LIVE\-TOOLS 7 07.11.2012 4.0~a2\-1 "Projet Debian Live"
 
 .SH NOM
 \fBlive\-tools\fP \- Scripts de Support du Système
@@ -24,7 +24,8 @@ systèmes Debian Live.
 \fBlive\-tools\fP contient les outils suivants.
 
 .IP \fBlive\-update\-initramfs\fP 4
-écrit des images initramfs mises à jour aux dispositifs.
+writes out updated initramfs images to the live media. This wrapper replaces
+the update\-initramfs command provided by the initramfs\-tools package.
 .IP \fBlive\-update\-initramfs\-uuid\fP 4
 updates UUID in an existing initramfs image.
 .IP \fBlive\-toram\fP 4
@@ -32,8 +33,8 @@ copie le système en exécution à la RAM afin d'éjecter le support.
 .IP \fBlive\-system\fP 4
 détermine si le système en exécution est un système basé sur debian\-live.
 .IP \fBlive\-uptime\fP 4
-indique combien de temps le système a été en cours d'exécution (fonctionne
-avec LXC).
+tells how long the system has been running (works with LXC). This wrapper
+replaces the uptime command provided by the procps package.
 
 .SH "VOIR AUSSI"
 \fIlive\-boot\fP(7)

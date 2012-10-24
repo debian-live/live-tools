@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: live-tools 4.0~a2-1\n"
-"POT-Creation-Date: 2012-09-27 12:41+0300\n"
+"POT-Creation-Date: 2012-11-07 15:21+0100\n"
 "PO-Revision-Date: 2010-05-24 09:59+0300\n"
 "Last-Translator: Daniel Baumann <daniel@debian.org>\n"
 "Language-Team: none\n"
@@ -24,8 +24,8 @@ msgstr "LIVE-TOOLS"
 #. type: TH
 #: en/live-tools.7:9
 #, no-wrap
-msgid "2012-09-27"
-msgstr "27.09.2012"
+msgid "2012-11-07"
+msgstr "07.11.2012"
 
 #. type: TH
 #: en/live-tools.7:9
@@ -81,8 +81,12 @@ msgstr "B<live-update-initramfs>"
 
 #. type: Plain text
 #: en/live-tools.7:22
-msgid "writes out updated initramfs images to the live media."
-msgstr "schreibt aktualisierte initramfs Images auf das Live Medium."
+msgid ""
+"writes out updated initramfs images to the live media. This wrapper replaces "
+"the update-initramfs command provided by the initramfs-tools package."
+msgstr ""
+"schreibt aktualisierte initramfs Images auf das Live Medium. Dieser Wrapper "
+"ersetzt den update-initramfs Befehl des initramfs-tools Paketes."
 
 #. type: IP
 #: en/live-tools.7:22
@@ -125,10 +129,12 @@ msgstr "B<live-uptime>"
 
 #. type: Plain text
 #: en/live-tools.7:30
-msgid "tells how long the system has been running (works with LXC)."
+msgid ""
+"tells how long the system has been running (works with LXC). This wrapper "
+"replaces the uptime command provided by the procps package."
 msgstr ""
 "gibt die aktuelle Dauer wie lange das System läuft aus (funktioniert mit "
-"LXC)."
+"LXC). Dieser Wrapper ersetzt den uptime Befehl des procps Paketes."
 
 #. type: SH
 #: en/live-tools.7:31
