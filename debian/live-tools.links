@@ -1,13 +1,13 @@
-/usr/share/man/man7/live-tools.7.gz	/usr/share/man/man1/live-system.1.gz
-/usr/share/man/man7/live-tools.7.gz	/usr/share/man/man1/live-toram.1.gz
+/usr/share/man/man7/live-tools.7.gz		/usr/share/man/man1/live-system.1.gz
+/usr/share/man/man7/live-tools.7.gz		/usr/share/man/man1/live-toram.1.gz
 
-/usr/share/man/de/man7/live-tools.7.gz	/usr/share/man/de/man1/live-system.1.gz
-/usr/share/man/de/man7/live-tools.7.gz	/usr/share/man/de/man1/live-toram.1.gz
+/usr/share/man/de/man7/live-tools.7.gz		/usr/share/man/de/man1/live-system.1.gz
+/usr/share/man/de/man7/live-tools.7.gz		/usr/share/man/de/man1/live-toram.1.gz
 
 # initramfs-tools: update-initramfs
-/bin/live-update-initramfs		/usr/sbin/update-initramfs
-/usr/share/man/man7/live-tools.7.gz	/usr/share/man/man8/update-initramfs.8.gz
+/bin/live-update-initramfs			/usr/sbin/update-initramfs
+/usr/share/man/man7/live-update-initramfs.7.gz	/usr/share/man/man8/update-initramfs.8.gz
 
 # procps: uptime
-/bin/live-uptime			/usr/bin/uptime
-/usr/share/man/man1/live-uptime.1.gz	/usr/share/man/man1/uptime.1.gz
+/bin/live-uptime				/usr/bin/uptime
+/usr/share/man/man1/live-uptime.1.gz		/usr/share/man/man1/uptime.1.gz
