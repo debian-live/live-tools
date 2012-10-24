@@ -123,9 +123,9 @@ msgstr ""
 "B<live-uptime> gibt die korrekte Dauer wie lange das System läuft auch "
 "innerhalb eines Linux Containers (LXC) an, der original uptime Befehl gibt "
 "nur die Dauer des Host Systems für alle Container an. B<live-uptime> gibt "
-"alle Kommandozeilenoptionen weiter an den original uptime Befehl, siehe "
-"I<uptime.orig.procs>(1) für weitere Informationen über Optionen des original "
-"uptime Befehls siehe I<uptime.orig.procs>(1)."
+"alle Kommandozeilenoptionen weiter an den original uptime Befehl, für "
+"weitere Informationen über Optionen des original uptime Befehls siehe "
+"I<uptime.orig.procs>(1)."
 
 #. type: Plain text
 #: en/live-uptime.1:24

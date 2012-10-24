@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: live-tools 4.0~a2-1\n"
-"POT-Creation-Date: 2012-11-07 15:25+0100\n"
+"POT-Creation-Date: 2012-10-24 16:03+0300\n"
 "PO-Revision-Date: 2010-05-24 09:59+0300\n"
 "Last-Translator: Daniel Baumann <daniel@debian.org>\n"
 "Language-Team: none\n"
@@ -92,11 +92,11 @@ msgstr "AUTOR"
 #. type: Plain text
 #: en/live-update-initramfs.8:13
 msgid ""
-"B<live-update-initramfs> - writes out updated initramfs images to the live "
-"media."
+"B<live-update-initramfs> - writes out updated kernel and initrd images to "
+"the live media."
 msgstr ""
-"B<live-update-initramfs> - schreibt aktualisierte initramfs Images auf das "
-"Live Medium."
+"B<live-update-initramfs> - schreibt aktualisierte Kernel und Initrd Images "
+"auf das Live Medium."
 
 #. type: Plain text
 #: en/live-update-initramfs.8:16
@@ -113,13 +113,19 @@ msgid ""
 "In live-systems with a persistence layer, B<live-update-initramfs> will "
 "writes out updated initramfs images to the live media. This allows to do "
 "kernel upgrades from within the live-system through apt-get without manual "
-"procedure to synchronise kernel and initrd from the live-medium."
+"procedure to synchronise kernel and initrd from the live-medium. B<live-"
+"update-initramfs> passes through all command-line arguments to the original "
+"update-initramfs command, see I<update-initramfs.orig.procs>(1) for more "
+"information about the options of the original update-initramfs command."
 msgstr ""
 "In Live-Systemen mit einem Persistence-Layer kann B<live-update-initramfs> "
 "aktualisierte initramfs Images auf das Live Medium schreiben. Dies erlaubt "
 "Kernel-Upgrades von innerhalb des Live-Systemes durch apt-get durchzuführen, "
 "ohne manuelle Vorgehensweise um Kernel und Initrd des Live Mediums synchron "
-"zu halten."
+"zu halten. B<live-update-initramfs> gibt alle Kommandozeilenoptionen weiter "
+"an den original update-initramfs Befehl, für weitere Informationen über "
+"Optionen des original update-initramfs Befehls siehe I<update-initramfs.orig."
+"initramfs-tools>(8)."
 
 #. type: Plain text
 #: en/live-update-initramfs.8:21 en/live-uptime.1:21
