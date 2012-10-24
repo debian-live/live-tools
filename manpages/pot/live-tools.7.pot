@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: live-config VERSION\n"
-"POT-Creation-Date: 2012-10-24 14:44+0300\n"
+"POT-Creation-Date: 2012-10-24 14:59+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,31 +17,31 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: TH
-#: en/live-tools.7:9
+#: en/live-tools.7:9 en/live-uptime.1:9
 #, no-wrap
 msgid "LIVE-TOOLS"
 msgstr ""
 
 #. type: TH
-#: en/live-tools.7:9
+#: en/live-tools.7:9 en/live-uptime.1:9
 #, no-wrap
 msgid "2012-10-24"
 msgstr ""
 
 #. type: TH
-#: en/live-tools.7:9
+#: en/live-tools.7:9 en/live-uptime.1:9
 #, no-wrap
 msgid "3.0.12-1"
 msgstr ""
 
 #. type: TH
-#: en/live-tools.7:9
+#: en/live-tools.7:9 en/live-uptime.1:9
 #, no-wrap
 msgid "Debian Live Project"
 msgstr ""
 
 #. type: SH
-#: en/live-tools.7:11
+#: en/live-tools.7:11 en/live-uptime.1:11
 #, no-wrap
 msgid "NAME"
 msgstr ""
@@ -52,7 +52,7 @@ msgid "B<live-tools> - System Support Scripts"
 msgstr ""
 
 #. type: SH
-#: en/live-tools.7:14
+#: en/live-tools.7:14 en/live-uptime.1:14
 #, no-wrap
 msgid "DESCRIPTION"
 msgstr ""
@@ -123,7 +123,7 @@ msgstr ""
 #. type: IP
 #: en/live-tools.7:28
 #, no-wrap
-msgid "B<live-uptime>"
+msgid "B<live-uptime>(1)"
 msgstr ""
 
 #. type: Plain text
@@ -134,7 +134,7 @@ msgid ""
 msgstr ""
 
 #. type: SH
-#: en/live-tools.7:31
+#: en/live-tools.7:31 en/live-uptime.1:19
 #, no-wrap
 msgid "SEE ALSO"
 msgstr ""
@@ -155,7 +155,7 @@ msgid "I<live-config>(7)"
 msgstr ""
 
 #. type: SH
-#: en/live-tools.7:38
+#: en/live-tools.7:38 en/live-uptime.1:22
 #, no-wrap
 msgid "HOMEPAGE"
 msgstr ""
@@ -169,13 +169,13 @@ msgid ""
 msgstr ""
 
 #. type: SH
-#: en/live-tools.7:41
+#: en/live-tools.7:41 en/live-uptime.1:25
 #, no-wrap
 msgid "BUGS"
 msgstr ""
 
 #. type: Plain text
-#: en/live-tools.7:43
+#: en/live-tools.7:43 en/live-uptime.1:27
 msgid ""
 "Bugs can be reported by submitting a bugreport for the live-tools package in "
 "the Debian Bug Tracking System at E<lt>I<http://bugs.debian.org/>E<gt> or by "
@@ -184,7 +184,7 @@ msgid ""
 msgstr ""
 
 #. type: SH
-#: en/live-tools.7:44
+#: en/live-tools.7:44 en/live-uptime.1:28
 #, no-wrap
 msgid "AUTHOR"
 msgstr ""
