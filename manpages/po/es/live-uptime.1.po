@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: live-config VERSION\n"
-"POT-Creation-Date: 2012-11-07 15:23+0100\n"
+"POT-Creation-Date: 2012-10-24 15:16+0300\n"
 "PO-Revision-Date: 2012-10-24 14:57+0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -17,61 +17,61 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. type: TH
-#: en/live-tools.7:9 en/live-uptime.1:9
+#: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
 #, no-wrap
 msgid "LIVE-TOOLS"
 msgstr "LIVE-TOOLS"
 
 #. type: TH
-#: en/live-tools.7:9 en/live-uptime.1:9
+#: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
 #, no-wrap
 msgid "2012-11-07"
 msgstr "07.11.2012"
 
 #. type: TH
-#: en/live-tools.7:9 en/live-uptime.1:9
+#: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
 #, no-wrap
 msgid "4.0~a2-1"
 msgstr "4.0~a2-1"
 
 #. type: TH
-#: en/live-tools.7:9 en/live-uptime.1:9
+#: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
 #, no-wrap
 msgid "Debian Live Project"
 msgstr "Debian Live Project"
 
 #. type: SH
-#: en/live-tools.7:11 en/live-uptime.1:11
+#: en/live-tools.7:11 en/live-update-initramfs.8:11 en/live-uptime.1:11
 #, no-wrap
 msgid "NAME"
 msgstr "NOMBRE"
 
 #. type: SH
-#: en/live-tools.7:14 en/live-uptime.1:14
+#: en/live-tools.7:14 en/live-update-initramfs.8:14 en/live-uptime.1:14
 #, no-wrap
 msgid "DESCRIPTION"
 msgstr "DESCRIPCIÓN"
 
 #. type: SH
-#: en/live-tools.7:31 en/live-uptime.1:19
+#: en/live-tools.7:31 en/live-update-initramfs.8:19 en/live-uptime.1:19
 #, no-wrap
 msgid "SEE ALSO"
 msgstr "VER TAMBIÉN"
 
 #. type: SH
-#: en/live-tools.7:38 en/live-uptime.1:22
+#: en/live-tools.7:38 en/live-update-initramfs.8:22 en/live-uptime.1:22
 #, no-wrap
 msgid "HOMEPAGE"
 msgstr "PÁGINA PRINCIPAL"
 
 #. type: SH
-#: en/live-tools.7:41 en/live-uptime.1:25
+#: en/live-tools.7:41 en/live-update-initramfs.8:25 en/live-uptime.1:25
 #, no-wrap
 msgid "BUGS"
 msgstr "ERRORES"
 
 #. type: Plain text
-#: en/live-tools.7:43 en/live-uptime.1:27
+#: en/live-tools.7:43 en/live-update-initramfs.8:27 en/live-uptime.1:27
 msgid ""
 "Bugs can be reported by submitting a bugreport for the live-tools package in "
 "the Debian Bug Tracking System at E<lt>I<http://bugs.debian.org/>E<gt> or by "
@@ -84,10 +84,15 @@ msgstr ""
 "Live a la dirección E<lt>I<debian-live@lists.debian.org>E<gt>."
 
 #. type: SH
-#: en/live-tools.7:44 en/live-uptime.1:28
+#: en/live-tools.7:44 en/live-update-initramfs.8:28 en/live-uptime.1:28
 #, no-wrap
 msgid "AUTHOR"
 msgstr "AUTOR"
+
+#. type: Plain text
+#: en/live-update-initramfs.8:21 en/live-uptime.1:21
+msgid "I<live-tools>(7)"
+msgstr "I<live-tools>(7)"
 
 #. type: Plain text
 #: en/live-uptime.1:13
@@ -97,14 +102,10 @@ msgstr ""
 
 #. type: Plain text
 #: en/live-uptime.1:16
-#, fuzzy
-#| msgid "tells how long the system has been running (works with LXC)."
 msgid ""
 "B<live-uptime> is a wrapper replacing the uptime command provided by the "
 "procps package."
 msgstr ""
-"especifica durante cuánto tiempo el sistema ha estado en ejecución (funciona "
-"con LXC)."
 
 #. type: Plain text
 #: en/live-uptime.1:18
@@ -115,11 +116,6 @@ msgid ""
 "arguments to the original uptime command, see I<uptime.orig.procs>(1) for "
 "more information about the options of the original uptime command."
 msgstr ""
-
-#. type: Plain text
-#: en/live-uptime.1:21
-msgid "I<live-tools>(7)"
-msgstr "I<live-tools>(7)"
 
 #. type: Plain text
 #: en/live-uptime.1:24

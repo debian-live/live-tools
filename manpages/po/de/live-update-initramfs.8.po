@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: live-tools 3.0.12-1\n"
-"POT-Creation-Date: 2012-11-07 15:23+0100\n"
+"POT-Creation-Date: 2012-11-07 15:25+0100\n"
 "PO-Revision-Date: 2010-05-24 09:59+0300\n"
 "Last-Translator: Daniel Baumann <daniel@debian.org>\n"
 "Language-Team: none\n"
@@ -90,58 +90,58 @@ msgid "AUTHOR"
 msgstr "AUTOR"
 
 #. type: Plain text
+#: en/live-update-initramfs.8:13
+msgid ""
+"B<live-update-initramfs> - writes out updated initramfs images to the live "
+"media."
+msgstr ""
+"B<live-update-initramfs> - schreibt aktualisierte initramfs Images auf das "
+"Live Medium."
+
+#. type: Plain text
+#: en/live-update-initramfs.8:16
+msgid ""
+"B<live-update-initramfs> is a wrapper replacing the update-initramfs command "
+"provided by the initramfs-tools package."
+msgstr ""
+"B<live-update-initramfs> ist ein Wrapper der den update-initramfs Befehl des "
+"initramfs-tools Paketes ersetzt."
+
+#. type: Plain text
+#: en/live-update-initramfs.8:18
+msgid ""
+"In live-systems with a persistence layer, B<live-update-initramfs> will "
+"writes out updated initramfs images to the live media. This allows to do "
+"kernel upgrades from within the live-system through apt-get without manual "
+"procedure to synchronise kernel and initrd from the live-medium."
+msgstr ""
+"In Live-Systemen mit einem Persistence-Layer kann B<live-update-initramfs> "
+"aktualisierte initramfs Images auf das Live Medium schreiben. Dies erlaubt "
+"Kernel-Upgrades von innerhalb des Live-Systemes durch apt-get durchzuführen, "
+"ohne manuelle Vorgehensweise um Kernel und Initrd des Live Mediums synchron "
+"zu halten."
+
+#. type: Plain text
 #: en/live-update-initramfs.8:21 en/live-uptime.1:21
 msgid "I<live-tools>(7)"
 msgstr "I<live-tools>(7)"
 
 #. type: Plain text
-#: en/live-uptime.1:13
+#: en/live-update-initramfs.8:24
 msgid ""
-"B<live-uptime> - Tell how long the system has been running (works with LXC)."
+"More information about live-update-initramfs and the Debian Live project can "
+"be found on the homepage at E<lt>I<http://live.debian.net/>E<gt> and in the "
+"manual at E<lt>I<http://live.debian.net/manual/>E<gt>."
 msgstr ""
-"B<live-uptime> - gibt die aktuelle Dauer wie lange das System läuft aus "
-"(funktioniert mit LXC)."
+"Weitere Informationen über live-update-initramfs und das Debian Live Projekt "
+"können auf der Homepage unter E<lt>I<http://live.debian.net/>E<gt> und im "
+"Handbuch unter E<lt>I<http://live.debian.net/manual/>E<gt> gefunden werden."
 
 #. type: Plain text
-#: en/live-uptime.1:16
+#: en/live-update-initramfs.8:29
 msgid ""
-"B<live-uptime> is a wrapper replacing the uptime command provided by the "
-"procps package."
+"live-update-initramfs was written by Daniel Baumann E<lt>I<daniel@debian."
+"org>E<gt>."
 msgstr ""
-"B<live-uptime> ist ein Wrapper der den uptime Befehl des procps Paketes "
-"ersetzt."
-
-#. type: Plain text
-#: en/live-uptime.1:18
-msgid ""
-"B<live-uptime> displays the correct uptime when a system is being used in a "
-"Linux Container (LXC), where the original uptime command shows the host "
-"uptime for all containers. B<live-uptime> passes through all command-line "
-"arguments to the original uptime command, see I<uptime.orig.procs>(1) for "
-"more information about the options of the original uptime command."
-msgstr ""
-"B<live-uptime> gibt die korrekte Dauer wie lange das System läuft auch "
-"innerhalb eines Linux Containers (LXC) an, der original uptime Befehl gibt "
-"nur die Dauer des Host Systems für alle Container an. B<live-uptime> gibt "
-"alle Kommandozeilenoptionen weiter an den original uptime Befehl, siehe "
-"I<uptime.orig.procs>(1) für weitere Informationen über Optionen des original "
-"uptime Befehls siehe I<uptime.orig.procs>(1)."
-
-#. type: Plain text
-#: en/live-uptime.1:24
-msgid ""
-"More information about live-uptime and the Debian Live project can be found "
-"on the homepage at E<lt>I<http://live.debian.net/>E<gt> and in the manual at "
-"E<lt>I<http://live.debian.net/manual/>E<gt>."
-msgstr ""
-"Weitere Informationen über live-uptime und das Debian Live Projekt können "
-"auf der Homepage unter E<lt>I<http://live.debian.net/>E<gt> und im Handbuch "
-"unter E<lt>I<http://live.debian.net/manual/>E<gt> gefunden werden."
-
-#. type: Plain text
-#: en/live-uptime.1:29
-msgid ""
-"live-uptime was written by Daniel Baumann E<lt>I<daniel@debian.org>E<gt>."
-msgstr ""
-"live-uptime wurde von Daniel Baumann E<lt>I<daniel@debian.org>E<gt> "
-"geschrieben."
+"live-update-initramfs wurde von Daniel Baumann E<lt>I<daniel@debian."
+"org>E<gt> geschrieben."
