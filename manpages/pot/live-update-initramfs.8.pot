@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: live-config VERSION\n"
-"POT-Creation-Date: 2012-10-24 15:16+0300\n"
+"POT-Creation-Date: 2012-10-24 16:03+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,8 +88,8 @@ msgstr ""
 #. type: Plain text
 #: en/live-update-initramfs.8:13
 msgid ""
-"B<live-update-initramfs> - writes out updated initramfs images to the live "
-"media."
+"B<live-update-initramfs> - writes out updated kernel and initrd images to "
+"the live media."
 msgstr ""
 
 #. type: Plain text
@@ -105,7 +105,10 @@ msgid ""
 "In live-systems with a persistence layer, B<live-update-initramfs> will "
 "writes out updated initramfs images to the live media. This allows to do "
 "kernel upgrades from within the live-system through apt-get without manual "
-"procedure to synchronise kernel and initrd from the live-medium."
+"procedure to synchronise kernel and initrd from the live-medium. B<live-"
+"update-initramfs> passes through all command-line arguments to the original "
+"update-initramfs command, see I<update-initramfs.orig.procs>(1) for more "
+"information about the options of the original update-initramfs command."
 msgstr ""
 
 #. type: Plain text
