@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: live-tools 3.0.12-1\n"
-"POT-Creation-Date: 2012-09-30 17:11+0300\n"
+"POT-Creation-Date: 2012-10-24 14:44+0300\n"
 "PO-Revision-Date: 2012-07-31 00:29+0100\n"
 "Last-Translator: Carlos Zuferri <chals@altorricon.com>\n"
 "Language-Team: none\n"
@@ -23,8 +23,8 @@ msgstr "LIVE-TOOLS"
 #. type: TH
 #: en/live-tools.7:9
 #, no-wrap
-msgid "2012-09-30"
-msgstr "30.09.2012"
+msgid "2012-10-24"
+msgstr "24.10.2012"
 
 #. type: TH
 #: en/live-tools.7:9
@@ -82,8 +82,10 @@ msgstr "B<live-update-initramfs>"
 
 #. type: Plain text
 #: en/live-tools.7:22
-msgid "writes out updated initramfs images to the live media."
-msgstr "écrit des images initramfs mises à jour aux dispositifs."
+msgid ""
+"writes out updated initramfs images to the live media. This wrapper replaces "
+"the update-initramfs command provided by the initramfs-tools package."
+msgstr ""
 
 #. type: IP
 #: en/live-tools.7:22
@@ -127,7 +129,11 @@ msgstr "B<live-uptime>"
 
 #. type: Plain text
 #: en/live-tools.7:30
-msgid "tells how long the system has been running (works with LXC)."
+#, fuzzy
+#| msgid "tells how long the system has been running (works with LXC)."
+msgid ""
+"tells how long the system has been running (works with LXC). This wrapper "
+"replaces the uptime command provided by the procps package."
 msgstr ""
 "indique combien de temps le système a été en cours d'exécution (fonctionne "
 "avec LXC)."
