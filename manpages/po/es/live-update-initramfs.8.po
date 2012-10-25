@@ -93,6 +93,8 @@ msgid ""
 "B<live-update-initramfs> - writes out updated kernel and initrd images to "
 "the live media."
 msgstr ""
+"B<live-update-initramfs> - escribe imágenes del kernel y del initrd "
+"actualizadas en los medios en vivo."
 
 #. type: Plain text
 #: en/live-update-initramfs.8:16
@@ -100,6 +102,8 @@ msgid ""
 "B<live-update-initramfs> is a wrapper replacing the update-initramfs command "
 "provided by the initramfs-tools package."
 msgstr ""
+"B<live-update-initramfs> es un wrapper que reemplaza el comando update-"
+"initramfs proporcionado por el paquete initramfs-tools."
 
 #. type: Plain text
 #: en/live-update-initramfs.8:18
@@ -112,6 +116,14 @@ msgid ""
 "initramfs command; see I<update-initramfs.orig.initramfs-tools>(8) for more "
 "information about the options of the original update-initramfs command."
 msgstr ""
+"En los sistemas en vivo con una capa de persistencia, B<live-update-"
+"initramfs> escribirá imágenes del kernel y del initrd actualizadas en los "
+"medios en vivo. Esto permite actualizar el kernel desde dentro del sistema "
+"en vivo utilizando apt-get sin necesidad de sincronizar manualmente el "
+"kernel y el initrd del sistema en vivo. B<live-update-initramfs> pasa todos "
+"los argumentos de la línea de comandos al comando original update-initramfs; "
+"ver I<update-initramfs.orig.initramfs-tools>(8) para más información acerca "
+"de las opciones del comando original update-initramfs."
 
 #. type: Plain text
 #: en/live-update-initramfs.8:21 en/live-uptime.1:21
