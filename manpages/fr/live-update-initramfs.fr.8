@@ -14,21 +14,22 @@
 .TH LIVE\-TOOLS 8 25.10.2012 3.0.12\-1 "Projet Debian Live"
 
 .SH NOM
-\fBlive\-update\-initramfs\fP \- writes out updated kernel and initrd images to
-the live media.
+\fBlive\-update\-initramfs\fP \- écrit ​​des images mises à jour du noyau et de
+l'initrd sur les supports live.
 
 .SH DESCRIPTION
-\fBlive\-update\-initramfs\fP is a wrapper replacing the update\-initramfs command
-provided by the initramfs\-tools package.
+\fBlive\-update\-initramfs\fP est un wrapper qui remplace la commande
+update\-initramfs fournie par le paquet initramfs\-tools.
 .PP
-In live\-systems with a persistence layer, \fBlive\-update\-initramfs\fP will
-write out updated kernel and initrd images to the live media. This allows
-kernel upgrades from within the live\-system through apt\-get without needing
-to manually synchronise kernel and initrd to the
-live\-medium. \fBlive\-update\-initramfs\fP passes through all command\-line
-arguments to the original update\-initramfs command; see
-\fIupdate\-initramfs.orig.initramfs\-tools\fP(8) for more information about the
-options of the original update\-initramfs command.
+Dans les systèmes live avec une couche de persistance,
+\fBlive\-update\-initramfs\fP écrira des images mises à jour du noyau et de
+l'initrd sur les supports live. Cela permet les mises à niveau du noyau au
+sein du système live à l'aide d'apt\-get sans avoir besoin de synchroniser
+manuellement le noyau et l'initrd pour le support
+live. \fBlive\-update\-initramfs\fP passe tous les arguments de ligne de commande
+à la commande originale update\-initramfs; voir
+\fIupdate\-initramfs.orig.initramfs\-tools\fP(8) pour plus d'informations sur les
+options de la commande originale update\-initramfs.
 
 .SH "VOIR AUSSI"
 \fIlive\-tools\fP(7)

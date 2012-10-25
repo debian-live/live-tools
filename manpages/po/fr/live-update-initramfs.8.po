@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: live-tools 3.0.12-1\n"
 "POT-Creation-Date: 2012-10-25 15:19+0300\n"
-"PO-Revision-Date: 2012-07-28 22:44+0100\n"
+"PO-Revision-Date: 2012-10-25 22:41+0100\n"
 "Last-Translator: Carlos Zuferri <chals@altorricon.com>\n"
 "Language-Team: none\n"
 "Language: fr\n"
@@ -94,6 +94,8 @@ msgid ""
 "B<live-update-initramfs> - writes out updated kernel and initrd images to "
 "the live media."
 msgstr ""
+"B<live-update-initramfs> - écrit ​​des images mises à jour du noyau et de "
+"l'initrd sur les supports live."
 
 #. type: Plain text
 #: en/live-update-initramfs.8:16
@@ -101,6 +103,8 @@ msgid ""
 "B<live-update-initramfs> is a wrapper replacing the update-initramfs command "
 "provided by the initramfs-tools package."
 msgstr ""
+"B<live-update-initramfs> est un wrapper qui remplace la commande update-"
+"initramfs fournie par le paquet initramfs-tools."
 
 #. type: Plain text
 #: en/live-update-initramfs.8:18
@@ -113,6 +117,14 @@ msgid ""
 "initramfs command; see I<update-initramfs.orig.initramfs-tools>(8) for more "
 "information about the options of the original update-initramfs command."
 msgstr ""
+"Dans les systèmes live avec une couche de persistance, B<live-update-"
+"initramfs> écrira des images mises à jour du noyau et de l'initrd sur les "
+"supports live. Cela permet les mises à niveau du noyau au sein du système "
+"live à l'aide d'apt-get sans avoir besoin de synchroniser manuellement le "
+"noyau et l'initrd pour le support live. B<live-update-initramfs> passe tous "
+"les arguments de ligne de commande à la commande originale update-initramfs; "
+"voir I<update-initramfs.orig.initramfs-tools>(8) pour plus d'informations "
+"sur les options de la commande originale update-initramfs."
 
 #. type: Plain text
 #: en/live-update-initramfs.8:21 en/live-uptime.1:21
