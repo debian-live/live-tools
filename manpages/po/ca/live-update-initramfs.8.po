@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: live-tools 3.0.12-1\n"
 "POT-Creation-Date: 2012-10-25 15:19+0300\n"
-"PO-Revision-Date: 2012-07-29 23:39+0100\n"
+"PO-Revision-Date: 2012-10-25 21:06+0100\n"
 "Last-Translator: Carlos Zuferri <chals@altorricon.com>\n"
 "Language-Team: none\n"
 "Language: ca\n"
@@ -93,6 +93,8 @@ msgid ""
 "B<live-update-initramfs> - writes out updated kernel and initrd images to "
 "the live media."
 msgstr ""
+"B<live-update-initramfs> - escriu imatges actualitzades del kernel i "
+"l'initrd en els medis en viu."
 
 #. type: Plain text
 #: en/live-update-initramfs.8:16
@@ -100,6 +102,8 @@ msgid ""
 "B<live-update-initramfs> is a wrapper replacing the update-initramfs command "
 "provided by the initramfs-tools package."
 msgstr ""
+"B<live-update-initramfs> és un wrapper que substitueix l'ordre update-"
+"initramfs proporcionada pel paquet initramfs-tools."
 
 #. type: Plain text
 #: en/live-update-initramfs.8:18
@@ -112,6 +116,14 @@ msgid ""
 "initramfs command; see I<update-initramfs.orig.initramfs-tools>(8) for more "
 "information about the options of the original update-initramfs command."
 msgstr ""
+"En els sistemes vius amb una capa de persistència, B<live-update-initramfs> "
+"escriurà imatges actualitzades del nucli i l'initrd en els medis en viu. "
+"Això permet fer les actualitzacions del nucli des del sistema en viu "
+"utilitzant apt-get sense necessitat de sincronitzar manualment el nucli i "
+"l'initrd al medi en viu. B<live-update-initramfs> passa tots els arguments "
+"de la línia d'ordres a l'ordre original update-initramfs; veure I<update-"
+"initramfs.orig.initramfs-tools>(8) per obtenir més informació sobre les "
+"opcions de l'ordre original update-initramfs."
 
 #. type: Plain text
 #: en/live-update-initramfs.8:21 en/live-uptime.1:21
