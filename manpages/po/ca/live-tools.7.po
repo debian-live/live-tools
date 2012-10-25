@@ -91,6 +91,9 @@ msgid ""
 "replaces the update-initramfs command provided by the initramfs-tools "
 "package."
 msgstr ""
+"escriu imatges actualitzades del nucli i l'initrd en els medis en viu. "
+"Aquest wrapper substitueix l'ordre update-initramfs proporcionada pel paquet "
+"initramfs-tools."
 
 #. type: IP
 #: en/live-tools.7:22
@@ -101,7 +104,7 @@ msgstr "B<live-update-initramfs-uuid>"
 #. type: Plain text
 #: en/live-tools.7:24
 msgid "updates UUID in an existing initramfs image."
-msgstr ""
+msgstr "actualitza l'UUID en una imatge initramfs que ja existeix."
 
 #. type: IP
 #: en/live-tools.7:24
@@ -140,6 +143,8 @@ msgid ""
 "tells how long the system has been running (works with LXC). This wrapper "
 "replaces the uptime command provided by the procps package."
 msgstr ""
+"diu quant temps el sistema ha estat en funcionament (també amb LXC). Aquest "
+"wrapper substitueix l'ordre uptime proporcionada pel paquet procps."
 
 #. type: SH
 #: en/live-tools.7:31 en/live-update-initramfs.8:23 en/live-uptime.1:23

@@ -14,21 +14,21 @@
 .TH LIVE\-TOOLS 8 07.11.2012 4.0~a2\-1 "Debian Live Project"
 
 .SH NOM
-\fBlive\-update\-initramfs\fP \- writes out updated kernel and initrd images to
-the live media.
+\fBlive\-update\-initramfs\fP \- escriu imatges actualitzades del kernel i
+l'initrd en els medis en viu.
 
 .SH DESCRIPCIÓ
-\fBlive\-update\-initramfs\fP is a wrapper replacing the update\-initramfs command
-provided by the initramfs\-tools package.
+\fBlive\-update\-initramfs\fP és un wrapper que substitueix l'ordre
+update\-initramfs proporcionada pel paquet initramfs\-tools.
 .PP
-In live\-systems with a persistence layer, \fBlive\-update\-initramfs\fP will
-write out updated kernel and initrd images to the live media. This allows
-kernel upgrades from within the live\-system through apt\-get without needing
-to manually synchronise kernel and initrd to the
-live\-medium. \fBlive\-update\-initramfs\fP passes through all command\-line
-arguments to the original update\-initramfs command; see
-\fIupdate\-initramfs.orig.initramfs\-tools\fP(8) for more information about the
-options of the original update\-initramfs command.
+En els sistemes vius amb una capa de persistència, \fBlive\-update\-initramfs\fP
+escriurà imatges actualitzades del nucli i l'initrd en els medis en
+viu. Això permet fer les actualitzacions del nucli des del sistema en viu
+utilitzant apt\-get sense necessitat de sincronitzar manualment el nucli i
+l'initrd al medi en viu. \fBlive\-update\-initramfs\fP passa tots els arguments
+de la línia d'ordres a l'ordre original update\-initramfs; veure
+\fIupdate\-initramfs.orig.initramfs\-tools\fP(8) per obtenir més informació sobre
+les opcions de l'ordre original update\-initramfs.
 
 .SH "VEURE TAMBÉ"
 \fIlive\-tools\fP(7)
