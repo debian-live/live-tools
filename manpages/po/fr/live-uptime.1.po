@@ -98,6 +98,8 @@ msgstr "I<live-tools>(7)"
 msgid ""
 "B<live-uptime> - Tell how long the system has been running (works with LXC)."
 msgstr ""
+"B<live-uptime> - Indique combien de temps le système a fonctionné "
+"(fonctionne avec LXC)."
 
 #. type: Plain text
 #: en/live-uptime.1:16
@@ -105,6 +107,8 @@ msgid ""
 "B<live-uptime> is a wrapper replacing the uptime command provided by the "
 "procps package."
 msgstr ""
+"B<live-uptime> est un wrapper qui remplace la commande uptime fournie par le "
+"paquet procps."
 
 #. type: Plain text
 #: en/live-uptime.1:18
@@ -115,6 +119,12 @@ msgid ""
 "arguments to the original uptime command; see I<uptime.orig.procps>(1) for "
 "more information about the options of the original uptime command."
 msgstr ""
+"B<live-uptime> indique le temps de fonctionnement correcte quand un système "
+"est utilisé dans un Linux Container (LXC), où la commande originale uptime "
+"montre le temps de fonctionnement du système hôte pour tous les conteneurs. "
+"B<live-uptime> passe tous les arguments de ligne de commande à la commande "
+"originale uptime; voir I<uptime.orig.procps>(1) pour plus d'informations sur "
+"les options de la commande originale uptime."
 
 #. type: Plain text
 #: en/live-uptime.1:24

@@ -14,17 +14,19 @@
 .TH LIVE\-TOOLS 1 07.11.2012 4.0~a2\-1 "Projet Debian Live"
 
 .SH NOM
-\fBlive\-uptime\fP \- Tell how long the system has been running (works with LXC).
+\fBlive\-uptime\fP \- Indique combien de temps le système a fonctionné
+(fonctionne avec LXC).
 
 .SH DESCRIPTION
-\fBlive\-uptime\fP is a wrapper replacing the uptime command provided by the
-procps package.
+\fBlive\-uptime\fP est un wrapper qui remplace la commande uptime fournie par le
+paquet procps.
 .PP
-\fBlive\-uptime\fP displays the correct uptime when a system is being used in a
-Linux Container (LXC), where the original uptime command shows the host
-uptime for all containers. \fBlive\-uptime\fP passes through all command\-line
-arguments to the original uptime command; see \fIuptime.orig.procps\fP(1) for
-more information about the options of the original uptime command.
+\fBlive\-uptime\fP indique le temps de fonctionnement correcte quand un système
+est utilisé dans un Linux Container (LXC), où la commande originale uptime
+montre le temps de fonctionnement du système hôte pour tous les
+conteneurs. \fBlive\-uptime\fP passe tous les arguments de ligne de commande à
+la commande originale uptime; voir \fIuptime.orig.procps\fP(1) pour plus
+d'informations sur les options de la commande originale uptime.
 
 .SH "VOIR AUSSI"
 \fIlive\-tools\fP(7)
