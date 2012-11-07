@@ -1,3 +1,39 @@
+live-tools (4.0~a3-1) experimental; urgency=low
+
+  [ Daniel Baumann ]
+  * Updating to standards version 3.9.4.
+  * Adding 3.0.12 changelog entries.
+  * Updating file paths for /lib/live/mount. See
+    http://lists.debian.org/debian-live/2012/10/msg00021.html for more
+    information.
+  * Renaming /lib/live/mount/image to /lib/live/mount/medium. See
+    http://lists.debian.org/debian-live/2012/10/msg00023.html for more
+    information.
+  * Updating package description.
+  * Adding note about wrappers that replace existing commands in live-
+    tools manpage, thanks to Ben Armstrong
+    <synrg@sanctuary.nslug.ns.ca>.
+  * Adding dedicated manpage for live-uptime.
+  * Adding dedicated manpage for live-update-initramfs.
+  * Synchronising po headers for manpage translations.
+  * Improving a bunch of formating and typo issues in manpages.
+
+  [ Ben Armstrong ]
+  * Improving manpage wording.
+
+  [ Daniel Baumann ]
+  * Making wording in live-update-initramfs a bit more precise wrt/ what
+    files are being taken care of.
+  * And another manpage typo fixed.
+
+  [ chals ]
+  * Running make rebuild to update the dates.
+  * Updating the Spanish translation of the man pages.
+  * Updating the Catalan translation of the man pages.
+  * Updating the French translation of the man pages.
+
+ -- Daniel Baumann <daniel@debian.org>  Wed, 07 Nov 2012 15:47:04 +0100
+
 live-tools (4.0~a2-1) experimental; urgency=low
 
   * Moving remaining stuff from /live to /lib/live to avoid further
