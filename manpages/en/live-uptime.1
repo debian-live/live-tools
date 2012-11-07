@@ -1,0 +1,29 @@
+.\" live-tools(7) - System Support Scripts
+.\" Copyright (C) 2006-2012 Daniel Baumann <daniel@debian.org>
+.\"
+.\" This program comes with ABSOLUTELY NO WARRANTY; for details see COPYING.
+.\" This is free software, and you are welcome to redistribute it
+.\" under certain conditions; see COPYING for details.
+.\"
+.\"
+.TH LIVE\-TOOLS 1 2012\-11\-07 3.0.13-1 "Debian Live Project"
+
+.SH NAME
+\fBlive\-uptime\fR \- Tell how long the system has been running (works with LXC).
+
+.SH DESCRIPTION
+\fBlive\-uptime\fR is a wrapper replacing the uptime command provided by the procps package.
+.PP
+\fBlive\-uptime\fR displays the correct uptime when a system is being used in a Linux Container (LXC), where the original uptime command shows the host uptime for all containers. \fBlive\-uptime\fR passes through all command-line arguments to the original uptime command; see \fIuptime.orig.procps\fR(1) for more information about the options of the original uptime command.
+
+.SH SEE ALSO
+\fIlive\-tools\fR(7)
+
+.SH HOMEPAGE
+More information about live\-uptime and the Debian Live project can be found on the homepage at <\fIhttp://live.debian.net/\fR> and in the manual at <\fIhttp://live.debian.net/manual/\fR>.
+
+.SH BUGS
+Bugs can be reported by submitting a bugreport for the live\-tools package in the Debian Bug Tracking System at <\fIhttp://bugs.debian.org/\fR> or by writing a mail to the Debian Live mailing list at <\fIdebian\-live@lists.debian.org\fR>.
+
+.SH AUTHOR
+live\-uptime was written by Daniel Baumann <\fIdaniel@debian.org\fR>.

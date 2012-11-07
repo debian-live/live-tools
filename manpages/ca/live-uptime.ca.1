@@ -1,0 +1,46 @@
+.\" live-tools(7) - System Support Scripts
+.\" Copyright (C) 2006-2012 Daniel Baumann <daniel@debian.org>
+.\"
+.\" This program comes with ABSOLUTELY NO WARRANTY; for details see COPYING.
+.\" This is free software, and you are welcome to redistribute it
+.\" under certain conditions; see COPYING for details.
+.\"
+.\"
+.\"*******************************************************************
+.\"
+.\" This file was generated with po4a. Translate the source file.
+.\"
+.\"*******************************************************************
+.TH LIVE\-TOOLS 1 07.11.2012 3.0.13\-1 "Debian Live Project"
+
+.SH NOM
+\fBlive\-uptime\fP \- Indica el temps que el sistema ha estat en funcionament
+(també amb LXC).
+
+.SH DESCRIPCIÓ
+\fBlive\-uptime\fP és un wrapper que substitueix l'ordre uptime proporcionada
+pel paquet procps.
+.PP
+\fBlive\-uptime\fP mostra el temps de funcionament correcte quan el sistema
+s'està utilitzant en un Linux Container (LXC), on l'ordre uptime original
+mostra el temps de funcionament del sistema amfitrió de tots els
+contenidors. \fBlive\-uptime\fP passa tots els arguments de la línia d'ordres a
+l'ordre original uptime; veure \fIuptime.orig.procps\fP(1) per obtenir més
+informació sobre les opcions de l'ordre original uptime.
+
+.SH "VEURE TAMBÉ"
+\fIlive\-tools\fP(7)
+
+.SH "PÀGINA WEB"
+Es pot trobar més informació sobre live\-uptime i el projecte Debian Live a
+la pàgina web <\fIhttp://live.debian.net/\fP> i al manual a
+<\fIhttp://live.debian.net/manual/\fP>.
+
+.SH ERRORS
+Es pot informar sobre els errors mitjançant la presentació d'un informe
+d'errors sobre al paquet live\-tools al Debian Bug Tracking System a
+<\fIhttp://bugs.debian.org/\fP> o escrivint un correu a la llista de
+correu de Debian Live a <\fIdebian\-live@lists.debian.org\fP>.
+
+.SH AUTOR
+live\-uptime va ser escrit per Daniel Baumann <\fIdaniel@debian.org\fP>.
