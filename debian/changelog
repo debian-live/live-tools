@@ -1,3 +1,10 @@
+live-tools (4.0~a4-1) experimental; urgency=low
+
+  * Correcting initrd pathes in live-update-initramfs.
+  * Adding dpkg-source local options.
+
+ -- Daniel Baumann <daniel@debian.org>  Fri, 30 Nov 2012 17:02:32 +0100
+
 live-tools (4.0~a3-1) experimental; urgency=low
 
   [ Daniel Baumann ]
