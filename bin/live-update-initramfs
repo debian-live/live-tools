@@ -56,13 +56,13 @@ case "${_READ_WRITE}" in
 		/usr/sbin/update-initramfs.orig.initramfs-tools "${@}"
 
 		# FIXME: needs to exclude initrd backup files
-		if [ "$(ls initrd.img-* | wc -l)" -gt 1 ]
+		if [ "$(ls /boot/initrd.img-* | wc -l)" -gt 1 ]
 		then
 			_NUMBER="1"
 
 			for _INITRD in /boot/initrd.img-*
 			do
-				_VERSION="$(echo ${_INITRD} | sed -e 's|initrd.img-||')"
+				_VERSION="$(basename ${_INITRD} | sed -e 's|initrd.img-||')"
 
 				cp /boot/vmlinuz-${_VERSION} /lib/live/mount/medium/live/vmlinuz${_NUMBER}.new
 				cp /boot/initrd.img-${_VERSION} /lib/live/mount/medium/live/initrd${_NUMBER}.img.new
