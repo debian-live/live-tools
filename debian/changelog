@@ -1,3 +1,10 @@
+live-tools (3.0.14-1) unstable; urgency=low
+
+  * Correcting initrd pathes in live-update-initramfs.
+  * Adding dpkg-source local options.
+
+ -- Daniel Baumann <daniel@debian.org>  Fri, 30 Nov 2012 16:58:53 +0100
+
 live-tools (3.0.13-1) unstable; urgency=low
 
   [ Daniel Baumann ]
