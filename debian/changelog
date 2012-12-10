@@ -56,6 +56,61 @@ live-tools (4.0~a1-1) experimental; urgency=low
 
  -- Daniel Baumann <daniel@debian.org>  Wed, 26 Sep 2012 14:54:43 +0200
 
+live-tools (3.0.15-1) unstable; urgency=low
+
+  [ Tails developers ]
+  * Adding a script for enabling persistence during post-initramfs time.
+
+  [ Daniel Baumann ]
+  * First pass coding style updates on live-persistence.
+
+ -- Daniel Baumann <daniel@debian.org>  Mon, 10 Dec 2012 20:25:52 +0100
+
+live-tools (3.0.14-1) unstable; urgency=low
+
+  * Correcting initrd pathes in live-update-initramfs.
+  * Adding dpkg-source local options.
+
+ -- Daniel Baumann <daniel@debian.org>  Fri, 30 Nov 2012 16:58:53 +0100
+
+live-tools (3.0.13-1) unstable; urgency=low
+
+  [ Daniel Baumann ]
+  * Updating file paths for /lib/live/mount.
+  * Renaming /lib/live/mount/image to /lib/live/mount/medium.
+  * Updating package description.
+  * Adding note about wrappers that replace existing commands in live-
+    tools manpage, thanks to Ben Armstrong
+    <synrg@sanctuary.nslug.ns.ca>.
+  * Adding dedicated manpage for live-uptime.
+  * Adding dedicated manpage for live-update-initramfs.
+  * Synchronising po headers for manpage translations.
+  * Improving a bunch of formating and typo issues in manpages.
+
+  [ Ben Armstrong ]
+  * Improving manpage wording.
+
+  [ Daniel Baumann ]
+  * Making wording in live-update-initramfs a bit more precise wrt/ what
+    files are being taken care of.
+  * And another manpage typo fixed.
+
+  [ Ben Armstrong ]
+  * Fixing cleanup of diversion by old live-tools. (Closes: #685810)
+
+  [ chals ]
+  * Running make rebuild to update the dates.
+  * Updating the Spanish translation of the man pages.
+  * Updating the Catalan translation of the man pages.
+
+  [ Daniel Baumann ]
+  * Adjusting coding style in preinst when removing divertions.
+
+  [ chals ]
+  * Updating the French translation of the man pages.
+
+ -- Daniel Baumann <daniel@debian.org>  Wed, 07 Nov 2012 15:14:24 +0100
+
 live-tools (3.0.12-1) unstable; urgency=low
 
   * Updating to standards version 3.9.4.
