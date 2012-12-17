@@ -24,7 +24,7 @@ _UPTIME="$(/usr/bin/uptime.orig.procps)"
 
 _DATE_HOST="$(date +%s)"
 
-_DATE_LXC="$(stat /dev/pts | awk '/^Change: / { print $2, $3 }')"
+_DATE_LXC="$(stat -c %z /dev/pts)"
 _DATE_LXC="$(date +%s -d"${_DATE_LXC}")"
 
 _UPTIME_LXC="$((${_DATE_HOST} - ${_DATE_LXC}))"
