@@ -1,3 +1,21 @@
+live-tools (4.0~a6-1) experimental; urgency=low
+
+  [ Daniel Baumann ]
+  * Correcting spelling typo in bug script.
+
+  [ Richard Nelson ]
+  * Update manpage with an entry for live-persistence.
+
+  [ Daniel Baumann ]
+  * Simplified wording of live-persistence short description in live-tools
+    manpage.
+  * Updating German live-tools manpage translation.
+  * Using simpler stat call on /dev/pts in live-uptime as suggested by
+    Javier Barroso <javibarroso@gmail.com> (Closes: #696173).
+  * Adding 3.0.16-1 changelog entries.
+
+ -- Daniel Baumann <daniel@debian.org>  Mon, 17 Dec 2012 21:05:25 +0100
+
 live-tools (4.0~a5-1) experimental; urgency=low
 
   [ Tails developers ]
