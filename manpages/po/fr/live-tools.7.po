@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: live-tools 4.0~a6-1\n"
 "POT-Creation-Date: 2012-12-17 21:04+0100\n"
-"PO-Revision-Date: 2012-07-31 00:29+0100\n"
+"PO-Revision-Date: 2012-12-17 22:44+0100\n"
 "Last-Translator: Carlos Zuferri <chals@altorricon.com>\n"
 "Language-Team: none\n"
 "Language: fr\n"
@@ -151,6 +151,8 @@ msgstr "B<live-persistence>(1)"
 #: en/live-tools.7:32
 msgid "switches a non-persistent system to using persistence at runtime."
 msgstr ""
+"permet qu'un système non persistant utilise la persistance pendant "
+"l'exécution du système."
 
 #. type: SH
 #: en/live-tools.7:33 en/live-update-initramfs.8:19 en/live-uptime.1:19
