@@ -152,6 +152,8 @@ msgstr "B<live-persistence>(1)"
 #: en/live-tools.7:32
 msgid "switches a non-persistent system to using persistence at runtime."
 msgstr ""
+"permet que un sistema no persistent utilitzi la persistència en temps "
+"d'execució."
 
 #. type: SH
 #: en/live-tools.7:33 en/live-update-initramfs.8:19 en/live-uptime.1:19
