@@ -1,3 +1,18 @@
+live-tools (3.0.17-1) unstable; urgency=low
+
+  [ chals ]
+  * Updating Catalan translation of live-tools man page in respect to
+    live-persistence.
+  * Updating Spanish translation of live-tools man page in respect to
+    live-persistence.
+  * Updating French translation of live-tools man page in respect to live-
+    persistence.
+
+  [ Daniel Baumann ]
+  * Updating year in all copyright notices.
+
+ -- Daniel Baumann <daniel@debian.org>  Wed, 02 Jan 2013 12:32:09 +0100
+
 live-tools (3.0.16-1) unstable; urgency=low
 
   [ Daniel Baumann ]
