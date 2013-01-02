@@ -1,3 +1,19 @@
+live-tools (4.0~a7-1) experimental; urgency=low
+
+  [ chals ]
+  * Updating Catalan translation of live-tools man page in respect to
+    live-persistence.
+  * Updating Spanish translation of live-tools man page in respect to
+    live-persistence.
+  * Updating French translation of live-tools man page in respect to live-
+    persistence.
+
+  [ Daniel Baumann ]
+  * Updating year in all copyright notices.
+  * Adding 3.0.17-1 changelog entries.
+
+ -- Daniel Baumann <daniel@debian.org>  Wed, 02 Jan 2013 12:37:23 +0100
+
 live-tools (4.0~a6-1) experimental; urgency=low
 
   [ Daniel Baumann ]
