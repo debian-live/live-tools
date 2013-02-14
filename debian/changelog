@@ -1,3 +1,10 @@
+live-tools (3.0.18-1) unstable; urgency=low
+
+  * Updating manpage year handling for 2013.
+  * Dropping dpkg compression level.
+
+ -- Daniel Baumann <daniel@debian.org>  Thu, 14 Feb 2013 19:28:54 +0100
+
 live-tools (3.0.17-1) unstable; urgency=low
 
   [ chals ]

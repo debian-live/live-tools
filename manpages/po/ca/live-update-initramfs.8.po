@@ -4,8 +4,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: live-tools 3.0.17-1\n"
-"POT-Creation-Date: 2013-01-02 12:27+0100\n"
+"Project-Id-Version: live-tools 3.0.18-1\n"
+"POT-Creation-Date: 2013-02-14 19:27+0100\n"
 "PO-Revision-Date: 2012-10-25 21:06+0100\n"
 "Last-Translator: Carlos Zuferri <chals@altorricon.com>\n"
 "Language-Team: none\n"
@@ -23,14 +23,14 @@ msgstr "LIVE-TOOLS"
 #. type: TH
 #: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
 #, no-wrap
-msgid "2013-01-02"
-msgstr "02.01.2013"
+msgid "2013-02-14"
+msgstr "14.02.2013"
 
 #. type: TH
 #: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
 #, no-wrap
-msgid "3.0.17-1"
-msgstr "3.0.17-1"
+msgid "3.0.18-1"
+msgstr "3.0.18-1"
 
 #. type: TH
 #: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
