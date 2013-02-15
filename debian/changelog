@@ -1,3 +1,11 @@
+live-tools (4.0~a8-1) experimental; urgency=low
+
+  * Updating manpage year handling for 2013.
+  * Dropping dpkg compression level.
+  * Adding 3.0.18-1 changelog entries.
+
+ -- Daniel Baumann <daniel@debian.org>  Fri, 15 Feb 2013 09:06:14 +0100
+
 live-tools (4.0~a7-1) experimental; urgency=low
 
   [ chals ]
