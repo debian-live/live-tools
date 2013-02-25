@@ -78,7 +78,7 @@ Kernel command-line options are parsed just like in live-boot and have the same
 effect (see live-boot(7) for more information).
 
 Most options correspond to the persistence-* options of live-boot, and will
-override the corresponging options parsed from the kernel command-line.
+override the corresponding options parsed from the kernel command-line.
 
 General options:
   -h, --help            display this help and exit
