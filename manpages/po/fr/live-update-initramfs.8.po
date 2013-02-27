@@ -4,8 +4,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: live-tools 3.0.18-1\n"
-"POT-Creation-Date: 2013-02-14 19:27+0100\n"
+"Project-Id-Version: live-tools 3.0.19-1\n"
+"POT-Creation-Date: 2013-02-27 06:41+0100\n"
 "PO-Revision-Date: 2012-10-25 22:41+0100\n"
 "Last-Translator: Carlos Zuferri <chals@altorricon.com>\n"
 "Language-Team: none\n"
@@ -24,14 +24,14 @@ msgstr "LIVE-TOOLS"
 #. type: TH
 #: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
 #, no-wrap
-msgid "2013-02-14"
-msgstr "14.02.2013"
+msgid "2013-02-27"
+msgstr "27.02.2013"
 
 #. type: TH
 #: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
 #, no-wrap
-msgid "3.0.18-1"
-msgstr "3.0.18-1"
+msgid "3.0.19-1"
+msgstr "3.0.19-1"
 
 #. type: TH
 #: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
@@ -52,25 +52,25 @@ msgid "DESCRIPTION"
 msgstr "DESCRIPTION"
 
 #. type: SH
-#: en/live-tools.7:33 en/live-update-initramfs.8:19 en/live-uptime.1:19
+#: en/live-tools.7:31 en/live-update-initramfs.8:19 en/live-uptime.1:19
 #, no-wrap
 msgid "SEE ALSO"
 msgstr "VOIR AUSSI"
 
 #. type: SH
-#: en/live-tools.7:40 en/live-update-initramfs.8:22 en/live-uptime.1:22
+#: en/live-tools.7:38 en/live-update-initramfs.8:22 en/live-uptime.1:22
 #, no-wrap
 msgid "HOMEPAGE"
 msgstr "PAGE D'ACCUEIL"
 
 #. type: SH
-#: en/live-tools.7:43 en/live-update-initramfs.8:25 en/live-uptime.1:25
+#: en/live-tools.7:41 en/live-update-initramfs.8:25 en/live-uptime.1:25
 #, no-wrap
 msgid "BUGS"
 msgstr "BOGUES"
 
 #. type: Plain text
-#: en/live-tools.7:45 en/live-update-initramfs.8:27 en/live-uptime.1:27
+#: en/live-tools.7:43 en/live-update-initramfs.8:27 en/live-uptime.1:27
 msgid ""
 "Bugs can be reported by submitting a bugreport for the live-tools package in "
 "the Debian Bug Tracking System at E<lt>I<http://bugs.debian.org/>E<gt> or by "
@@ -83,7 +83,7 @@ msgstr ""
 "Live sur E<lt>I<debian-live@lists.debian.org>E<gt>"
 
 #. type: SH
-#: en/live-tools.7:46 en/live-update-initramfs.8:28 en/live-uptime.1:28
+#: en/live-tools.7:44 en/live-update-initramfs.8:28 en/live-uptime.1:28
 #, no-wrap
 msgid "AUTHOR"
 msgstr "AUTEUR"
