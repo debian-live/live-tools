@@ -1,3 +1,13 @@
+live-tools (3.0.19-1) unstable; urgency=low
+
+  [ Daniel Baumann ]
+  * Dropping live-update-initramfs-uuid for wheezy.
+
+  [ Ben Armstrong ]
+  * Fixing spelling typo, thanks to Adam D. Barratt <adam@adam-barratt.org.uk>.
+
+ -- Daniel Baumann <daniel@debian.org>  Wed, 27 Feb 2013 06:43:13 +0100
+
 live-tools (3.0.18-1) unstable; urgency=low
 
   * Updating manpage year handling for 2013.
