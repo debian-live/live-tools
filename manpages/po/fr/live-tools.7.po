@@ -220,6 +220,7 @@ msgstr "AUTEUR"
 #. type: Plain text
 #: en/live-tools.7:47
 msgid ""
-"live-tools was written by Daniel Baumann E<lt>I<daniel@debian.org>E<gt>."
+"live-tools was written by Daniel Baumann E<lt>I<mail@daniel-baumann.ch>E<gt>."
 msgstr ""
-"live-tools a été conçu par Daniel Baumann E<lt>I<daniel@debian.org>E<gt>."
+"live-tools a été conçu par Daniel Baumann E<lt>I<mail@daniel-baumann."
+"ch>E<gt>."

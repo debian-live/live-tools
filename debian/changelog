@@ -3,7 +3,7 @@ live-tools (4.0~a10-1) experimental; urgency=low
   * Correcting spelling typos, thanks to Adam D. Barratt <adam@adam-
     barratt.org.uk>.
 
- -- Daniel Baumann <daniel@debian.org>  Sun, 10 Mar 2013 19:19:20 +0100
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Sun, 10 Mar 2013 19:19:20 +0100
 
 live-tools (4.0~a9-1) experimental; urgency=low
 
@@ -14,7 +14,7 @@ live-tools (4.0~a9-1) experimental; urgency=low
   [ Daniel Baumann ]
   * Adding 3.0.19-1 changelog entries.
 
- -- Daniel Baumann <daniel@debian.org>  Wed, 27 Feb 2013 06:47:39 +0100
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Wed, 27 Feb 2013 06:47:39 +0100
 
 live-tools (4.0~a8-1) experimental; urgency=low
 
@@ -22,7 +22,7 @@ live-tools (4.0~a8-1) experimental; urgency=low
   * Dropping dpkg compression level.
   * Adding 3.0.18-1 changelog entries.
 
- -- Daniel Baumann <daniel@debian.org>  Fri, 15 Feb 2013 09:06:14 +0100
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Fri, 15 Feb 2013 09:06:14 +0100
 
 live-tools (4.0~a7-1) experimental; urgency=low
 
@@ -38,7 +38,7 @@ live-tools (4.0~a7-1) experimental; urgency=low
   * Updating year in all copyright notices.
   * Adding 3.0.17-1 changelog entries.
 
- -- Daniel Baumann <daniel@debian.org>  Wed, 02 Jan 2013 12:37:23 +0100
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Wed, 02 Jan 2013 12:37:23 +0100
 
 live-tools (4.0~a6-1) experimental; urgency=low
 
@@ -56,7 +56,7 @@ live-tools (4.0~a6-1) experimental; urgency=low
     Javier Barroso <javibarroso@gmail.com> (Closes: #696173).
   * Adding 3.0.16-1 changelog entries.
 
- -- Daniel Baumann <daniel@debian.org>  Mon, 17 Dec 2012 21:05:25 +0100
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Mon, 17 Dec 2012 21:05:25 +0100
 
 live-tools (4.0~a5-1) experimental; urgency=low
 
@@ -69,14 +69,14 @@ live-tools (4.0~a5-1) experimental; urgency=low
   * First pass coding style updates on live-persistence.
   * Adding 3.0.13-3.0.15 changelog entries.
 
- -- Daniel Baumann <daniel@debian.org>  Mon, 10 Dec 2012 20:31:22 +0100
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Mon, 10 Dec 2012 20:31:22 +0100
 
 live-tools (4.0~a4-1) experimental; urgency=low
 
   * Correcting initrd pathes in live-update-initramfs.
   * Adding dpkg-source local options.
 
- -- Daniel Baumann <daniel@debian.org>  Fri, 30 Nov 2012 17:02:32 +0100
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Fri, 30 Nov 2012 17:02:32 +0100
 
 live-tools (4.0~a3-1) experimental; urgency=low
 
@@ -112,7 +112,7 @@ live-tools (4.0~a3-1) experimental; urgency=low
   * Updating the Catalan translation of the man pages.
   * Updating the French translation of the man pages.
 
- -- Daniel Baumann <daniel@debian.org>  Wed, 07 Nov 2012 15:47:04 +0100
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Wed, 07 Nov 2012 15:47:04 +0100
 
 live-tools (4.0~a2-1) experimental; urgency=low
 
@@ -120,14 +120,14 @@ live-tools (4.0~a2-1) experimental; urgency=low
     namespace pollution.
   * Adding 3.0.11 changelog entries.
 
- -- Daniel Baumann <daniel@debian.org>  Thu, 27 Sep 2012 12:44:21 +0200
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Thu, 27 Sep 2012 12:44:21 +0200
 
 live-tools (4.0~a1-1) experimental; urgency=low
 
   * Adding suggests to procps.
   * Removing divertion cleanup from pre-wheezy.
 
- -- Daniel Baumann <daniel@debian.org>  Wed, 26 Sep 2012 14:54:43 +0200
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Wed, 26 Sep 2012 14:54:43 +0200
 
 live-tools (3.0.19-1) unstable; urgency=low
 
@@ -137,14 +137,14 @@ live-tools (3.0.19-1) unstable; urgency=low
   [ Ben Armstrong ]
   * Fixing spelling typo, thanks to Adam D. Barratt <adam@adam-barratt.org.uk>.
 
- -- Daniel Baumann <daniel@debian.org>  Wed, 27 Feb 2013 06:43:13 +0100
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Wed, 27 Feb 2013 06:43:13 +0100
 
 live-tools (3.0.18-1) unstable; urgency=low
 
   * Updating manpage year handling for 2013.
   * Dropping dpkg compression level.
 
- -- Daniel Baumann <daniel@debian.org>  Thu, 14 Feb 2013 19:28:54 +0100
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Thu, 14 Feb 2013 19:28:54 +0100
 
 live-tools (3.0.17-1) unstable; urgency=low
 
@@ -159,7 +159,7 @@ live-tools (3.0.17-1) unstable; urgency=low
   [ Daniel Baumann ]
   * Updating year in all copyright notices.
 
- -- Daniel Baumann <daniel@debian.org>  Wed, 02 Jan 2013 12:32:09 +0100
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Wed, 02 Jan 2013 12:32:09 +0100
 
 live-tools (3.0.16-1) unstable; urgency=low
 
@@ -176,7 +176,7 @@ live-tools (3.0.16-1) unstable; urgency=low
   * Using simpler stat call on /dev/pts in live-uptime as suggested by
     Javier Barroso <javibarroso@gmail.com> (Closes: #696173).
 
- -- Daniel Baumann <daniel@debian.org>  Mon, 17 Dec 2012 21:00:16 +0100
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Mon, 17 Dec 2012 21:00:16 +0100
 
 live-tools (3.0.15-1) unstable; urgency=low
 
@@ -186,14 +186,14 @@ live-tools (3.0.15-1) unstable; urgency=low
   [ Daniel Baumann ]
   * First pass coding style updates on live-persistence.
 
- -- Daniel Baumann <daniel@debian.org>  Mon, 10 Dec 2012 20:25:52 +0100
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Mon, 10 Dec 2012 20:25:52 +0100
 
 live-tools (3.0.14-1) unstable; urgency=low
 
   * Correcting initrd pathes in live-update-initramfs.
   * Adding dpkg-source local options.
 
- -- Daniel Baumann <daniel@debian.org>  Fri, 30 Nov 2012 16:58:53 +0100
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Fri, 30 Nov 2012 16:58:53 +0100
 
 live-tools (3.0.13-1) unstable; urgency=low
 
@@ -231,20 +231,20 @@ live-tools (3.0.13-1) unstable; urgency=low
   [ chals ]
   * Updating the French translation of the man pages.
 
- -- Daniel Baumann <daniel@debian.org>  Wed, 07 Nov 2012 15:14:24 +0100
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Wed, 07 Nov 2012 15:14:24 +0100
 
 live-tools (3.0.12-1) unstable; urgency=low
 
   * Updating to standards version 3.9.4.
 
- -- Daniel Baumann <daniel@debian.org>  Sun, 30 Sep 2012 17:10:48 +0200
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Sun, 30 Sep 2012 17:10:48 +0200
 
 live-tools (3.0.11-1) unstable; urgency=low
 
   * Moving remaining stuff from /live to /lib/live to avoid further
     namespace pollution.
 
- -- Daniel Baumann <daniel@debian.org>  Thu, 27 Sep 2012 12:35:28 +0200
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Thu, 27 Sep 2012 12:35:28 +0200
 
 live-tools (3.0.10-1) unstable; urgency=low
 
@@ -253,7 +253,7 @@ live-tools (3.0.10-1) unstable; urgency=low
   * Adding Catalan to automatic date translation in manpages.
   * Adding rewritten live-update-initramfs-uuid from live-boot.
 
- -- Daniel Baumann <daniel@debian.org>  Mon, 24 Sep 2012 10:30:48 +0200
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Mon, 24 Sep 2012 10:30:48 +0200
 
 live-tools (3.0.9-1) unstable; urgency=low
 
@@ -271,14 +271,14 @@ live-tools (3.0.9-1) unstable; urgency=low
     required anymore as the conditional alternatives usage on procps has
     been workarounded.
 
- -- Daniel Baumann <daniel@debian.org>  Thu, 16 Aug 2012 12:08:24 +0200
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Thu, 16 Aug 2012 12:08:24 +0200
 
 live-tools (3.0.8-1) unstable; urgency=low
 
   * Moving symlink from /usr/bin to /bin where live-update-initramfs
     actually resides now (Closes: #684423).
 
- -- Daniel Baumann <daniel@debian.org>  Fri, 10 Aug 2012 22:27:08 +0200
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Fri, 10 Aug 2012 22:27:08 +0200
 
 live-tools (3.0.7-1) unstable; urgency=low
 
@@ -289,13 +289,13 @@ live-tools (3.0.7-1) unstable; urgency=low
   * Covering cases of live systems where live media is not mounted on
     /live/image in live-update-initramfs.
 
- -- Daniel Baumann <daniel@debian.org>  Sun, 05 Aug 2012 13:19:15 +0200
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Sun, 05 Aug 2012 13:19:15 +0200
 
 live-tools (3.0.6-1) unstable; urgency=low
 
   * Adding pre-depends to procps and initramfs-tools (Closes: #682574).
 
- -- Daniel Baumann <daniel@debian.org>  Sat, 04 Aug 2012 15:46:46 +0200
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Sat, 04 Aug 2012 15:46:46 +0200
 
 live-tools (3.0.5-1) unstable; urgency=low
 
@@ -311,7 +311,7 @@ live-tools (3.0.5-1) unstable; urgency=low
   [ Daniel Baumann ]
   * Removing references to jessie-only live-debconfig in manpages.
 
- -- Daniel Baumann <daniel@debian.org>  Fri, 03 Aug 2012 12:37:28 +0200
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Fri, 03 Aug 2012 12:37:28 +0200
 
 live-tools (3.0.4-1) unstable; urgency=low
 
@@ -325,7 +325,7 @@ live-tools (3.0.4-1) unstable; urgency=low
     be arround before /usr is available.
   * Also diverting uptime manpage from procps (Closes: #682574).
 
- -- Daniel Baumann <daniel@debian.org>  Tue, 24 Jul 2012 21:43:48 +0200
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Tue, 24 Jul 2012 21:43:48 +0200
 
 live-tools (3.0.3-1) unstable; urgency=low
 
@@ -333,19 +333,19 @@ live-tools (3.0.3-1) unstable; urgency=low
   * Installing the uptime to live-uptime link in the package, not in
     preinst (Closes: #679704).
 
- -- Daniel Baumann <daniel@debian.org>  Thu, 05 Jul 2012 17:05:30 +0200
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Thu, 05 Jul 2012 17:05:30 +0200
 
 live-tools (3.0.2-1) unstable; urgency=low
 
   * Switching to xz compression in source and binary packages.
 
- -- Daniel Baumann <daniel@debian.org>  Wed, 27 Jun 2012 14:53:31 +0200
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Wed, 27 Jun 2012 14:53:31 +0200
 
 live-tools (3.0.1-1) unstable; urgency=low
 
   * Adding live-uptime which previously was in linux-container.
 
- -- Daniel Baumann <daniel@debian.org>  Wed, 13 Jun 2012 18:39:36 +0200
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Wed, 13 Jun 2012 18:39:36 +0200
 
 live-tools (3.0.0-1) unstable; urgency=low
 
@@ -353,7 +353,7 @@ live-tools (3.0.0-1) unstable; urgency=low
     with multiple dots in the filename.
   * Automatically translate date formats in po files.
 
- -- Daniel Baumann <daniel@debian.org>  Tue, 05 Jun 2012 13:55:13 +0200
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Tue, 05 Jun 2012 13:55:13 +0200
 
 live-tools (3.0~b1-1) unstable; urgency=low
 
@@ -380,7 +380,7 @@ live-tools (3.0~b1-1) unstable; urgency=low
   * Using common spacing for /dev/null redirection consistently in live-
     toram.
 
- -- Daniel Baumann <daniel@debian.org>  Fri, 06 Apr 2012 13:39:13 +0200
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Fri, 06 Apr 2012 13:39:13 +0200
 
 live-tools (3.0~a7-1) unstable; urgency=low
 
@@ -391,7 +391,7 @@ live-tools (3.0~a7-1) unstable; urgency=low
   * Removing todo file, content is included centrally on
     live.debian.net/devel for all components.
 
- -- Daniel Baumann <daniel@debian.org>  Sun, 18 Mar 2012 14:47:23 +0100
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Sun, 18 Mar 2012 14:47:23 +0100
 
 live-tools (3.0~a6-1) unstable; urgency=low
 
@@ -401,7 +401,7 @@ live-tools (3.0~a6-1) unstable; urgency=low
   * Updating to debhelper version 9.
   * Updating year to 2012 in copyright notices.
 
- -- Daniel Baumann <daniel@debian.org>  Mon, 06 Feb 2012 23:35:41 +0100
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Mon, 06 Feb 2012 23:35:41 +0100
 
 live-tools (3.0~a5-1) unstable; urgency=low
 
@@ -410,7 +410,7 @@ live-tools (3.0~a5-1) unstable; urgency=low
     manpages.
   * Adding empty line as seperater in makefile for consistency reasons.
 
- -- Daniel Baumann <daniel@debian.org>  Sat, 11 Jun 2011 13:23:02 +0200
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Sat, 11 Jun 2011 13:23:02 +0200
 
 live-tools (3.0~a4-1) unstable; urgency=low
 
@@ -422,14 +422,14 @@ live-tools (3.0~a4-1) unstable; urgency=low
   * Updating manpage to cover the live-system script and making the
     manpage distribution neutral.
 
- -- Daniel Baumann <daniel@debian.org>  Wed, 18 May 2011 18:35:14 +0200
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Wed, 18 May 2011 18:35:14 +0200
 
 live-tools (3.0~a3-1) unstable; urgency=low
 
   * Updating year in copyright.
   * Updating year in manpage files.
 
- -- Daniel Baumann <daniel@debian.org>  Wed, 09 Mar 2011 20:22:16 +0100
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Wed, 09 Mar 2011 20:22:16 +0100
 
 live-tools (3.0~a2-1) experimental; urgency=low
 
@@ -444,10 +444,10 @@ live-tools (3.0~a2-1) experimental; urgency=low
   * Don't hard-depend on test target in Makefile.
   * Adding recommends to debian-installer-launcher.
 
- -- Daniel Baumann <daniel@debian.org>  Mon, 06 Dec 2010 15:19:05 +0100
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Mon, 06 Dec 2010 15:19:05 +0100
 
 live-tools (3.0~a1-1) experimental; urgency=low
 
   * Initial release.
 
- -- Daniel Baumann <daniel@debian.org>  Thu, 02 Sep 2010 19:02:30 +0200
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Thu, 02 Sep 2010 19:02:30 +0200
