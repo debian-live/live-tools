@@ -20,7 +20,8 @@ then
 	exit 1
 fi
 
-if grep -qs "boot=live" /proc/cmdline
+# system is a live system and not a system in the process of being built by live-build
+if [ ! -e /.live-build ] && grep -qs "boot=live" /proc/cmdline
 then
 	if grep -qs "\/lib\/live\/mount\/medium" /proc/mounts
 	then
