@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: live-tools 4.0~a11-1\n"
-"POT-Creation-Date: 2013-03-10 22:42+0100\n"
+"POT-Creation-Date: 2013-03-11 05:22+0100\n"
 "PO-Revision-Date: 2012-07-29 23:39+0100\n"
 "Last-Translator: Carlos Zuferri <chals@altorricon.com>\n"
 "Language-Team: none\n"
@@ -23,8 +23,8 @@ msgstr "LIVE-TOOLS"
 #. type: TH
 #: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
 #, no-wrap
-msgid "2013-03-10"
-msgstr "10.03.2013"
+msgid "2013-03-11"
+msgstr "11.03.2013"
 
 #. type: TH
 #: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
@@ -35,8 +35,8 @@ msgstr "4.0~a11-1"
 #. type: TH
 #: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
 #, no-wrap
-msgid "Debian Live Project"
-msgstr "Debian Live Project"
+msgid "Live Systems Project"
+msgstr ""
 
 #. type: SH
 #: en/live-tools.7:11 en/live-update-initramfs.8:11 en/live-uptime.1:11
@@ -70,16 +70,17 @@ msgstr "ERRORS"
 
 #. type: Plain text
 #: en/live-tools.7:45 en/live-update-initramfs.8:27 en/live-uptime.1:27
+#, fuzzy
 msgid ""
 "Bugs can be reported by submitting a bugreport for the live-tools package in "
-"the Debian Bug Tracking System at E<lt>I<http://bugs.debian.org/>E<gt> or by "
-"writing a mail to the Debian Live mailing list at E<lt>I<debian-live@lists."
+"the Bug Tracking System at E<lt>I<http://bugs.debian.org/>E<gt> or by "
+"writing a mail to the Live Systems mailing list at E<lt>I<debian-live@lists."
 "debian.org>E<gt>."
 msgstr ""
 "Es pot informar sobre els errors mitjançant la presentació d'un informe "
-"d'errors sobre al paquet live-tools al Debian Bug Tracking System a "
-"E<lt>I<http://bugs.debian.org/>E<gt> o escrivint un correu a la llista de "
-"correu de Debian Live a E<lt>I<debian-live@lists.debian.org>E<gt>."
+"d'errors sobre al paquet live-tools al Bug Tracking System a E<lt>I<http://"
+"bugs.debian.org/>E<gt> o escrivint un correu a la llista de correu de Debian "
+"Live a E<lt>I<debian-live@lists.debian.org>E<gt>."
 
 #. type: SH
 #: en/live-tools.7:46 en/live-update-initramfs.8:28 en/live-uptime.1:28
@@ -132,14 +133,19 @@ msgstr "I<live-tools>(7)"
 
 #. type: Plain text
 #: en/live-update-initramfs.8:24
+#, fuzzy
+#| msgid ""
+#| "More information about live-update-initramfs and the Debian Live project "
+#| "can be found on the homepage at E<lt>I<http://live-systems.org/>E<gt> and "
+#| "in the manual at E<lt>I<http://live-systems.org/manual/>E<gt>."
 msgid ""
-"More information about live-update-initramfs and the Debian Live project can "
-"be found on the homepage at E<lt>I<http://live.debian.net/>E<gt> and in the "
-"manual at E<lt>I<http://live.debian.net/manual/>E<gt>."
+"More information about live-update-initramfs and the Live Systems project "
+"can be found on the homepage at E<lt>I<http://live-systems.org/>E<gt> and in "
+"the manual at E<lt>I<http://live-systems.org/manual/>E<gt>."
 msgstr ""
 "Es pot trobar més informació sobre live-update-initramfs i el projecte "
-"Debian Live a la pàgina web E<lt>I<http://live.debian.net/>E<gt> i al manual "
-"a E<lt>I<http://live.debian.net/manual/>E<gt>."
+"Debian Live a la pàgina web E<lt>I<http://live-systems.org/>E<gt> i al "
+"manual a E<lt>I<http://live-systems.org/manual/>E<gt>."
 
 #. type: Plain text
 #: en/live-update-initramfs.8:29
