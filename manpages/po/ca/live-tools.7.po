@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: live-tools 4.0~a12-1\n"
 "POT-Creation-Date: 2013-04-13 17:48+0300\n"
-"PO-Revision-Date: 2013-04-13 17:49+0100\n"
+"PO-Revision-Date: 2013-04-13 17:59+0100\n"
 "Last-Translator: Carlos Zuferri <chals@altorricon.com>\n"
 "Language-Team: none\n"
 "Language: ca\n"
@@ -36,7 +36,7 @@ msgstr "4.0~a12-1"
 #: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
 #, no-wrap
 msgid "Live Systems Project"
-msgstr ""
+msgstr "Projecte Live Systems"
 
 #. type: SH
 #: en/live-tools.7:11 en/live-update-initramfs.8:11 en/live-uptime.1:11
@@ -57,13 +57,9 @@ msgstr "DESCRIPCIÓ"
 
 #. type: Plain text
 #: en/live-tools.7:16
-#, fuzzy
-#| msgid ""
-#| "B<live-tools> contains additional support scripts for Debian Live systems."
 msgid "B<live-tools> contains additional support scripts for live systems."
 msgstr ""
-"B<live-tools> conté scripts addicionals de suport per als sistemes Debian "
-"Live."
+"B<live-tools> conté scripts addicionals de suport per als sistemes en viu."
 
 #. type: SH
 #: en/live-tools.7:17
@@ -124,12 +120,8 @@ msgstr "B<live-system>"
 
 #. type: Plain text
 #: en/live-tools.7:28
-#, fuzzy
-#| msgid "determines if running system is a debian-live based system."
 msgid "determines if running system is a live system."
-msgstr ""
-"determina si el sistema que s'està executant és un sistema basat en debian-"
-"live."
+msgstr "determina si el sistema que s'està executant és un sistema en viu."
 
 #. type: IP
 #: en/live-tools.7:28
@@ -188,19 +180,14 @@ msgstr "PÀGINA WEB"
 
 #. type: Plain text
 #: en/live-tools.7:42
-#, fuzzy
-#| msgid ""
-#| "More information about live-tools and the Debian Live project can be "
-#| "found on the homepage at E<lt>I<http://live-systems.org/>E<gt> and in the "
-#| "manual at E<lt>I<http://live-systems.org/manual/>E<gt>."
 msgid ""
 "More information about live-tools and the Live Systems project can be found "
 "on the homepage at E<lt>I<http://live-systems.org/>E<gt> and in the manual "
 "at E<lt>I<http://live-systems.org/manual/>E<gt>."
 msgstr ""
-"Es pot trobar més informació sobre live-tools i el projecte Debian Live a la "
-"pàgina web E<lt>I<http://live-systems.org/>E<gt> i al manual a E<lt>I<http://"
-"live-systems.org/manual/>E<gt>."
+"Es pot trobar més informació sobre live-tools i el projecte Live Systems a "
+"la pàgina web E<lt>I<http://live-systems.org/>E<gt> i al manual a "
+"E<lt>I<http://live-systems.org/manual/>E<gt>."
 
 #. type: SH
 #: en/live-tools.7:43 en/live-update-initramfs.8:25 en/live-uptime.1:25
@@ -210,17 +197,16 @@ msgstr "ERRORS"
 
 #. type: Plain text
 #: en/live-tools.7:45 en/live-update-initramfs.8:27 en/live-uptime.1:27
-#, fuzzy
 msgid ""
 "Bugs can be reported by submitting a bugreport for the live-tools package in "
 "the Bug Tracking System at E<lt>I<http://bugs.debian.org/>E<gt> or by "
 "writing a mail to the Live Systems mailing list at E<lt>I<debian-live@lists."
 "debian.org>E<gt>."
 msgstr ""
-"Es pot informar sobre els errors mitjançant la presentació d'un informe "
-"d'errors sobre al paquet live-tools al Bug Tracking System a E<lt>I<http://"
-"bugs.debian.org/>E<gt> o escrivint un correu a la llista de correu de Debian "
-"Live a E<lt>I<debian-live@lists.debian.org>E<gt>."
+"Es pot informar de les errades mitjançant la presentació d'un informe "
+"d'errors sobre al paquet live-tools al Sistema de Seguiment d'Errors a "
+"E<lt>I<http://bugs.debian.org/>E<gt> o escrivint un correu electrònic a la "
+"llista de correu de Live Systems a E<lt>I<debian-live@lists.debian.org>E<gt>."
 
 #. type: SH
 #: en/live-tools.7:46 en/live-update-initramfs.8:28 en/live-uptime.1:28
