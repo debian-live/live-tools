@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: live-tools 4.0~a12-1\n"
 "POT-Creation-Date: 2013-04-13 17:48+0300\n"
-"PO-Revision-Date: 2013-04-13 17:50+0100\n"
+"PO-Revision-Date: 2013-04-13 17:43+0100\n"
 "Last-Translator: Carlos Zuferri <chals@altorricon.com>\n"
 "Language-Team: none\n"
 "Language: fr\n"
@@ -37,7 +37,7 @@ msgstr "4.0~a12-1"
 #: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
 #, no-wrap
 msgid "Live Systems Project"
-msgstr ""
+msgstr "Projet Debian Live"
 
 #. type: SH
 #: en/live-tools.7:11 en/live-update-initramfs.8:11 en/live-uptime.1:11
@@ -58,13 +58,9 @@ msgstr "DESCRIPTION"
 
 #. type: Plain text
 #: en/live-tools.7:16
-#, fuzzy
-#| msgid ""
-#| "B<live-tools> contains additional support scripts for Debian Live systems."
 msgid "B<live-tools> contains additional support scripts for live systems."
 msgstr ""
-"B<live-tools> contient des scripts de support supplémentaires pour les "
-"systèmes Debian Live."
+"B<live-tools> contient des scripts supplémentaires pour les systèmes live."
 
 #. type: SH
 #: en/live-tools.7:17
@@ -124,11 +120,8 @@ msgstr "B<live-system>"
 
 #. type: Plain text
 #: en/live-tools.7:28
-#, fuzzy
-#| msgid "determines if running system is a debian-live based system."
 msgid "determines if running system is a live system."
-msgstr ""
-"détermine si le système en exécution est un système basé sur debian-live."
+msgstr "détermine si le système en exécution est un système live."
 
 #. type: IP
 #: en/live-tools.7:28
@@ -187,17 +180,12 @@ msgstr "PAGE D'ACCUEIL"
 
 #. type: Plain text
 #: en/live-tools.7:42
-#, fuzzy
-#| msgid ""
-#| "More information about live-tools and the Debian Live project can be "
-#| "found on the homepage at E<lt>I<http://live-systems.org/>E<gt> and in the "
-#| "manual at E<lt>I<http://live-systems.org/manual/>E<gt>."
 msgid ""
 "More information about live-tools and the Live Systems project can be found "
 "on the homepage at E<lt>I<http://live-systems.org/>E<gt> and in the manual "
 "at E<lt>I<http://live-systems.org/manual/>E<gt>."
 msgstr ""
-"Plus d'informations sur live-tools et le projet Debian Live peuvent être "
+"Plus d'informations sur live-tools et le projet Live Systems peuvent être "
 "trouvées sur la page E<lt>I<http://live-systems.org/>E<gt> et dans le manuel "
 "sur E<lt>I<http://live-systems.org/manual/>E<gt>."
 
@@ -209,17 +197,16 @@ msgstr "BOGUES"
 
 #. type: Plain text
 #: en/live-tools.7:45 en/live-update-initramfs.8:27 en/live-uptime.1:27
-#, fuzzy
 msgid ""
 "Bugs can be reported by submitting a bugreport for the live-tools package in "
 "the Bug Tracking System at E<lt>I<http://bugs.debian.org/>E<gt> or by "
 "writing a mail to the Live Systems mailing list at E<lt>I<debian-live@lists."
 "debian.org>E<gt>."
 msgstr ""
-"Les bogues peuvent être signalés en soumettant un rapport de bogue à propos "
-"du paquet live-tools via le Bug Tracking System sur E<lt>I<http://bugs."
-"debian.org/>E<gt> ou en envoyant un mail à la liste de diffusion Debian Live "
-"sur E<lt>I<debian-live@lists.debian.org>E<gt>"
+"Les bogues peuvent être soumis dans le système de gestion des bogues contre "
+"le paquet live-tools sur E<lt>I<http://bugs.debian.org/>E<gt> ou en envoyant "
+"un courrier électronique à la liste de diffusion Live Systems sur "
+"E<lt>I<debian-live@lists.debian.org>E<gt>"
 
 #. type: SH
 #: en/live-tools.7:46 en/live-update-initramfs.8:28 en/live-uptime.1:28
