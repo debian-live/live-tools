@@ -1,3 +1,13 @@
+live-tools (3.0.20-1) unstable; urgency=low
+
+  * Detect being run in a live system being built on a live system by
+    looking for the /.live-build handle provided by live-build in live-
+    update-initramfs.
+  * Correcting symlink to point to the correct section for live-update-
+    initramfs manpage (Closes: #706100).
+
+ -- Daniel Baumann <daniel@debian.org>  Thu, 25 Apr 2013 12:53:45 +0200
+
 live-tools (3.0.19-1) unstable; urgency=low
 
   [ Daniel Baumann ]
