@@ -6,7 +6,7 @@
 
 # initramfs-tools: update-initramfs
 /bin/live-update-initramfs			/usr/sbin/update-initramfs
-/usr/share/man/man7/live-update-initramfs.7.gz	/usr/share/man/man8/update-initramfs.8.gz
+/usr/share/man/man8/live-update-initramfs.8.gz	/usr/share/man/man8/update-initramfs.8.gz
 
 # procps: uptime
 /bin/live-uptime				/usr/bin/uptime
