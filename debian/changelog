@@ -1,3 +1,18 @@
+live-tools (4.0~a13-1) experimental; urgency=low
+
+  [ chals ]
+  * Updating dates in man pages.
+  * Updating Catalan translation of man pages.
+  * Updating Spanish translation of man pages.
+  * Updating French translation of man pages.
+
+  [ Daniel Baumann ]
+  * Correcting symlink to point to the correct section for live-update-
+    initramfs manpage (Closes: #706100).
+  * Adding 3.0.20-1 changelog entries.
+
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Mon, 06 May 2013 21:33:57 +0200
+
 live-tools (4.0~a12-1) experimental; urgency=low
 
   * Debranding package for derivatives.
