@@ -6,7 +6,7 @@
 .\" under certain conditions; see COPYING for details.
 .\"
 .\"
-.TH LIVE\-TOOLS 7 2012\-09\-27 4.0~a2-1 "Debian Live Project"
+.TH LIVE\-TOOLS 7 2012\-11\-07 4.0~a3-1 "Debian Live Project"
 
 .SH NAME
 \fBlive\-tools\fR \- System Support Scripts
@@ -17,16 +17,16 @@
 .SH TOOLS
 \fBlive\-tools\fR currently contains the following tools.
 
-.IP "\fBlive\-update\-initramfs\fR" 4
-writes out updated initramfs images to the live media.
+.IP "\fBlive\-update\-initramfs\fR(8)" 4
+writes out updated kernel and initrd images to the live media. This wrapper replaces the update\-initramfs command provided by the initramfs\-tools package.
 .IP "\fBlive\-update\-initramfs\-uuid\fR" 4
 updates UUID in an existing initramfs image.
 .IP "\fBlive\-toram\fR" 4
 copies running system to RAM in order to eject the live media.
 .IP "\fBlive\-system\fR" 4
 determines if running system is a debian-live based system.
-.IP "\fBlive\-uptime\fR" 4
-tells how long the system has been running (works with LXC).
+.IP "\fBlive\-uptime\fR(1)" 4
+tells how long the system has been running (works with LXC). This wrapper replaces the uptime command provided by the procps package.
 
 .SH SEE ALSO
 \fIlive\-boot\fR(7)

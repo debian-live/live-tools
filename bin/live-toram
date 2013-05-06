@@ -23,16 +23,16 @@ done
 # Assemble filesystems
 if [ -z "${_MODULE}" ]
 then
-	_FILESYSTEMS="/lib/live/image/live/filesystem.squashfs"
+	_FILESYSTEMS="/lib/live/mount/medium/live/filesystem.squashfs"
 else
 	for _FILESYSTEM in _MODULE
 	do
-		_FILESYSTEMS="${_FILESYSTEMS} /lib/live/image/live/${_FILESYSTEM}"
+		_FILESYSTEMS="${_FILESYSTEMS} /lib/live/mount/medium/live/${_FILESYSTEM}"
 	done
 fi
 
 # Exit if system is not debian-live based system
-if [ ! -d /lib/live/image ]
+if [ ! -d /lib/live/mount/medium ]
 then
 	echo "E: live-toram only works on Debian Live based systems."
 
@@ -77,15 +77,15 @@ case ${@} in
 		if [ $_MEMORY -lt $_SIZE ]
 		then
 			echo "E: not enough free memory available."
-			echo "I: images need ${_SIZE}kB, free memory is ${_MEMORY}kB."
+			echo "I: filesystems need ${_SIZE}kB, free memory is ${_MEMORY}kB."
 
 			exit 1
 		fi
 		;;
 esac
 
-# Copying image to memory
-echo "P: Copying images to memory."
+# Copying filesystems to memory
+echo "P: Copying filesystems to memory."
 echo "I: This may take a while..."
 
 # FIXME: doesn't work with multiple filesystems
@@ -109,12 +109,12 @@ EOF
 done
 
 # Unmounting live media
-_DEVICE="$(awk '/\/lib\/live\/image / { print $1 }' /proc/mounts)"
+_DEVICE="$(awk '/\/lib\/live\/medium / { print $1 }' /proc/mounts)"
 
-if [ -d /lib/live/image ]
+if [ -d /lib/live/mount/medium ]
 then
-	umount /lib/live/image
-	rmdir --ignore-fail-on-non-empty /lib/live/image || true
+	umount /lib/live/mount/medium
+	rmdir --ignore-fail-on-non-empty /lib/live/mount/medium || true
 fi
 
 # Ejecting live media if it is not an optical device

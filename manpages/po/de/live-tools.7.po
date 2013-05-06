@@ -1,11 +1,11 @@
-# German translations for live-tools package
-# Copyright (C) 2006-2012 Daniel Baumann <daniel@debian.org>
+# German translations for live-tools
+# 2006-2012 Daniel Baumann <daniel@debian.org>
 # This file is distributed under the same license as the live-tools package.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: live-tools 4.0~a2-1\n"
-"POT-Creation-Date: 2012-09-27 12:41+0300\n"
+"Project-Id-Version: live-tools 4.0~a3-1\n"
+"POT-Creation-Date: 2012-11-07 15:44+0100\n"
 "PO-Revision-Date: 2010-05-24 09:59+0300\n"
 "Last-Translator: Daniel Baumann <daniel@debian.org>\n"
 "Language-Team: none\n"
@@ -16,31 +16,31 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. type: TH
-#: en/live-tools.7:9
+#: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
 #, no-wrap
 msgid "LIVE-TOOLS"
 msgstr "LIVE-TOOLS"
 
 #. type: TH
-#: en/live-tools.7:9
+#: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
 #, no-wrap
-msgid "2012-09-27"
-msgstr "27.09.2012"
+msgid "2012-11-07"
+msgstr "07.11.2012"
 
 #. type: TH
-#: en/live-tools.7:9
+#: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
 #, no-wrap
-msgid "4.0~a2-1"
-msgstr "4.0~a2-1"
+msgid "4.0~a3-1"
+msgstr "4.0~a3-1"
 
 #. type: TH
-#: en/live-tools.7:9
+#: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
 #, no-wrap
 msgid "Debian Live Project"
 msgstr "Debian Live Projekt"
 
 #. type: SH
-#: en/live-tools.7:11
+#: en/live-tools.7:11 en/live-update-initramfs.8:11 en/live-uptime.1:11
 #, no-wrap
 msgid "NAME"
 msgstr "NAME"
@@ -51,7 +51,7 @@ msgid "B<live-tools> - System Support Scripts"
 msgstr "B<live-tools> - System Support Skripte"
 
 #. type: SH
-#: en/live-tools.7:14
+#: en/live-tools.7:14 en/live-update-initramfs.8:14 en/live-uptime.1:14
 #, no-wrap
 msgid "DESCRIPTION"
 msgstr "BESCHREIBUNG"
@@ -76,13 +76,18 @@ msgstr "B<live-tools> enthält derzeit folgende Tools."
 #. type: IP
 #: en/live-tools.7:20
 #, no-wrap
-msgid "B<live-update-initramfs>"
-msgstr "B<live-update-initramfs>"
+msgid "B<live-update-initramfs>(8)"
+msgstr "B<live-update-initramfs>(8)"
 
 #. type: Plain text
 #: en/live-tools.7:22
-msgid "writes out updated initramfs images to the live media."
-msgstr "schreibt aktualisierte initramfs Images auf das Live Medium."
+msgid ""
+"writes out updated kernel and initrd images to the live media. This wrapper "
+"replaces the update-initramfs command provided by the initramfs-tools "
+"package."
+msgstr ""
+"schreibt aktualisierte Kernel und Initrd Images auf das Live Medium. Dieser "
+"Wrapper ersetzt den update-initramfs Befehl des initramfs-tools Paketes."
 
 #. type: IP
 #: en/live-tools.7:22
@@ -120,18 +125,20 @@ msgstr "bestimmt ob das laufende System ein Debian Live basiertes System ist."
 #. type: IP
 #: en/live-tools.7:28
 #, no-wrap
-msgid "B<live-uptime>"
-msgstr "B<live-uptime>"
+msgid "B<live-uptime>(1)"
+msgstr "B<live-uptime>(1)"
 
 #. type: Plain text
 #: en/live-tools.7:30
-msgid "tells how long the system has been running (works with LXC)."
+msgid ""
+"tells how long the system has been running (works with LXC). This wrapper "
+"replaces the uptime command provided by the procps package."
 msgstr ""
 "gibt die aktuelle Dauer wie lange das System läuft aus (funktioniert mit "
-"LXC)."
+"LXC). Dieser Wrapper ersetzt den uptime Befehl des procps Paketes."
 
 #. type: SH
-#: en/live-tools.7:31
+#: en/live-tools.7:31 en/live-update-initramfs.8:19 en/live-uptime.1:19
 #, no-wrap
 msgid "SEE ALSO"
 msgstr "SIEHE AUCH"
@@ -152,7 +159,7 @@ msgid "I<live-config>(7)"
 msgstr "I<live-config>(7)"
 
 #. type: SH
-#: en/live-tools.7:38
+#: en/live-tools.7:38 en/live-update-initramfs.8:22 en/live-uptime.1:22
 #, no-wrap
 msgid "HOMEPAGE"
 msgstr "HOMEPAGE"
@@ -169,13 +176,13 @@ msgstr ""
 "unter E<lt>I<http://live.debian.net/manual/>E<gt> gefunden werden."
 
 #. type: SH
-#: en/live-tools.7:41
+#: en/live-tools.7:41 en/live-update-initramfs.8:25 en/live-uptime.1:25
 #, no-wrap
 msgid "BUGS"
 msgstr "FEHLER"
 
 #. type: Plain text
-#: en/live-tools.7:43
+#: en/live-tools.7:43 en/live-update-initramfs.8:27 en/live-uptime.1:27
 msgid ""
 "Bugs can be reported by submitting a bugreport for the live-tools package in "
 "the Debian Bug Tracking System at E<lt>I<http://bugs.debian.org/>E<gt> or by "
@@ -189,7 +196,7 @@ msgstr ""
 "werden."
 
 #. type: SH
-#: en/live-tools.7:44
+#: en/live-tools.7:44 en/live-update-initramfs.8:28 en/live-uptime.1:28
 #, no-wrap
 msgid "AUTHOR"
 msgstr "AUTOR"

@@ -1,0 +1,50 @@
+.\" live-tools(7) - System Support Scripts
+.\" Copyright (C) 2006-2012 Daniel Baumann <daniel@debian.org>
+.\"
+.\" This program comes with ABSOLUTELY NO WARRANTY; for details see COPYING.
+.\" This is free software, and you are welcome to redistribute it
+.\" under certain conditions; see COPYING for details.
+.\"
+.\"
+.\"*******************************************************************
+.\"
+.\" This file was generated with po4a. Translate the source file.
+.\"
+.\"*******************************************************************
+.TH LIVE\-TOOLS 8 07.11.2012 4.0~a3\-1 "Projet Debian Live"
+
+.SH NOM
+\fBlive\-update\-initramfs\fP \- écrit ​​des images mises à jour du noyau et de
+l'initrd sur les supports live.
+
+.SH DESCRIPTION
+\fBlive\-update\-initramfs\fP est un wrapper qui remplace la commande
+update\-initramfs fournie par le paquet initramfs\-tools.
+.PP
+Dans les systèmes live avec une couche de persistance,
+\fBlive\-update\-initramfs\fP écrira des images mises à jour du noyau et de
+l'initrd sur les supports live. Cela permet les mises à niveau du noyau au
+sein du système live à l'aide d'apt\-get sans avoir besoin de synchroniser
+manuellement le noyau et l'initrd pour le support
+live. \fBlive\-update\-initramfs\fP passe tous les arguments de ligne de commande
+à la commande originale update\-initramfs; voir
+\fIupdate\-initramfs.orig.initramfs\-tools\fP(8) pour plus d'informations sur les
+options de la commande originale update\-initramfs.
+
+.SH "VOIR AUSSI"
+\fIlive\-tools\fP(7)
+
+.SH "PAGE D'ACCUEIL"
+Plus d'informations sur live\-update\-initramfs et le projet Debian Live
+peuvent être trouvées sur la page <\fIhttp://live.debian.net/\fP> et
+dans le manuel sur <\fIhttp://live.debian.net/manual/\fP>.
+
+.SH BOGUES
+Les bogues peuvent être signalés en soumettant un rapport de bogue à propos
+du paquet live\-tools via le Debian Bug Tracking System sur
+<\fIhttp://bugs.debian.org/\fP> ou en envoyant un mail à la liste de
+diffusion Debian Live sur <\fIdebian\-live@lists.debian.org\fP>
+
+.SH AUTEUR
+live\-update\-initramfs a été conçu par Daniel Baumann
+<\fIdaniel@debian.org\fP>.
