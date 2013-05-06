@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: live-config VERSION\n"
-"POT-Creation-Date: 2012-12-10 20:29+0100\n"
+"POT-Creation-Date: 2012-12-17 21:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,13 +25,13 @@ msgstr ""
 #. type: TH
 #: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
 #, no-wrap
-msgid "2012-12-10"
+msgid "2012-12-17"
 msgstr ""
 
 #. type: TH
 #: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
 #, no-wrap
-msgid "4.0~a5-1"
+msgid "4.0~a6-1"
 msgstr ""
 
 #. type: TH
@@ -134,35 +134,46 @@ msgid ""
 "replaces the uptime command provided by the procps package."
 msgstr ""
 
+#. type: IP
+#: en/live-tools.7:30
+#, no-wrap
+msgid "B<live-persistence>(1)"
+msgstr ""
+
+#. type: Plain text
+#: en/live-tools.7:32
+msgid "switches a non-persistent system to using persistence at runtime."
+msgstr ""
+
 #. type: SH
-#: en/live-tools.7:31 en/live-update-initramfs.8:19 en/live-uptime.1:19
+#: en/live-tools.7:33 en/live-update-initramfs.8:19 en/live-uptime.1:19
 #, no-wrap
 msgid "SEE ALSO"
 msgstr ""
 
 #. type: Plain text
-#: en/live-tools.7:33
+#: en/live-tools.7:35
 msgid "I<live-boot>(7)"
 msgstr ""
 
 #. type: Plain text
-#: en/live-tools.7:35
+#: en/live-tools.7:37
 msgid "I<live-build>(7)"
 msgstr ""
 
 #. type: Plain text
-#: en/live-tools.7:37
+#: en/live-tools.7:39
 msgid "I<live-config>(7)"
 msgstr ""
 
 #. type: SH
-#: en/live-tools.7:38 en/live-update-initramfs.8:22 en/live-uptime.1:22
+#: en/live-tools.7:40 en/live-update-initramfs.8:22 en/live-uptime.1:22
 #, no-wrap
 msgid "HOMEPAGE"
 msgstr ""
 
 #. type: Plain text
-#: en/live-tools.7:40
+#: en/live-tools.7:42
 msgid ""
 "More information about live-tools and the Debian Live project can be found "
 "on the homepage at E<lt>I<http://live.debian.net/>E<gt> and in the manual at "
@@ -170,13 +181,13 @@ msgid ""
 msgstr ""
 
 #. type: SH
-#: en/live-tools.7:41 en/live-update-initramfs.8:25 en/live-uptime.1:25
+#: en/live-tools.7:43 en/live-update-initramfs.8:25 en/live-uptime.1:25
 #, no-wrap
 msgid "BUGS"
 msgstr ""
 
 #. type: Plain text
-#: en/live-tools.7:43 en/live-update-initramfs.8:27 en/live-uptime.1:27
+#: en/live-tools.7:45 en/live-update-initramfs.8:27 en/live-uptime.1:27
 msgid ""
 "Bugs can be reported by submitting a bugreport for the live-tools package in "
 "the Debian Bug Tracking System at E<lt>I<http://bugs.debian.org/>E<gt> or by "
@@ -185,13 +196,13 @@ msgid ""
 msgstr ""
 
 #. type: SH
-#: en/live-tools.7:44 en/live-update-initramfs.8:28 en/live-uptime.1:28
+#: en/live-tools.7:46 en/live-update-initramfs.8:28 en/live-uptime.1:28
 #, no-wrap
 msgid "AUTHOR"
 msgstr ""
 
 #. type: Plain text
-#: en/live-tools.7:45
+#: en/live-tools.7:47
 msgid ""
 "live-tools was written by Daniel Baumann E<lt>I<daniel@debian.org>E<gt>."
 msgstr ""
