@@ -31,10 +31,10 @@ else
 	done
 fi
 
-# Exit if system is not debian-live based system
+# Exit if system is not live system
 if [ ! -d /lib/live/mount/medium ]
 then
-	echo "E: live-toram only works on Debian Live based systems."
+	echo "E: live-toram only works on live systems."
 
 	exit 1
 fi

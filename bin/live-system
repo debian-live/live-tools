@@ -25,7 +25,7 @@ exec 1>&2
 
 case "${1}" in
 	-h|--help|-u|--usage)
-		echo "live-system - determine if running system is a debian-live based system"
+		echo "live-system - determine if running system is a live system"
 		echo
 		echo "Usage: ${0} [-v|--verbose]"
 
@@ -37,7 +37,7 @@ case "${1}" in
 		;;
 esac
 
-[ "${_VERBOSE}" ] && echo -n "Checking for debian-live based system..."
+[ "${_VERBOSE}" ] && echo -n "Checking for live system..."
 
 if [ ! -e /proc/cmdline ]
 then
@@ -49,7 +49,7 @@ fi
 
 if grep -qs "boot=live" /proc/cmdline
 then
-	[ "${_VERBOSE}" ] && echo -n " yes, this is a debian-live based system"
+	[ "${_VERBOSE}" ] && echo -n " yes, this is a live system"
 
 	if [ -d /lib/live/mount/medium/install ]
 	then
@@ -65,7 +65,7 @@ then
 
 	exit 0
 else
-	[ "${_VERBOSE}" ] && echo " no, this is not a debian-live based system."
+	[ "${_VERBOSE}" ] && echo " no, this is not a live system."
 
 	exit 1
 fi
