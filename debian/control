@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Debian Live Project <debian-live@lists.debian.org>
 Uploaders: Daniel Baumann <daniel@debian.org>
 Build-Depends: debhelper (>= 9)
-Standards-Version: 3.9.4
+Standards-Version: 3.9.3
 Homepage: http://live.debian.net/devel/live-tools/
 Vcs-Browser: http://live.debian.net/gitweb/?p=live-tools.git
 Vcs-Git: git://live.debian.net/git/live-tools.git
@@ -12,6 +12,6 @@ Vcs-Git: git://live.debian.net/git/live-tools.git
 Package: live-tools
 Architecture: all
 Depends: ${misc:Depends}
-Suggests: debian-installer-launcher, perl, rsync
-Description: Live System Support Scripts
- live-tools contains additional support scripts for live systems.
+Suggests: debian-installer-launcher, perl, procps, rsync, uuid-runtime
+Description: Debian Live - System Support Scripts
+ live-tools contains additional support scripts for Debian Live systems.

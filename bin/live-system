@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ## live-tools(7) - System Support Scripts
-## Copyright (C) 2006-2013 Daniel Baumann <daniel@debian.org>
+## Copyright (C) 2006-2012 Daniel Baumann <daniel@debian.org>
 ##
 ## This program is free software: you can redistribute it and/or modify
 ## it under the terms of the GNU General Public License as published by
@@ -51,9 +51,9 @@ if grep -qs "boot=live" /proc/cmdline
 then
 	[ "${_VERBOSE}" ] && echo -n " yes, this is a debian-live based system"
 
-	if [ -d /lib/live/mount/medium/install ]
+	if [ -d /live/image/install ]
 	then
-		if ls /lib/live/mount/medium/install/pool/main/l/live-installer/live-installer_*.udeb > /dev/null 2>&1
+		if ls /live/image/install/pool/main/l/live-installer/live-installer_*.udeb > /dev/null 2>&1
 		then
 			[ "${_VERBOSE}" ] && echo " with debian-installer (live) support."
 		else

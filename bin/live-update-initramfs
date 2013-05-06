@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ## live-tools(7) - System Support Scripts
-## Copyright (C) 2006-2013 Daniel Baumann <daniel@debian.org>
+## Copyright (C) 2006-2012 Daniel Baumann <daniel@debian.org>
 ##
 ## This program comes with ABSOLUTELY NO WARRANTY; for details see COPYING.
 ## This is free software, and you are welcome to redistribute it
@@ -20,27 +20,26 @@ then
 	exit 1
 fi
 
-# system is a live system and not a system in the process of being built by live-build
-if [ ! -e /.live-build ] && grep -qs "boot=live" /proc/cmdline
+if grep -qs "boot=live" /proc/cmdline
 then
-	if grep -qs "\/lib\/live\/mount\/medium" /proc/mounts
+	if grep -qs "\/live\/image" /proc/mounts
 	then
-		# live system with live media mounted as /lib/live/mount/medium
-		_DEVICE="$(awk '/\/lib\/live\/mount\/medium/ { print $1 }' /proc/mounts)"
+		# live system with live media mounted as /live/image
+		_DEVICE="$(awk '/\/live\/image/ { print $1 }' /proc/mounts)"
 
 		mount -o remount,rw ${_DEVICE} > /dev/null 2>&1 || true
 
-		if touch /lib/live/mount/medium/.test > /dev/null 2>&1
+		if touch /live/image/.test > /dev/null 2>&1
 		then
 			_READ_WRITE="true"
 
-			rm -f /lib/live/mount/medium/.test
+			rm -f /live/image/.test
 		else
 			_READ_WRITE="false"
 		fi
 	else
-		# live system without live media mounted as /lib/live/mount/medium
-		echo "I: update-initramfs is disabled (live system is running without media mounted on /lib/live/mount/medium)."
+		# live system without live media mounted as /live/image
+		echo "I: update-initramfs is disabled (live system is running without media mounted on /live/image)."
 
 		exit 0
 	fi
@@ -57,28 +56,28 @@ case "${_READ_WRITE}" in
 		/usr/sbin/update-initramfs.orig.initramfs-tools "${@}"
 
 		# FIXME: needs to exclude initrd backup files
-		if [ "$(ls /boot/initrd.img-* | wc -l)" -gt 1 ]
+		if [ "$(ls initrd.img-* | wc -l)" -gt 1 ]
 		then
 			_NUMBER="1"
 
 			for _INITRD in /boot/initrd.img-*
 			do
-				_VERSION="$(basename ${_INITRD} | sed -e 's|initrd.img-||')"
+				_VERSION="$(echo ${_INITRD} | sed -e 's|initrd.img-||')"
 
-				cp /boot/vmlinuz-${_VERSION} /lib/live/mount/medium/live/vmlinuz${_NUMBER}.new
-				cp /boot/initrd.img-${_VERSION} /lib/live/mount/medium/live/initrd${_NUMBER}.img.new
+				cp /boot/vmlinuz-${_VERSION} /live/image/live/vmlinuz${_NUMBER}.new
+				cp /boot/initrd.img-${_VERSION} /live/image/live/initrd${_NUMBER}.img.new
 
-				mv /lib/live/mount/medium/live/vmlinuz${_NUMBER}.new /lib/live/mount/medium/live/vmlinuz${_NUMBER}
-				mv /lib/live/mount/medium/live/initrd${_NUMBER}.img.new /lib/live/mount/medium/live/initrd${_NUMBER}.img
+				mv /live/image/live/vmlinuz${_NUMBER}.new /live/image/live/vmlinuz${_NUMBER}
+				mv /live/image/live/initrd${_NUMBER}.img.new /live/image/live/initrd${_NUMBER}.img
 
 				_NUMBER="$((${_NUMBER} + 1))"
 			done
 		else
-			cp /boot/vmlinuz-* /lib/live/mount/medium/live/vmlinuz.new
-			cp /boot/initrd.img-* /lib/live/mount/medium/live/initrd.img.new
+			cp /boot/vmlinuz-* /live/image/live/vmlinuz.new
+			cp /boot/initrd.img-* /live/image/live/initrd.img.new
 
-			mv /lib/live/mount/medium/live/vmlinuz.new /lib/live/mount/medium/live/vmlinuz
-			mv /lib/live/mount/medium/live/initrd.img.new /lib/live/mount/medium/live/initrd.img
+			mv /live/image/live/vmlinuz.new /live/image/live/vmlinuz
+			mv /live/image/live/initrd.img.new /live/image/live/initrd.img
 		fi
 		;;
 

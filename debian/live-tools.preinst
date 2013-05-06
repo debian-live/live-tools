@@ -4,15 +4,6 @@ set -e
 
 case "${1}" in
 	install|upgrade)
-		# removing old diversions from live-tools <= 3.0.8
-		_PACKAGE="$(dpkg-divert --listpackage /usr/bin/uptime)"
-		_DIVERSION="$(dpkg-divert --truename /usr/bin/uptime)"
-
-		if [ "${_PACKAGE}" = "live-tools" ] && [ "${_DIVERSION}" = "/usr/bin/uptime.procps" ]
-		then
-			dpkg-divert --package live-tools --quiet --remove --divert /usr/bin/uptime.procps /usr/bin/uptime
-		fi
-
 		# initramfs-tools: update-initramfs
 		dpkg-divert --package live-tools --quiet --add --rename --divert /usr/sbin/update-initramfs.orig.initramfs-tools /usr/sbin/update-initramfs
 		dpkg-divert --package live-tools --quiet --add --rename --divert /usr/share/man/man8/update-initramfs.orig.initramfs-tools.8.gz /usr/share/man/man8/update-initramfs.8.gz
@@ -20,12 +11,6 @@ case "${1}" in
 		# procps: uptime
 		dpkg-divert --package live-tools --quiet --add --rename --divert /usr/bin/uptime.orig.procps /usr/bin/uptime
 		dpkg-divert --package live-tools --quiet --add --rename --divert /usr/share/man/man1/uptime.orig.procps.1.gz /usr/share/man/man1/uptime.1.gz
-
-		# renaming old diversions from live-tools <= 3.0.8
-		if [ "${_PACKAGE}" = "live-tools" ] && [ "${_DIVERSION}" = "/usr/bin/uptime.procps" ] && [ -e /usr/bin/uptime.procps ]
-		then
-			mv /usr/bin/uptime.procps /usr/bin/uptime.orig.procps
-		fi
 		;;
 
 	abort-upgrade)

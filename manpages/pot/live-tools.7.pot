@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: live-config VERSION\n"
-"POT-Creation-Date: 2013-04-25 12:52+0300\n"
+"POT-Creation-Date: 2012-09-26 14:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,31 +17,31 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: TH
-#: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
+#: en/live-tools.7:9
 #, no-wrap
 msgid "LIVE-TOOLS"
 msgstr ""
 
 #. type: TH
-#: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
+#: en/live-tools.7:9
 #, no-wrap
-msgid "2013-04-25"
+msgid "2012-09-26"
 msgstr ""
 
 #. type: TH
-#: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
+#: en/live-tools.7:9
 #, no-wrap
-msgid "3.0.20-1"
+msgid "4.0~a1-1"
 msgstr ""
 
 #. type: TH
-#: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
+#: en/live-tools.7:9
 #, no-wrap
 msgid "Debian Live Project"
 msgstr ""
 
 #. type: SH
-#: en/live-tools.7:11 en/live-update-initramfs.8:11 en/live-uptime.1:11
+#: en/live-tools.7:11
 #, no-wrap
 msgid "NAME"
 msgstr ""
@@ -52,7 +52,7 @@ msgid "B<live-tools> - System Support Scripts"
 msgstr ""
 
 #. type: SH
-#: en/live-tools.7:14 en/live-update-initramfs.8:14 en/live-uptime.1:14
+#: en/live-tools.7:14
 #, no-wrap
 msgid "DESCRIPTION"
 msgstr ""
@@ -77,65 +77,60 @@ msgstr ""
 #. type: IP
 #: en/live-tools.7:20
 #, no-wrap
-msgid "B<live-update-initramfs>(8)"
+msgid "B<live-update-initramfs>"
 msgstr ""
 
 #. type: Plain text
 #: en/live-tools.7:22
-msgid ""
-"writes out updated kernel and initrd images to the live media. This wrapper "
-"replaces the update-initramfs command provided by the initramfs-tools "
-"package."
+msgid "writes out updated initramfs images to the live media."
 msgstr ""
 
 #. type: IP
 #: en/live-tools.7:22
+#, no-wrap
+msgid "B<live-update-initramfs-uuid>"
+msgstr ""
+
+#. type: Plain text
+#: en/live-tools.7:24
+msgid "updates UUID in an existing initramfs image."
+msgstr ""
+
+#. type: IP
+#: en/live-tools.7:24
 #, no-wrap
 msgid "B<live-toram>"
 msgstr ""
 
 #. type: Plain text
-#: en/live-tools.7:24
+#: en/live-tools.7:26
 msgid "copies running system to RAM in order to eject the live media."
 msgstr ""
 
 #. type: IP
-#: en/live-tools.7:24
+#: en/live-tools.7:26
 #, no-wrap
 msgid "B<live-system>"
 msgstr ""
 
 #. type: Plain text
-#: en/live-tools.7:26
+#: en/live-tools.7:28
 msgid "determines if running system is a debian-live based system."
 msgstr ""
 
 #. type: IP
-#: en/live-tools.7:26
-#, no-wrap
-msgid "B<live-uptime>(1)"
-msgstr ""
-
-#. type: Plain text
-#: en/live-tools.7:28
-msgid ""
-"tells how long the system has been running (works with LXC). This wrapper "
-"replaces the uptime command provided by the procps package."
-msgstr ""
-
-#. type: IP
 #: en/live-tools.7:28
 #, no-wrap
-msgid "B<live-persistence>(1)"
+msgid "B<live-uptime>"
 msgstr ""
 
 #. type: Plain text
 #: en/live-tools.7:30
-msgid "switches a non-persistent system to using persistence at runtime."
+msgid "tells how long the system has been running (works with LXC)."
 msgstr ""
 
 #. type: SH
-#: en/live-tools.7:31 en/live-update-initramfs.8:19 en/live-uptime.1:19
+#: en/live-tools.7:31
 #, no-wrap
 msgid "SEE ALSO"
 msgstr ""
@@ -156,7 +151,7 @@ msgid "I<live-config>(7)"
 msgstr ""
 
 #. type: SH
-#: en/live-tools.7:38 en/live-update-initramfs.8:22 en/live-uptime.1:22
+#: en/live-tools.7:38
 #, no-wrap
 msgid "HOMEPAGE"
 msgstr ""
@@ -170,13 +165,13 @@ msgid ""
 msgstr ""
 
 #. type: SH
-#: en/live-tools.7:41 en/live-update-initramfs.8:25 en/live-uptime.1:25
+#: en/live-tools.7:41
 #, no-wrap
 msgid "BUGS"
 msgstr ""
 
 #. type: Plain text
-#: en/live-tools.7:43 en/live-update-initramfs.8:27 en/live-uptime.1:27
+#: en/live-tools.7:43
 msgid ""
 "Bugs can be reported by submitting a bugreport for the live-tools package in "
 "the Debian Bug Tracking System at E<lt>I<http://bugs.debian.org/>E<gt> or by "
@@ -185,7 +180,7 @@ msgid ""
 msgstr ""
 
 #. type: SH
-#: en/live-tools.7:44 en/live-update-initramfs.8:28 en/live-uptime.1:28
+#: en/live-tools.7:44
 #, no-wrap
 msgid "AUTHOR"
 msgstr ""
