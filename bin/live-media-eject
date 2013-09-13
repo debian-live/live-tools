@@ -16,12 +16,13 @@ if ! grep -qs "boot=live" /proc/cmdline || \
    grep -qs "netboot" /proc/cmdline || \
    grep -qs "root=/dev/nfs" /proc/cmdline || \
    grep -qs "root=/dev/cifs" /proc/cmdline || \
+# Exit if system is findiso
+   grep -qs "find_iso" /proc/cmdline || \
 # Exit if system is toram
    grep -qs "toram" /proc/cmdline || \
 # Exit if user disabled medium eject
    grep -qs "cdrom-detect/eject=false" /proc/cmdline || \
-   grep -qs "noeject" /proc/cmdline || \
-   grep -qs "find_iso" /proc/cmdline
+   grep -qs "noeject" /proc/cmdline
 then
 	exit 0
 fi
