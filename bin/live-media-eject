@@ -26,6 +26,19 @@ then
 	exit 0
 fi
 
+# Reading configuration files from filesystem and live-media
+for _FILE in /etc/live/tools.conf /etc/live/tools/* \
+	     /lib/live/mount/medium/live/tools.conf /lib/live/mount/medium/live/tools/*
+do
+	if [ -e "${_FILE}" ]
+	then
+		. "${_FILE}"
+	fi
+done
+
+# Setting defaults
+LIVE_MEDIA_EJECT_VERBOSE="${LIVE_MEDIA_EJECT_VERBOSE:-true}"
+
 # Get root device node
 while read _DEVICE _MOUNT _REST
 do
