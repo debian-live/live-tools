@@ -17,114 +17,75 @@ if ! grep -qs "boot=live" /proc/cmdline || \
    grep -qs "root=/dev/nfs" /proc/cmdline || \
    grep -qs "root=/dev/cifs" /proc/cmdline || \
 # Exit if system is toram
-   grep -qs "toram" /proc/cmdline
+   grep -qs "toram" /proc/cmdline || \
+# Exit if user disabled medium eject
+   grep -qs "cdrom-detect/eject=false" /proc/cmdline || \
+   grep -qs "noeject" /proc/cmdline || \
+   grep -qs "find_iso" /proc/cmdline
 then
 	exit 0
 fi
 
-
-
-get_boot_device()
-{
-	# search in /proc/mounts for the device that is mounted at /lib/live/mount/medium
-	while read DEVICE MOUNT REST
-	do
-		case "${MOUNT}" in
-			/lib/live/mount/medium)
-				echo "${DEVICE}"
-				exit 0
-				;;
-		esac
-	done < /proc/mounts
-}
-
-device_is_USB_flash_drive()
-{
-	# remove leading "/dev/" and all trailing numbers from input
-	DEVICE=$(echo ${1} | sed -e 's|/dev/||' -e 's|[0-9].*$||')
-
-	# check that device starts with "sd"
-	case "${DEVICE}" in
-		sd*)
-			;;
-
-		*)
-			return 1
+# Get root device node
+while read _DEVICE _MOUNT _REST
+do
+	case "${_MOUNT}" in
+		/lib/live/mount/medium)
+			LIVE_MEDIUM_NODE="$(echo ${_DEVICE} | sed -e 's|/dev/||' -e 's|[0-9].*$||')"
+			break
 			;;
 	esac
+done < /proc/mounts
 
-	# check that the device is an USB device
-	if readlink /sys/block/${DEVICE} | grep -q usb
-	then
-		return 0
-	fi
+# Get root device type
+case "${LIVE_MEDIUM_NODE}" in
+	sd*)
+		if readlink "/sys/block/${LIVE_MEDIUM_NODE}" | grep -q usb
+		then
+			LIVE_MEDIUM_TYPE="usb"
+		fi
+		;;
+esac
 
-	return 1
-}
+LIVE_MEDIUM_TYPE="${LIVE_MEDIUM_TYPE:-disc}"
 
-Eject ()
-{
-	# TODO: i18n
-	BOOT_DEVICE="$(get_boot_device)"
+# Eject live medium
+case "${LIVE_MEDIUM_TYPE}" in
+	usb)
+		_EJECT="Please remove the USB flash drive"
+		;;
 
-	if device_is_USB_flash_drive ${BOOT_DEVICE}
-	then
-		# do NOT eject USB flash drives!
-		# otherwise rebooting with most USB flash drives
-		# failes because they actually remember the
-		# "ejected" state even after reboot
-		MESSAGE="Please remove the USB flash drive"
+	disc)
+		_EJECT="Please remove the disc, close the tray (if any)"
+		;;
+esac
 
-		case "${NOPROMPT}" in
-			usb)
-				prompt=
-				;;
-		esac
-	else
-		# ejecting is a very good idea here
-		MESSAGE="Please remove the disc, close the tray (if any)"
+case "${LIVE_MEDIUM_TYPE}" in
+	usb)
+		# do not eject usb devices
+		# they need coldreboot to recover
+		;;
 
+	*)
 		if [ -x /usr/bin/eject ]
 		then
 			eject -p -m /lib/live/mount/medium >/dev/null 2>&1
 		fi
 
-		case "${NOPROMPT}" in
-			cd)
-				prompt=
+		case "${LIVE_MEDIA_EJECT_VERBOSE}" in
+			true)
+				if [ -x /bin/plymouth ] && plymouth --ping
+				then
+					plymouth message --text="${_EJECT} and press ENTER to continue:"
+					plymouth watch-keystroke > /dev/null
+				else
+					stty sane < /dev/console
+
+					printf "\n\n${_EJECT} and press ENTER to continue:" > /dev/console
+
+					read x < /dev/console
+				fi
 				;;
 		esac
-	fi
-
-	[ "$prompt" ] || return 0
-
-	if [ -x /bin/plymouth ] && plymouth --ping
-	then
-		plymouth message --text="${MESSAGE} and press ENTER to continue:"
-		plymouth watch-keystroke > /dev/null
-	else
-		stty sane < /dev/console
-
-		printf "\n\n${MESSAGE} and press ENTER to continue:" > /dev/console
-
-		read x < /dev/console
-	fi
-}
-
-prompt=1
-
-case "${NOPROMPT}" in
-	yes)
-		prompt=
 		;;
 esac
-
-# Check if we need to eject the drive
-if grep -qs "cdrom-detect/eject=false" /proc/cmdline || \
-   grep -qs "noeject" /proc/cmdline || \
-   grep -qs "find_iso" /proc/cmdline
-then
-	return
-else
-	Eject
-fi
