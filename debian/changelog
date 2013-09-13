@@ -1,3 +1,26 @@
+live-tools (4.0~a14-1) experimental; urgency=low
+
+  [ Daniel Baumann ]
+  * Adding live-media-eject, previously included in live-config.
+  * Adding eject to suggests.
+
+  [ chals ]
+  * Updating the dates in man pages.
+  * Updating French translation of man pages.
+
+  [ Daniel Baumann ]
+  * Factoring out medium caching in live-medium-eject to live-medium-
+    cache.
+  * Decrufting and simplyfing live-media-eject.
+  * Reading in live-tools configuration files for verbosity level in live-
+    media-eject.
+  * Reordering initial exit conditions in live-media-eject.
+  * Renaming and updating naming in live-media-* tools for consistent use
+    of live-medium instead of live-media.
+  * Simplifying live-medium-eject even more.
+
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Fri, 13 Sep 2013 14:11:42 +0200
+
 live-tools (4.0~a13-1) experimental; urgency=low
 
   [ chals ]
