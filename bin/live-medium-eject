@@ -40,66 +40,42 @@ done
 # Setting defaults
 LIVE_MEDIUM_EJECT_VERBOSE="${LIVE_MEDIUM_EJECT_VERBOSE:-true}"
 
-# Get root device node
-while read _DEVICE _MOUNT _REST
-do
-	case "${_MOUNT}" in
-		/lib/live/mount/medium)
-			LIVE_MEDIUM_NODE="$(echo ${_DEVICE} | sed -e 's|/dev/||' -e 's|[0-9].*$||')"
-			break
-			;;
-	esac
-done < /proc/mounts
+# Ejecting live-medium
+_DEVICE="$(awk '/\/lib\/live\/medium / { print $1 }' /proc/mounts) | sed -e 's|/dev/||' -e 's|[0-9].*$||')"
 
-# Get root device type
-case "${LIVE_MEDIUM_NODE}" in
+if [ ! -b "/dev/${_DEVICE}" ]
+then
+	exit 0
+fi
+
+case "${_DEVICE}" in
 	sd*)
-		if readlink "/sys/block/${LIVE_MEDIUM_NODE}" | grep -q usb
+		if readlink "/sys/block/${_DEVICE}" | grep -q usb
 		then
-			LIVE_MEDIUM_TYPE="usb"
+			# ignoring usb mass storage devices
+			# (they need coldreboot to recover)
+			exit 0
 		fi
 		;;
 esac
 
-LIVE_MEDIUM_TYPE="${LIVE_MEDIUM_TYPE:-disc}"
+if [ ! -x "$(which eject 2> /dev/null)" ]
+then
+	eject -p -m ${_DEVICE} > /dev/null 2>&1
+fi
 
-# Eject live medium
-case "${LIVE_MEDIUM_TYPE}" in
-	usb)
-		_EJECT="Please remove the USB flash drive"
-		;;
-
-	disc)
-		_EJECT="Please remove the disc, close the tray (if any)"
-		;;
-esac
-
-case "${LIVE_MEDIUM_TYPE}" in
-	usb)
-		# do not eject usb devices
-		# they need coldreboot to recover
-		;;
-
-	*)
-		if [ -x /usr/bin/eject ]
+case "${LIVE_MEDIUM_EJECT_VERBOSE}" in
+	true)
+		if [ -x /bin/plymouth ] && plymouth --ping
 		then
-			eject -p -m /lib/live/mount/medium >/dev/null 2>&1
+			plymouth message --text="Please remove the live-medium, close the tray (if any) and press ENTER to continue:"
+			plymouth watch-keystroke > /dev/null
+		else
+			stty sane < /dev/console
+
+			printf "\n\nPlease remove the live-medium, close the tray (if any) and press ENTER to continue:" > /dev/console
+
+			read x < /dev/console
 		fi
-
-		case "${LIVE_MEDIUM_EJECT_VERBOSE}" in
-			true)
-				if [ -x /bin/plymouth ] && plymouth --ping
-				then
-					plymouth message --text="${_EJECT} and press ENTER to continue:"
-					plymouth watch-keystroke > /dev/null
-				else
-					stty sane < /dev/console
-
-					printf "\n\n${_EJECT} and press ENTER to continue:" > /dev/console
-
-					read x < /dev/console
-				fi
-				;;
-		esac
 		;;
 esac
