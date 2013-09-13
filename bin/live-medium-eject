@@ -27,7 +27,7 @@ then
 	exit 0
 fi
 
-# Reading configuration files from filesystem and live-media
+# Reading configuration files from filesystem and live-medium
 for _FILE in /etc/live/tools.conf /etc/live/tools/* \
 	     /lib/live/mount/medium/live/tools.conf /lib/live/mount/medium/live/tools/*
 do
@@ -38,7 +38,7 @@ do
 done
 
 # Setting defaults
-LIVE_MEDIA_EJECT_VERBOSE="${LIVE_MEDIA_EJECT_VERBOSE:-true}"
+LIVE_MEDIUM_EJECT_VERBOSE="${LIVE_MEDIUM_EJECT_VERBOSE:-true}"
 
 # Get root device node
 while read _DEVICE _MOUNT _REST
@@ -86,7 +86,7 @@ case "${LIVE_MEDIUM_TYPE}" in
 			eject -p -m /lib/live/mount/medium >/dev/null 2>&1
 		fi
 
-		case "${LIVE_MEDIA_EJECT_VERBOSE}" in
+		case "${LIVE_MEDIUM_EJECT_VERBOSE}" in
 			true)
 				if [ -x /bin/plymouth ] && plymouth --ping
 				then
