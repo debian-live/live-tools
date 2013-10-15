@@ -1,3 +1,9 @@
+live-tools (4.0~alpha15-1) experimental; urgency=low
+
+  * Updating package descriptions.
+
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Tue, 15 Oct 2013 09:24:33 +0200
+
 live-tools (4.0~a14-1) experimental; urgency=low
 
   [ Daniel Baumann ]

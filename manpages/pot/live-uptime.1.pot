@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: live-config VERSION\n"
-"POT-Creation-Date: 2013-09-13 14:11+0300\n"
+"POT-Creation-Date: 2013-10-15 09:23+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,13 +25,13 @@ msgstr ""
 #. type: TH
 #: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
 #, no-wrap
-msgid "2013-09-13"
+msgid "2013-10-15"
 msgstr ""
 
 #. type: TH
 #: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
 #, no-wrap
-msgid "4.0~a14-1"
+msgid "4.0~alpha15-1"
 msgstr ""
 
 #. type: TH
