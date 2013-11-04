@@ -1,3 +1,10 @@
+live-tools (4.0~alpha16-1) experimental; urgency=low
+
+  * Rewrapping control file.
+  * Updating to standards version 3.9.5.
+
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Mon, 04 Nov 2013 08:05:47 +0100
+
 live-tools (4.0~alpha15-1) experimental; urgency=low
 
   * Updating package descriptions.
