@@ -1,3 +1,9 @@
+live-tools (4.0~alpha17-1) experimental; urgency=low
+
+  * Adding depends to initramfs-tools (Closes: #729810).
+
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Sun, 17 Nov 2013 19:47:07 +0100
+
 live-tools (4.0~alpha16-1) experimental; urgency=low
 
   * Rewrapping control file.
