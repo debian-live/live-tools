@@ -11,7 +11,9 @@ Vcs-Git: git://live-systems.org/git/live-tools.git
 
 Package: live-tools
 Architecture: all
-Depends: ${misc:Depends}
+Depends:
+ ${misc:Depends},
+ initramfs-tools,
 Suggests:
  debian-installer-launcher,
  eject,
