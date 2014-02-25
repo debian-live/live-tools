@@ -1,6 +1,6 @@
 #!/bin/sh
 
-## partial-squashfs-updates - Generate partial squashfs updates.
+## live-partial-squashfs-updates - Generate partial squashfs updates.
 ## Copyright (C) 2013 Richard Nelson <unixabg@gmail.com>
 ##
 ## This program comes with ABSOLUTELY NO WARRANTY; for details see COPYING.
