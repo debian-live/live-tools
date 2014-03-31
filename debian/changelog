@@ -1,3 +1,10 @@
+live-tools (4.0~alpha18-1) unstable; urgency=low
+
+  * Updating year in copyright file.
+  * Building with dh --parallel.
+
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Mon, 31 Mar 2014 22:03:06 +0200
+
 live-tools (4.0~alpha17-1) experimental; urgency=low
 
   * Adding depends to initramfs-tools (Closes: #729810).
