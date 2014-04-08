@@ -139,7 +139,7 @@ then
 	if [ ${_RUNTYPE} = "J" ]
 	then
 		# Modify the _ROSTACK to not include the filesystem_squashfs mount so we just stack the updates together
-		_ROSTACK=$(echo ${_ROSTACK} | sed s@:./filesystem_squashfs=rr+wh@@g)
+		_ROSTACK=$(echo ${_ROSTACK} | sed s@:./filesystem_squashfs=ro@@g)
 		_ACTIONTYPE="join psu squashfs files to new single psu-DATE.squashfs"
 	else
 		_ACTIONTYPE="create a new single filesystem.squashfs"
