@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
-# This file is distributed under the same license as the live-config package.
+# This file is distributed under the same license as the live-tools package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: live-config VERSION\n"
-"POT-Creation-Date: 2014-03-31 22:02+0200\n"
+"Project-Id-Version: live-tools 4.0~alpha18-1\n"
+"POT-Creation-Date: 2014-05-25 13:52+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgstr ""
 #. type: TH
 #: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
 #, no-wrap
-msgid "2014-03-31"
+msgid "2014-05-25"
 msgstr ""
 
 #. type: TH
