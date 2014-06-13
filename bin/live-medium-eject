@@ -59,7 +59,7 @@ case "${_DEVICE}" in
 		;;
 esac
 
-if [ ! -x "$(which eject 2> /dev/null)" ]
+if [ -x "$(which eject 2> /dev/null)" ]
 then
 	eject -p -m ${_DEVICE} > /dev/null 2>&1
 fi
