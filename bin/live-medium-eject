@@ -41,7 +41,7 @@ done
 LIVE_MEDIUM_EJECT_VERBOSE="${LIVE_MEDIUM_EJECT_VERBOSE:-true}"
 
 # Ejecting live-medium
-_DEVICE="$(awk '/\/lib\/live\/medium / { print $1 }' /proc/mounts) | sed -e 's|/dev/||' -e 's|[0-9].*$||')"
+_DEVICE="$(awk '/\/lib\/live\/mount\/medium / { print $1 }' /proc/mounts) | sed -e 's|/dev/||' -e 's|[0-9].*$||')"
 
 if [ ! -b "/dev/${_DEVICE}" ]
 then
