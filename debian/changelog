@@ -1,3 +1,19 @@
+live-tools (4.0~alpha19-1) unstable; urgency=low
+
+  [ Carlos Zuferri ]
+  * Correcting package name in po4a options.
+  * Removing obsolete flag '--no-backups' from po4a options.
+  * Adding '--package-version' to po4a options.
+  * Updating translation files.
+  * Adding .po integrity check target to manpages/Makefile.
+
+  [ Daniel Baumann ]
+  * Correcting mountpoint of live medium in live-medium-eject.
+  * Correcting inverted logic when ejecting medium in live-medium-eject.
+  * Correcting device when ejecting medium in live-medium-eject.
+
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Sat, 14 Jun 2014 07:34:15 +0200
+
 live-tools (4.0~alpha18-1) unstable; urgency=low
 
   * Updating year in copyright file.
