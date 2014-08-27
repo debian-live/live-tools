@@ -1,3 +1,17 @@
+live-tools (4.0.0-1) unstable; urgency=low
+
+  [ Richard Nelson ]
+  * Initial commit of live-partial-squashfs-updates for generating partial
+    squashfs updates.
+  * Update filename in description on live-partial-squashfs-updates.
+  * Correct _ROSTACK for joining of psu files in live-partial-squashfs-
+    updates.
+
+  [ Daniel Baumann ]
+  * Updating copyright file.
+
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Wed, 27 Aug 2014 18:36:34 +0200
+
 live-tools (4.0~alpha19-1) unstable; urgency=low
 
   [ Carlos Zuferri ]
