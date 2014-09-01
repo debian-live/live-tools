@@ -1,0 +1,42 @@
+.\" live-tools(7) - System Support Scripts
+.\" Copyright (C) 2006-2013 Daniel Baumann <mail@daniel-baumann.ch>
+.\"
+.\" This program comes with ABSOLUTELY NO WARRANTY; for details see COPYING.
+.\" This is free software, and you are welcome to redistribute it
+.\" under certain conditions; see COPYING for details.
+.\"
+.\"
+.\"*******************************************************************
+.\"
+.\" This file was generated with po4a. Translate the source file.
+.\"
+.\"*******************************************************************
+.TH LIVE\-TOOLS 1 2014\-08\-27 4.0.0\-1 "Live システムプロジェクト"
+
+.SH 名前
+\fBlive\-uptime\fP \- システムが実行中となっている時間を返します (LXCで動作します)。
+
+.SH 説明
+\fBlive\-uptime\fP は procps パッケージにより提供される uptime コマンドを置き換えるラッパーです。
+.PP
+元の uptime コマンドが全コンテナでホストの uptime を表示するのに対し、\fBlive\-uptime\fP はシステムが Linux
+Container (LXC) で使われている場合に正しい uptime を表示します。\fBlive\-uptime\fP はコマンドライン引数を全て元の
+uptime コマンドに渡します。元の uptime コマンドのオプションについてのさらなる情報は \fIuptime.orig.procps\fP(1)
+を見てください。
+
+.SH 関連項目
+\fIlive\-tools\fP(7)
+
+.SH ホームページ
+live\-uptime 及び Live
+システムプロジェクトについてのさらなる情報は、<\fIhttp://live\-systems.org/\fP> のホームページや
+<\fIhttp://live\-systems.org/manual/\fP> のマニュアルにあります。
+
+.SH バグ
+バグは <\fIhttp://bugs.debian.org/\fP> にあるバグ追跡システムに live\-tools
+パッケージのバグ報告として提出するか、<\fIdebian\-live@lists.debian.org\fP> にある Live
+システムのメーリングリスト宛てにメールを書くことにより報告できます。
+
+.SH 作者
+live\-uptime は Daniel Baumann さん <\fImail@daniel\-baumann.ch\fP>
+により書かれました。
