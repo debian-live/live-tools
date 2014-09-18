@@ -1,11 +1,11 @@
 # German translations for live-tools
-# 2006-2013 Daniel Baumann <mail@daniel-baumann.ch>
+# 2006-2014 Daniel Baumann <mail@daniel-baumann.ch>
 # This file is distributed under the same license as the live-tools package.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: live-tools 4.0.0-1\n"
-"POT-Creation-Date: 2014-08-27 18:35+0200\n"
+"Project-Id-Version: live-tools 4.0.1-1\n"
+"POT-Creation-Date: 2014-09-18 21:11+0200\n"
 "PO-Revision-Date: 2013-04-13 17:49+0100\n"
 "Last-Translator: Carlos Zuferri <chals@altorricon.com>\n"
 "Language-Team: none\n"
@@ -16,31 +16,31 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. type: TH
-#: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
+#: en/live-tools.7:9 en/live-update-initramfs.8:9
 #, no-wrap
 msgid "LIVE-TOOLS"
 msgstr "LIVE-TOOLS"
 
 #. type: TH
-#: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
+#: en/live-tools.7:9 en/live-update-initramfs.8:9
 #, no-wrap
-msgid "2014-08-27"
-msgstr ""
+msgid "2014-09-18"
+msgstr "18.09.2014"
 
 #. type: TH
-#: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
+#: en/live-tools.7:9 en/live-update-initramfs.8:9
 #, no-wrap
-msgid "4.0.0-1"
-msgstr ""
+msgid "4.0.1-1"
+msgstr "4.0.1-1"
 
 #. type: TH
-#: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
+#: en/live-tools.7:9 en/live-update-initramfs.8:9
 #, no-wrap
 msgid "Live Systems Project"
 msgstr "Live Systems Projekt"
 
 #. type: SH
-#: en/live-tools.7:11 en/live-update-initramfs.8:11 en/live-uptime.1:11
+#: en/live-tools.7:11 en/live-update-initramfs.8:11
 #, no-wrap
 msgid "NAME"
 msgstr "NAME"
@@ -51,7 +51,7 @@ msgid "B<live-tools> - System Support Scripts"
 msgstr "B<live-tools> - System Support Skripte"
 
 #. type: SH
-#: en/live-tools.7:14 en/live-update-initramfs.8:14 en/live-uptime.1:14
+#: en/live-tools.7:14 en/live-update-initramfs.8:14
 #, no-wrap
 msgid "DESCRIPTION"
 msgstr "BESCHREIBUNG"
@@ -124,58 +124,43 @@ msgstr "bestimmt ob das laufende System ein Live System ist."
 #. type: IP
 #: en/live-tools.7:28
 #, no-wrap
-msgid "B<live-uptime>(1)"
-msgstr "B<live-uptime>(1)"
-
-#. type: Plain text
-#: en/live-tools.7:30
-msgid ""
-"tells how long the system has been running (works with LXC). This wrapper "
-"replaces the uptime command provided by the procps package."
-msgstr ""
-"gibt die aktuelle Dauer wie lange das System läuft aus (funktioniert mit "
-"LXC). Dieser Wrapper ersetzt den uptime Befehl des procps Paketes."
-
-#. type: IP
-#: en/live-tools.7:30
-#, no-wrap
 msgid "B<live-persistence>(1)"
 msgstr "B<live-persistence>(1)"
 
 #. type: Plain text
-#: en/live-tools.7:32
+#: en/live-tools.7:30
 msgid "switches a non-persistent system to using persistence at runtime."
 msgstr "wechselt zur Laufzeit ein nicht persistentes System auf Persistenz."
 
 #. type: SH
-#: en/live-tools.7:33 en/live-update-initramfs.8:19 en/live-uptime.1:19
+#: en/live-tools.7:31 en/live-update-initramfs.8:19
 #, no-wrap
 msgid "SEE ALSO"
 msgstr "SIEHE AUCH"
 
 #. type: Plain text
-#: en/live-tools.7:35
+#: en/live-tools.7:33
 msgid "I<live-boot>(7)"
 msgstr "I<live-boot>(7)"
 
 #. type: Plain text
-#: en/live-tools.7:37
+#: en/live-tools.7:35
 msgid "I<live-build>(7)"
 msgstr "I<live-build>(7)"
 
 #. type: Plain text
-#: en/live-tools.7:39
+#: en/live-tools.7:37
 msgid "I<live-config>(7)"
 msgstr "I<live-config>(7)"
 
 #. type: SH
-#: en/live-tools.7:40 en/live-update-initramfs.8:22 en/live-uptime.1:22
+#: en/live-tools.7:38 en/live-update-initramfs.8:22
 #, no-wrap
 msgid "HOMEPAGE"
 msgstr "HOMEPAGE"
 
 #. type: Plain text
-#: en/live-tools.7:42
+#: en/live-tools.7:40
 msgid ""
 "More information about live-tools and the Live Systems project can be found "
 "on the homepage at E<lt>I<http://live-systems.org/>E<gt> and in the manual "
@@ -186,13 +171,13 @@ msgstr ""
 "unter E<lt>I<http://live-systems.org/manual/>E<gt> gefunden werden."
 
 #. type: SH
-#: en/live-tools.7:43 en/live-update-initramfs.8:25 en/live-uptime.1:25
+#: en/live-tools.7:41 en/live-update-initramfs.8:25
 #, no-wrap
 msgid "BUGS"
 msgstr "FEHLER"
 
 #. type: Plain text
-#: en/live-tools.7:45 en/live-update-initramfs.8:27 en/live-uptime.1:27
+#: en/live-tools.7:43 en/live-update-initramfs.8:27
 msgid ""
 "Bugs can be reported by submitting a bugreport for the live-tools package in "
 "the Bug Tracking System at E<lt>I<http://bugs.debian.org/>E<gt> or by "
@@ -206,13 +191,13 @@ msgstr ""
 "werden."
 
 #. type: SH
-#: en/live-tools.7:46 en/live-update-initramfs.8:28 en/live-uptime.1:28
+#: en/live-tools.7:44 en/live-update-initramfs.8:28
 #, no-wrap
 msgid "AUTHOR"
 msgstr "AUTOR"
 
 #. type: Plain text
-#: en/live-tools.7:47
+#: en/live-tools.7:45
 msgid ""
 "live-tools was written by Daniel Baumann E<lt>I<mail@daniel-baumann.ch>E<gt>."
 msgstr ""

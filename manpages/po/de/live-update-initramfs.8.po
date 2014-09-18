@@ -1,11 +1,11 @@
 # German translations for live-tools
-# 2006-2013 Daniel Baumann <mail@daniel-baumann.ch>
+# 2006-2014 Daniel Baumann <mail@daniel-baumann.ch>
 # This file is distributed under the same license as the live-tools package.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: live-tools 4.0.0-1\n"
-"POT-Creation-Date: 2014-08-27 18:35+0200\n"
+"Project-Id-Version: live-tools 4.0.1-1\n"
+"POT-Creation-Date: 2014-09-18 21:11+0200\n"
 "PO-Revision-Date: 2013-04-13 17:49+0100\n"
 "Last-Translator: Carlos Zuferri <chals@altorricon.com>\n"
 "Language-Team: none\n"
@@ -16,61 +16,61 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. type: TH
-#: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
+#: en/live-tools.7:9 en/live-update-initramfs.8:9
 #, no-wrap
 msgid "LIVE-TOOLS"
 msgstr "LIVE-TOOLS"
 
 #. type: TH
-#: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
+#: en/live-tools.7:9 en/live-update-initramfs.8:9
 #, no-wrap
-msgid "2014-08-27"
-msgstr ""
+msgid "2014-09-18"
+msgstr "18.09.2014"
 
 #. type: TH
-#: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
+#: en/live-tools.7:9 en/live-update-initramfs.8:9
 #, no-wrap
-msgid "4.0.0-1"
-msgstr ""
+msgid "4.0.1-1"
+msgstr "4.0.1-1"
 
 #. type: TH
-#: en/live-tools.7:9 en/live-update-initramfs.8:9 en/live-uptime.1:9
+#: en/live-tools.7:9 en/live-update-initramfs.8:9
 #, no-wrap
 msgid "Live Systems Project"
 msgstr "Live Systems Projekt"
 
 #. type: SH
-#: en/live-tools.7:11 en/live-update-initramfs.8:11 en/live-uptime.1:11
+#: en/live-tools.7:11 en/live-update-initramfs.8:11
 #, no-wrap
 msgid "NAME"
 msgstr "NAME"
 
 #. type: SH
-#: en/live-tools.7:14 en/live-update-initramfs.8:14 en/live-uptime.1:14
+#: en/live-tools.7:14 en/live-update-initramfs.8:14
 #, no-wrap
 msgid "DESCRIPTION"
 msgstr "BESCHREIBUNG"
 
 #. type: SH
-#: en/live-tools.7:33 en/live-update-initramfs.8:19 en/live-uptime.1:19
+#: en/live-tools.7:31 en/live-update-initramfs.8:19
 #, no-wrap
 msgid "SEE ALSO"
 msgstr "SIEHE AUCH"
 
 #. type: SH
-#: en/live-tools.7:40 en/live-update-initramfs.8:22 en/live-uptime.1:22
+#: en/live-tools.7:38 en/live-update-initramfs.8:22
 #, no-wrap
 msgid "HOMEPAGE"
 msgstr "HOMEPAGE"
 
 #. type: SH
-#: en/live-tools.7:43 en/live-update-initramfs.8:25 en/live-uptime.1:25
+#: en/live-tools.7:41 en/live-update-initramfs.8:25
 #, no-wrap
 msgid "BUGS"
 msgstr "FEHLER"
 
 #. type: Plain text
-#: en/live-tools.7:45 en/live-update-initramfs.8:27 en/live-uptime.1:27
+#: en/live-tools.7:43 en/live-update-initramfs.8:27
 msgid ""
 "Bugs can be reported by submitting a bugreport for the live-tools package in "
 "the Bug Tracking System at E<lt>I<http://bugs.debian.org/>E<gt> or by "
@@ -84,7 +84,7 @@ msgstr ""
 "werden."
 
 #. type: SH
-#: en/live-tools.7:46 en/live-update-initramfs.8:28 en/live-uptime.1:28
+#: en/live-tools.7:44 en/live-update-initramfs.8:28
 #, no-wrap
 msgid "AUTHOR"
 msgstr "AUTOR"
@@ -128,7 +128,7 @@ msgstr ""
 "siehe I<update-initramfs.orig.initramfs-tools>(8)."
 
 #. type: Plain text
-#: en/live-update-initramfs.8:21 en/live-uptime.1:21
+#: en/live-update-initramfs.8:21
 msgid "I<live-tools>(7)"
 msgstr "I<live-tools>(7)"
 
