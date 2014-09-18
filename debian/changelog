@@ -1,3 +1,14 @@
+live-tools (4.0.1-1) unstable; urgency=low
+
+  [ victory ]
+  * Add Japanese translation.
+
+  [ Daniel Baumann ]
+  * Updating to standards version 3.9.6.
+  * Removing live-uptime, doesn't really belong here.
+
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Thu, 18 Sep 2014 21:17:00 +0200
+
 live-tools (4.0.0-1) unstable; urgency=low
 
   [ Richard Nelson ]
