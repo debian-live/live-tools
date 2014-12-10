@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: live-tools 4.0.1-1\n"
-"POT-Creation-Date: 2014-09-18 21:11+0200\n"
+"POT-Creation-Date: 2014-12-10 10:01+0100\n"
 "PO-Revision-Date: 2014-08-28 01:35+0900\n"
 "Last-Translator: victory <victory.deb@gmail.com>\n"
 "Language-Team: none\n"
@@ -23,14 +23,14 @@ msgstr "LIVE-TOOLS"
 #. type: TH
 #: en/live-tools.7:9 en/live-update-initramfs.8:9
 #, no-wrap
-msgid "2014-09-18"
-msgstr "2014-09-18"
+msgid "2014-12-10"
+msgstr "2014-12-10"
 
 #. type: TH
 #: en/live-tools.7:9 en/live-update-initramfs.8:9
 #, no-wrap
-msgid "4.0.1-1"
-msgstr "4.0.1-1"
+msgid "4.0.2-1"
+msgstr "4.0.2-1"
 
 #. type: TH
 #: en/live-tools.7:9 en/live-update-initramfs.8:9

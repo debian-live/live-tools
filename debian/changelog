@@ -1,3 +1,10 @@
+live-tools (4.0.2-1) unstable; urgency=low
+
+  * Removing left-over divertion on procps when upgrading from before
+    live-tools 4.0.1 (Closes: #765635).
+
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Wed, 10 Dec 2014 10:01:27 +0100
+
 live-tools (4.0.1-1) unstable; urgency=low
 
   [ victory ]
