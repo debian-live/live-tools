@@ -1,3 +1,9 @@
+live-tools (5.0~a1-1) unstable; urgency=low
+
+  * Dropping pre-jessie upgrade handling.
+
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Mon, 27 Apr 2015 07:26:27 +0200
+
 live-tools (4.0.2-1) unstable; urgency=low
 
   * Removing left-over divertion on procps when upgrading from before
