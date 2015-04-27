@@ -8,12 +8,6 @@ case "${1}" in
 		dpkg-divert --package live-tools --quiet --add --rename --divert /usr/sbin/update-initramfs.orig.initramfs-tools /usr/sbin/update-initramfs
 		dpkg-divert --package live-tools --quiet --add --rename --divert /usr/share/man/man8/update-initramfs.orig.initramfs-tools.8.gz /usr/share/man/man8/update-initramfs.8.gz
 
-		# upgrade from live-tools >> 4.0.1
-		if [ -e /usr/bin/uptime.orig.procps ]
-		then
-			dpkg-divert --package live-tools --quiet --remove --rename --divert /usr/bin/uptime.orig.procps /usr/bin/uptime
-			dpkg-divert --package live-tools --quiet --remove --rename --divert /usr/share/man/man1/uptime.orig.procps.1.gz /usr/share/man/man1/uptime.1.gz
-		fi
 		;;
 
 	abort-upgrade)
