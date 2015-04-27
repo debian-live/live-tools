@@ -1,3 +1,10 @@
+live-tools (4.0.2-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Move removal of diversion to postinst (Closes: #774915)
+
+ -- Gaudenz Steinlin <gaudenz@debian.org>  Sun, 01 Feb 2015 01:53:17 +0100
+
 live-tools (4.0.2-1) unstable; urgency=low
 
   * Removing left-over divertion on procps when upgrading from before
