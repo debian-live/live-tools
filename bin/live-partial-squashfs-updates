@@ -16,11 +16,13 @@ Cleanup_mounts () {
 		umount -l $mount_point
 		rmdir $mount_point
 	done
+	# The upperdir and work dir need to be cleaned up also.
+	rm -rf ./psu_overlay_rw ./psu_overlay_work
 }
 
 _MOUNTDIR=""
-_MOUNTLIST="./filesystem_squashfs ./partial_squashfs_union ./partial_squashfs_updates"
-_ROSTACK=":./filesystem_squashfs=ro"
+_MOUNTLIST="./filesystem_squashfs ./psu_overlay"
+_LSTACK="./filesystem_squashfs"
 for squash_file in $(ls ./psu-*.squashfs); do
 	# Setup mount for the squashfs images.
 	# Note that we stack here on the listing provided by ls command.
@@ -30,10 +32,12 @@ for squash_file in $(ls ./psu-*.squashfs); do
 		mkdir "${_MOUNTDIR}"
 	fi
 	mount -o loop "./$squash_file" "./${_MOUNTDIR}"
-	_ROSTACK=":./${_MOUNTDIR}=rr+wh${_ROSTACK}"
-	_MOUNTLIST="${_MOUNTLIST} ./${_MOUNTDIR}"
+	# The lowerdir stacks the list from right to left, hence the filesystem.squashfs
+	# is the last one in the list, so we pre-append names to the list.
+	_LSTACK="./${_MOUNTDIR}:${_LSTACK}"
+	_MOUNTLIST="./${_MOUNTDIR} ${_MOUNTLIST}"
 done
-echo "${_ROSTACK}"
+echo "${_LSTACK}"
 echo "${_MOUNTLIST}"
 
 # Setup mount for the filesystem.squashfs mount.
@@ -42,15 +46,17 @@ if [ ! -d "filesystem_squashfs" ]; then
 fi
 mount -o loop ./filesystem.squashfs ./filesystem_squashfs
 
-# Setup mount for the updates which we will squash later.
-if [ ! -d "partial_squashfs_updates" ]; then
-	mkdir partial_squashfs_updates
+# Setup mount for the overlay upperdir which is rw which we will squash later.
+if [ ! -d "psu_overlay_rw" ]; then
+	mkdir psu_overlay_rw
 fi
-mount -t tmpfs tmpfs ./partial_squashfs_updates
-
-# Setup mount for the union where we stack ro squashfs and rw updates mount.
-if [ ! -d "partial_squashfs_union" ]; then
-	mkdir partial_squashfs_union
+# Setup mount for the overlay work folder which appears to be required.
+if [ ! -d "psu_overlay_work" ]; then
+	mkdir psu_overlay_work
+fi
+# Setup mount for the overlay where we stack ro squashfs list.
+if [ ! -d "psu_overlay" ]; then
+	mkdir psu_overlay
 fi
 
 _DEFAULTRUNTYPE="C"
@@ -66,40 +72,40 @@ _RUNTYPE="${_RUNTYPE:-${_DEFAULTRUNTYPE}}"
 
 if [ ${_RUNTYPE} = "C" ]
 then
-	#mount -t aufs -o br=./partial_squashfs_updates=rw:./filesystem_squashfs=ro none ./partial_squashfs_union
-	mount -t aufs -o br=./partial_squashfs_updates=rw"${_ROSTACK}" none ./partial_squashfs_union
+	#mount -t overlay overlay -olowerdir=./psu-2_squashfs:./psu-1_squashfs:filesystem_squashfs,upperdir=./psu_overlay_rw,workdir=./psu_overlay_work ./psu_overlay
+	mount -t overlay overlay -olowerdir="${_LSTACK}",upperdir=./psu_overlay_rw,workdir=./psu_overlay_work ./psu_overlay
 	echo "You selected to run a chroot"
-	echo "Setup the chroot to union mount."
-	echo "Mounting bindings for dev, proc, sys, pts in union."
-	mount --bind /dev ./partial_squashfs_union/dev
-	mount --bind /proc ./partial_squashfs_union/proc
-	mount --bind /sys ./partial_squashfs_union/sys
-	mount --bind /dev/pts ./partial_squashfs_union/dev/pts
+	echo "Setup the chroot to overlay mount."
+	echo "Mounting bindings for dev, proc, sys, pts in overlay."
+	mount --bind /dev ./psu_overlay/dev
+	mount --bind /proc ./psu_overlay/proc
+	mount --bind /sys ./psu_overlay/sys
+	mount --bind /dev/pts ./psu_overlay/dev/pts
 
-	echo "Backup the union/etc/hosts."
-	mv ./partial_squashfs_union/etc/hosts ./hosts.bak
-	echo "Copying /etc/hosts to union/etc/hosts."
-	cp /etc/hosts ./partial_squashfs_union/etc/hosts
+	echo "Backup the overlay/etc/hosts."
+	mv ./psu_overlay/etc/hosts ./hosts.bak
+	echo "Copying /etc/hosts to overlay/etc/hosts."
+	cp /etc/hosts ./psu_overlay/etc/hosts
 
-	echo "Backup the union/etc/resolv.conf."
-	mv ./partial_squashfs_union/etc/resolv.conf ./resolv.conf.bak
-	echo "Copying /etc/resolv.conf to the union/etc/resolv.conf."
-	cp /etc/resolv.conf ./partial_squashfs_union/etc/resolv.conf
+	echo "Backup the overlay/etc/resolv.conf."
+	mv ./psu_overlay/etc/resolv.conf ./resolv.conf.bak
+	echo "Copying /etc/resolv.conf to the overlay/etc/resolv.conf."
+	cp /etc/resolv.conf ./psu_overlay/etc/resolv.conf
 
-	echo "Starting chroot in the union directory."
-	chroot ./partial_squashfs_union /bin/bash
+	echo "Starting chroot in the overlay directory."
+	chroot ./psu_overlay /bin/bash
 
 	echo "Exited the chroot so time to clean up."
-	umount -l ./partial_squashfs_union/dev
-	umount -l ./partial_squashfs_union/proc
-	umount -l ./partial_squashfs_union/sys
+	umount -l ./psu_overlay/dev
+	umount -l ./psu_overlay/proc
+	umount -l ./psu_overlay/sys
 
-	echo "Restore original union/etc/hosts."
-	mv ./hosts.bak ./partial_squashfs_union/etc/hosts
-	echo "Restore union/etc/resolv.conf."
-	mv ./resolv.conf.bak ./partial_squashfs_union/etc/resolv.conf
-	echo "Remove union/root/.bash_history."
-	rm ./partial_squashfs_union/root/.bash_history
+	echo "Restore original overlay/etc/hosts."
+	mv ./hosts.bak ./psu_overlay/etc/hosts
+	echo "Restore overlay/etc/resolv.conf."
+	mv ./resolv.conf.bak ./psu_overlay/etc/resolv.conf
+	echo "Remove overlay/root/.bash_history."
+	rm ./psu_overlay/root/.bash_history
 
 	# Prompt to save changes or not.
 	_DEFAULTYESNO="N"
@@ -116,7 +122,7 @@ then
 	then
 		_DATE=$(date +%Y%m%d-%H%M%S)
 		echo "Now making the updated squashfs ${_DATE}."
-		mksquashfs ./partial_squashfs_updates psu-${_DATE}.squashfs
+		mksquashfs ./psu_overlay_rw psu-${_DATE}.squashfs
 
 		# Since we use sed to put text at the top of the file make sure the file exists.
 		if [ ! -e psu-changelog.txt ]
@@ -138,16 +144,16 @@ elif [ ${_RUNTYPE} = "J" ] || [ ${_RUNTYPE} = "N" ]
 then
 	if [ ${_RUNTYPE} = "J" ]
 	then
-		# Modify the _ROSTACK to not include the filesystem_squashfs mount so we just stack the updates together
-		_ROSTACK=$(echo ${_ROSTACK} | sed s@:./filesystem_squashfs=ro@@g)
+		# Modify the _LSTACK to not include the filesystem_squashfs mount so we just stack the updates together
+		_LSTACK=$(echo ${_LSTACK} | sed s@:./filesystem_squashfs@@g)
 		_ACTIONTYPE="join psu squashfs files to new single psu-DATE.squashfs"
 	else
 		_ACTIONTYPE="create a new single filesystem.squashfs"
 	fi
 
-	echo "${_ROSTACK}"
-	#mount -t aufs -o br=./partial_squashfs_updates=rw:./filesystem_squashfs=ro none ./partial_squashfs_union
-	mount -t aufs -o br=./partial_squashfs_updates=rw"${_ROSTACK}" none ./partial_squashfs_union
+	echo "${_LSTACK}"
+	#mount -t overlay overlay -olowerdir=./psu-2_squashfs:./psu-1_squashfs,upperdir=./psu_overlay_rw,workdir=./psu_overlay_work ./psu_overlay
+	mount -t overlay overlay -olowerdir="${_LSTACK}",upperdir=./psu_overlay_rw,workdir=./psu_overlay_work ./psu_overlay
 
 	# Prompt to join squashfs files or not.
 	_DEFAULTYESNO="N"
@@ -176,12 +182,12 @@ then
 				mkdir new_squashfs
 			fi
 			echo "Now making a new and updated filesystem.squashfs."
-			mksquashfs ./partial_squashfs_union ./new_squashfs/filesystem.squashfs
+			mksquashfs ./psu_overlay ./new_squashfs/filesystem.squashfs
 			# Add entry to changelog for the joining of the *.squashfs files to a new filesystem.squashfs.
 			sed -i "1s/^/******* ${_DATE} - New filesystem.squashfs generated. ********\n/" psu-changelog.txt
 		else
-			echo "Now making the updated squashfs ${_DATE} from union."
-			mksquashfs ./partial_squashfs_union psu-${_DATE}.squashfs
+			echo "Now making the updated squashfs ${_DATE} from overlay."
+			mksquashfs ./psu_overlay psu-${_DATE}.squashfs
 			# Add entry to changelog for the joining of the psu files.
 			sed -i "1s/^/******* ${_DATE} - Joined squashfs files. ********\n/" psu-changelog.txt
 		fi
@@ -194,7 +200,7 @@ then
 	# Remove old directories and move old partials out.
 	if [ ${_YESNO} = "Y" ]
 	then
-		if [ ! -d "partial_squashfs_updates-OLD-${_DATE}" ]; then
+		if [ ! -d "psu_overlay_rw-OLD-${_DATE}" ]; then
 			mkdir psu-OOS-${_DATE}
 		fi
 		if [ ${_RUNTYPE} = "N" ]
