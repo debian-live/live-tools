@@ -7,7 +7,7 @@ Files: *
 Copyright: 2006-2014 Daniel Baumann <mail@daniel-baumann.ch>
 License: GPL-3+
 
-Files: bin/live-partial-squashfs
+Files: bin/live-partial-squashfs-updates
 Copyright: 2014 Richard Nelson <unixabg@gmail.com>
 License: GPL-3+
 
