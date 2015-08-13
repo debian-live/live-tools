@@ -1,10 +1,5 @@
 #!/bin/sh
 
-## live-tools contains additional support scripts for live systems.
-##
-## This is the sysvinit initscript for live-tools.
-
-
 ### BEGIN INIT INFO
 # Provides:		live-tools
 # Required-Start:	$syslog bootmisc
