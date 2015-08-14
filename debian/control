@@ -2,8 +2,10 @@ Source: live-tools
 Section: misc
 Priority: optional
 Maintainer: Live Systems Maintainers <debian-live@lists.debian.org>
-Uploaders: Daniel Baumann <mail@daniel-baumann.ch>
-Build-Depends: debhelper (>= 9)
+Uploaders:
+ Daniel Baumann <mail@daniel-baumann.ch>,
+Build-Depends:
+ debhelper (>= 9),
 Standards-Version: 3.9.6
 Homepage: http://live-systems.org/devel/live-tools/
 Vcs-Browser: http://live-systems.org/gitweb/?p=live-tools.git
@@ -12,8 +14,8 @@ Vcs-Git: git://live-systems.org/git/live-tools.git
 Package: live-tools
 Architecture: all
 Depends:
- ${misc:Depends},
  initramfs-tools,
+ ${misc:Depends},
 Suggests:
  debian-installer-launcher,
  eject,
