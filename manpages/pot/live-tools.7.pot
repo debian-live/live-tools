@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE
-# Copyright (C) YEAR Free Software Foundation, Inc.
+# Copyright (C) YEAR Live Systems Project
 # This file is distributed under the same license as the live-tools package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: live-tools 5.0~a2-1\n"
-"POT-Creation-Date: 2015-08-23 11:09+0200\n"
+"POT-Creation-Date: 2015-09-25 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgstr ""
 #. type: TH
 #: en/live-tools.7:9 en/live-update-initramfs.8:9
 #, no-wrap
-msgid "2015-08-23"
+msgid "2015-09-25"
 msgstr ""
 
 #. type: TH

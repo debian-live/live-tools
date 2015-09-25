@@ -11,40 +11,40 @@
 .\" This file was generated with po4a. Translate the source file.
 .\"
 .\"*******************************************************************
-.TH LIVE\-TOOLS 8 2015\-08\-23 5.0~a2\-1 "Projet Live Systems"
+.TH LIVE\-TOOLS 8 2015\-09\-25 5.0~a2\-1 "Projet Live Systems"
 
 .SH NOM
-\fBlive\-update\-initramfs\fP \- écrit ​​des images mises à jour du noyau et de
-l'initrd sur les supports live.
+\fBlive\-update\-initramfs\fP \- inscrit ​​des noyaux à jour et des images initrd
+sur les médias live.
 
 .SH DESCRIPTION
-\fBlive\-update\-initramfs\fP est un wrapper qui remplace la commande
+\fBlive\-update\-initramfs\fP est un emballage qui remplace la commande
 update\-initramfs fournie par le paquet initramfs\-tools.
 .PP
 Dans les systèmes live avec une couche de persistance,
-\fBlive\-update\-initramfs\fP écrira des images mises à jour du noyau et de
-l'initrd sur les supports live. Cela permet les mises à niveau du noyau au
-sein du système live à l'aide d'apt\-get sans avoir besoin de synchroniser
-manuellement le noyau et l'initrd pour le support
-live. \fBlive\-update\-initramfs\fP passe tous les arguments de ligne de commande
-à la commande originale update\-initramfs; voir
-\fIupdate\-initramfs.orig.initramfs\-tools\fP(8) pour plus d'informations sur les
-options de la commande originale update\-initramfs.
+\fBlive\-update\-initramfs\fP écrira des noyaux à jour et des images initrd sur
+les médias live. Cela permet des mises à jour du noyau au sein du système
+live à l'aide d'apt\-get sans avoir besoin de synchroniser manuellement le
+noyau et l'initrd pour le support live. \fBlive\-update\-initramfs\fP passe tous
+les arguments de ligne de commande à la commande originelle
+update\-initramfs; voir \fIupdate\-initramfs.orig.initramfs\-tools\fP(8) pour
+davantage d'informations à propos des options de la commande
+update\-initramfs originelle.
 
 .SH "VOIR AUSSI"
 \fIlive\-tools\fP(7)
 
 .SH "PAGE D'ACCUEIL"
-Plus d'informations sur live\-update\-initramfs et le projet Live Systems
+Davantage d'informations sur live\-update\-initramfs et le projet Live Systems
 peuvent être trouvées sur la page <\fIhttp://live\-systems.org/\fP> et
-dans le manuel sur <\fIhttp://live\-systems.org/manual/\fP>.
+dans le manuel <\fIhttp://live\-systems.org/manual/\fP>.
 
 .SH BOGUES
-Les bogues peuvent être soumis dans le système de gestion des bogues contre
-le paquet live\-tools sur <\fIhttp://bugs.debian.org/\fP> ou en envoyant
-un courrier électronique à la liste de diffusion Live Systems sur
-<\fIdebian\-live@lists.debian.org\fP>
+Les bogues peuvent être signalés en soumettant un rapport de bogue pour le
+paquet live\-tools sur le BTS <\fIhttp://bugs.debian.org/\fP> ou en
+envoyant un courriel à la liste de diffusion Live Systems sur
+<\fIdebian\-live@lists.debian.org\fP>.
 
 .SH AUTEUR
-live\-update\-initramfs a été conçu par Daniel Baumann
+live\-update\-initramfs a été écrit par Daniel Baumann
 <\fImail@daniel\-baumann.ch\fP>.
